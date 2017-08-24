@@ -1,0 +1,46 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+/* Select by element */
+p {
+    font-size: 20px;
+}
+
+/* Select by id */
+#special {
+    font-weight:bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+    background:green;
+    color:white;
+    /* Allows for padding on all 4 sides of the element */
+    /* padding: 20px; */
+
+    padding: 40px 20px;
+    margin:40px;
+    border: 5px solid red;
+}
+
+.column {
+    background: blue;
+    width: 49%;
+    color: white;
+    text-align: center;
+    height: 200px;
+    display: inline-block;
+}
+
