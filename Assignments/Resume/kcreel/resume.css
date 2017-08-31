@@ -1,0 +1,35 @@
+h2 {
+    color: #1e8894;
+    font-size: 24pt;
+    text-align: center;
+}
+
+h1 {
+    color: #1e8894;
+    font-size: 46pt;
+    text-align: center;
+}
+head, body {
+    background: black;
+}
+h3 {
+    color: white;
+
+}
+p {
+    color: white;
+    text-align: center;
+
+}
+li {
+    color: white;
+}
+ul li {
+    list-style-type: none;
+}
+ul li:before {
+    content: "\2022";
+    color: #1e8894;
+    width: 20px;
+    padding-right: 0.5em;
+}
