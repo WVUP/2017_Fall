@@ -1,0 +1,35 @@
+html body{
+    background-image: url("https://assets.change.org/photos/6/hy/zb/OkHYzBTdLAimSrf-1600x900-noPad.jpg?1476918815");
+    background-position: x * y;
+    margin: 0;
+    padding: 0;
+}
+.text-right{
+    text-align: right;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.text-center{
+    text-align: center;
+}
+
+.middleposition{
+    position: relative;
+    top: +100px;
+    text-align: center;
+}
+.leftposition{
+    position: relative;
+    top: +100px;
+    left: +100px;
+    text-align: left;
+}
+.position{
+    position: absolute;
+    bottom: +10px;
+    
+}
