@@ -1,0 +1,55 @@
+html, body 
+{
+	margin: 1%;
+	padding: 0;
+	background: #2a88b3;
+	/*Love the chrome inspect*/
+}
+
+header
+{
+	font-size: 500%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.basicText
+{
+	font-size: 115%;
+	color: white;
+	text-align: center;
+}
+
+.subHeader
+{
+	font-size: 200%;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+}
+
+p
+{
+	font-size: 115%;
+	color: white;
+}
+
+li
+{
+	font-size: 100%;
+	color: white;
+}
+
+.bulletHeader
+{
+	text-indent: 2%; 
+	color: white;
+}
+
+.outlineBox
+{
+	/*found outline at https://www.w3schools.com/cssref/pr_outline.asp*/
+	margin: 2%;
+	padding: 2%;
+	outline: #aee5ff dotted thick;
+}
