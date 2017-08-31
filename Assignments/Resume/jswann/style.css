@@ -1,0 +1,83 @@
+html
+{
+	font-family: sans-serif;
+}
+
+body
+{
+	margin: 28px;
+	padding: 28px;
+}
+main, header
+{
+	width: 100%;
+}
+header 
+{
+
+}
+header * {
+	display: inline-block;
+}
+header h1 {
+	width: 30%;
+	font-size: 2.4em;
+}
+header p {
+	width: 69.5%;
+	text-align: right;
+}
+hr {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+section 
+{
+
+}
+section h2,
+section div.content {
+	display: inline-block;
+}
+section#education div.left
+{
+	width: 40%;
+	vertical-align: top;
+	display: inline-block;
+}
+section h2 {
+	color: gray;
+	width: 40%;
+	vertical-align: top;
+
+}
+section div.content {
+	width: 59.5%;
+}
+.title {
+	height:32px;
+}
+.title h3,
+.title h4 {
+	display: inline-block;
+}
+.title h3 {
+	width:80%;
+	font-size: 1.4em;
+}
+.title h4 {
+	text-align: right;
+	width: 20%;
+}
+#education div h4 {
+
+}
+ul
+{
+	padding:12px;
+}
+footer 
+{
+	text-align: center;
+}
