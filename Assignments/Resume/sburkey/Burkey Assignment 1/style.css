@@ -1,0 +1,56 @@
+html, body
+{
+	background: violet;
+}
+
+h1
+{
+	color: midnightblue;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2
+{
+	color: purple;
+	text-align: center;
+}
+
+#column
+{
+	display: inline-block;
+}
+
+.box
+{
+	background: pink;
+	padding: 40px 20px;
+	margin: 50px;
+	border: 5px solid blue;
+	width: 15%;
+}
+
+.box2
+{
+	background: blue;
+	color: white;
+	padding: 40px 20px;
+	margin: 50px;
+	border: 5px dotted red;
+	width: 20%;
+}
+
+.pic
+{
+	height: 200px;
+}
+
+.pic2
+{
+	height: 250px;
+}
+
+.pic3
+{
+	height:400px;
+}

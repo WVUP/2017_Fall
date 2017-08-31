@@ -1,0 +1,85 @@
+div {
+	border-radius:1px;
+}
+
+#header {
+	z-index: 1;
+	position: fixed;
+	width: 99.5%;
+	margin-top: -10.9px;
+	height: 60px;
+	background-color: black;
+	margin-bottom: 5px;
+}
+
+#name {
+	float:left;
+	margin-left: 5px;
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+}
+
+#email{
+	float:right;
+	margin-right: 5px;
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+}
+
+h4 {
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.right p {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: -5px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #000000;
+}
+
+li {
+	list-style-type: circle;
+}
+
+
+.left {
+	position: relative;
+	float: left;
+	width: 11%;
+	height:940px;
+	background-color: black;
+	border-radius: 0;
+}
+
+.right {
+	position: relative;
+	float: right;
+	margin-top: 50px;
+	width: 88%;
+	height: 900px;
+	background-color: gray;
+	margin-bottom: 10px;
+}
+
+#footer {
+	position: relative;
+	height: 110px;
+	background-color: black;
+	clear: both;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+
+#footer p {
+	position: relative;
+	padding-top: 10px;
+}
