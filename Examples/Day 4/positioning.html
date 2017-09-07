@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning</title>
+
+    <style>
+        html, body { margin: 0; padding:0;}
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            /* background:silver; */
+        }
+
+        .nav {
+            height: 80px;
+            background: #babad0;
+            line-height: 80px;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .logo {
+            background: #10b6e8;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .menu {
+            padding-left: 40px;
+        }
+
+        .menu ul {
+            margin:0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            background:#0089ff;
+            color:white;
+            padding: 0 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="nav">
+
+                <div class="logo inline-block">
+                    Some Logo
+                </div>
+
+                <div class="menu inline-block">
+                    
+                    <ul>
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                    </ul>
+
+                </div>
+        </div>
+
+        <div class="content">
+            I am content
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <h2>Forms</h2>
+
+
+    <form>
+        Your name: <input type="text" placeholder="First Name" value="Aaron" required>
+
+        <br /><br />
+
+        Password: <input type="password" placeholder="secret" required>
+        
+        <br /><br />
+
+        Email: <input type="email" placeholder="yourname@gmail.com" required>
+        
+        <br /><br />
+
+        <input type="checkbox" name="colors" value="blue" > blue
+        <input type="checkbox" name="colors" value="red" > red
+        <input type="checkbox" name="colors" value="green" > green
+
+        <br /><br />
+        
+        <input type="radio" name="radio_colors" value="blue" id="blue"> <label for="blue">blue</label>
+        <input type="radio" name="radio_colors" value="red" id="red"> <label for="red">red</label>
+        <input type="radio" name="radio_colors" value="green" id="green" > <label for="green">green</label>
+
+        <br /><br />
+
+        <select name="dd_colors" id="dd_colors">
+            <option value="1">blue</option>
+            <option value="2">green</option>
+            <option value="3" selected>red</option>
+        </select>
+
+        <br /><br />
+        
+            <select name="dd_colors" id="dd_colors" multiple>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="red">red</option>
+            </select>
+
+        <br /><br />
+
+        <textarea name="" id="" cols="30" rows="10" no-resize>I am some text
+        </textarea>
+
+        <br /><br />
+
+        <input type="number" value="3" min="1" max="5">
+
+        <br /><br />
+
+        <input type="range" min="0" max="20">
+
+        <br /><br />
+
+        <input type="date" >
+
+
+        <br /><br />
+
+        <input type="submit" name="btn" value="Submit">
+
+
+        <audio src="filepath/file.mp3" controls="controls"></audio>
+        
+
+    </form>
+
+
+</body>
+</html>
