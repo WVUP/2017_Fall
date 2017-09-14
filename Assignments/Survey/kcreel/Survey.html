@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul, li {
+            list-style-type: none;
+        }
+        
+        div {
+            width: 80%;
+            float: right;
+            
+        }
+        h1 {
+            width: 80%;
+            float: right;
+            
+        }
+        #submit {
+            width: 80%;
+            float: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <font face="Arial">
+        <h1>Thank you for taking the time to fill out this Survey!</h1>
+        
+        <br>
+        <nav>
+
+            <ul>
+                <li><a href="Survey.html">Survey 1</a></li>
+                <li><a href="#">Survey 2</a></li>
+                <li><a href="#">Survey 3</a></li>
+            </ul>
+        </nav>
+        <form>
+            <div>
+                What is your Name?
+                <input type="text" placeholder="First Name & Last Name" required>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                Email:
+                <input type="text" placeholder="Email"required>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                Would you like to sign up for our newsletter?
+                <input type="checkbox" name="Scam" id="Scam" checked>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                How old are you?
+                <input type="radio" name="age"value="Under 18" id="Really young"><label for="Really young">Under 18</label>
+                <input type="radio" name="age"value="18-35" id="Young"><label for="Young">18-35</label>
+                <input type="radio" name="age"value="35-60" id="Old"><label for="Old">35-60</label>
+                <input type="radio" name="age"value="Over 60" id="Really old"><label for="Really old">Over 60</label>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                What is your favorite color?
+                <input type="color" name="color" id="color" onchange="changeBackground();">
+                <br>
+                <br>
+                
+            </div>
+
+            <div>
+                Where do you work?
+                <input type="text" placeholder="Ex. Public Debt">
+                <br>
+                <br>
+
+            </div>
+
+            <div>
+                How often do you work?
+                <input type="radio" name="Time" id="Part"><label for="Part">Part Time</label>
+                <input type="radio" name="Time" id="Full"><label for="Full">Full Time</label>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                Do you feel that you are paid the correct amount for the effort that you put into your job?
+                <input type="radio" name="salary" id="SalaryY"><label for="SalaryY">Yes</label>
+                <input type="radio" name="salary" id="SalaryN"><label for="SalaryN">No</label>
+                <br>
+                <br>
+            </div>
+            
+            <div>
+                We love your feedback so here is a comment box.
+                <br>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <br>
+            </div>  
+            
+            
+            
+            
+
+        </form>
+        <form id="submit" method="get" action="SurveyTY.html">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            
+            function changeBackground() {document.bgColor = document.getElementById("color").value;}
+
+        </script>
+    </font>
+</body>
+</html>
