@@ -150,4 +150,14 @@ html, body
     font-family: impact;
     position: fixed;
     
+}
+#formmain
+{
+    background: #1d0f0c;
+    top: 15%;
+    position: right 50%;
+   
+    font-family: impact;
+    color: #e1d1c1;
 
+}
