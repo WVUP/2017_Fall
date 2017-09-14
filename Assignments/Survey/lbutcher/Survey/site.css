@@ -1,0 +1,53 @@
+html,body
+{
+	background: aqua;
+	background-image: url("http://pa1.narvii.com/6279/a69d24cea4a2a563b8320623ab41c4ee37b30380_hq.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.top
+{
+	outline-color: blue; 
+	outline: thick; 
+	color: white;
+}
+
+.spacingForTop
+{
+
+}
+
+.centerAlign
+{
+	text-align: center;
+}
+
+.outlineBox
+{
+	/*found outline at https://www.w3schools.com/cssref/pr_outline.asp*/
+	margin: 2%;
+	padding: 2%;
+	outline: white dotted thick;
+	color: white;
+}
+
+.divSize
+{
+	size: 30%;
+}
+
+.formSetup
+{
+	display: inline-block;
+	width: 100%;
+}
+
+.divSetup
+{
+	width: 49%;
+	padding: 0%;
+	margin: 0%;
+	display: inline-block;
+}
