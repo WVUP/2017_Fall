@@ -1,0 +1,51 @@
+html, body{
+    background-color: black
+}
+
+#container{
+    align-self: auto;
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    background-color: #270BEB;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.column{
+    background:#01D501;
+    width: 99%;
+    color:#EC0DED;
+    height: 100px;
+    display: inline-block;
+}
+
+.column1{
+    background: #C70B16;
+    width: 99%;
+    color: #DD630E;
+    text-align: left;
+    height: 100px;
+    display: inline-block;
+}
+
+.column2{
+    background: #0928C7;
+    width: 99%;
+    color: #EB3E05;
+    text-align: left;
+    height: 125px;
+    display: inline-block;
+}
+
+.column3{
+    background: #91F004;
+    width: 99%;
+    color: #430BEB;
+    text-align: left;
+    height: 125px;
+    display: inline-block;
+}

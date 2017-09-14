@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<style>
+		.blue 
+		{
+			color: #0088FF;
+		}
+		header, footer, section
+		{
+			margin-top: 2em;
+		}
+		footer h1 
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body class="container">
+	<header>
+		<h1 class="display-4 blue">Survey</h1>
+	</header>
+	<main>
+		<form>
+			<section id="basic-info">
+				<h2 class="blue">Basics</h2>
+				<div class="row">
+					<div class="row col-6 form-group">
+						<label class="col-4 col-form-label col-form-label-lg">Name</label>
+						<input class="form-control col-8 form-control-lg" name="Name"/>
+					</div>
+					<div class="row col-3 form-group">
+						<label class="col-6 col-form-label">SSN</label>
+						<input class="form-control col-6" name="SSN" />
+					</div>
+					<div class="row col-3 form-group">
+						<label class="col col-form-label">Zip Code</label>
+						<input class="form-control col" name="Zipcode"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row col-6 form-group">
+						<label class="col-4 col-form-label">Birth date</label>
+						<input class="form-control col-4" name="Birthdate" placeholder="MM/DD/YYYY" />
+					</div>
+					<div class="row col-6 form-group">
+						<label class="col-5 col-form-label">Education Level</label>
+						<select class="col-7 custom-select" name="educationLevel">
+							<option selected></option>
+							<option value="Illiterate">Illiterate</option>
+							<option value="Highschool">Highschool</option>
+							<option value="Some College">Some College</option>
+							<option value="Bachelor's degree">Bachelor's degree</option>
+							<option value="Master's degree">Master's degree</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section id="Questions">
+				<h2 class="blue">Questions</h2>
+				<div class="row form-group">
+					<label class="col-3 col-form-label col-form-label-lg">Question 1</label>
+					<select class="col-9 custom-select form-control-lg">
+						<option selected></option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="row form-group">
+					<label class="col-3 col-form-label col-form-label-lg">Question 2</label>
+					<select class="col-9 custom-select form-control-lg">
+						<option selected></option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="row form-group">
+					<label class="col-3 col-form-label">Question 3</label>
+					<select class="col-9 custom-select">
+						<option selected></option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="row form-group">
+					<label class="col-3 col-form-label">Question 4</label>
+					<select class="col-9 custom-select">
+						<option selected></option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 5</label>
+							<input class="" type="radio" name="question5" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question5" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 6</label>
+							<input class="" type="radio" name="question6" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question6" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 7</label>
+							<input class="" type="radio" name="question7" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question7" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 8</label>
+							<input name="question8" class="col-3 form-control" placeholder="MM/YYYY" />
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 9</label>
+							<input class="" type="radio" name="question9" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question9" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 10</label>
+							<input class="" type="radio" name="question10" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question10" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 11</label>
+							<input class="" type="radio" name="question11" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question11" value="false"><span>&nbsp;NO</span>
+						</div>
+						<div class="row form-group">
+							<label class="col-7 col-form-label">Question 12</label>
+							<input class="" type="radio" name="question12" value="true"><span>&nbsp;YES</span>
+							<span class="col-1">&nbsp;</span>
+							<input class="" type="radio" name="question12" value="false"><span>&nbsp;NO</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br/>
+			<input type="Submit" class="container btn btn-primary" />
+			</div>
+		</form>
+	</main>
+	<footer>
+		<h1 class="display-4">Thank you!</h1>
+	</footer>
+</body>
+</html>
