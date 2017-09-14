@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>JavaScript</h1>
+    
+    <h1 id="welcome"></h1>
+
+    <div id="message">
+        Here is my message
+    </div>
+
+    <div class="msg">Another message</div>
+
+    <div class="msg">
+        Another message  
+        <div class="sub">Sub 1</div>
+    </div>
+
+    <div class="sub">Sub 2</div>
+
+    <!-- <form name="myForm"> -->
+        <input type="text" name="firstName" placeholder="First Name" id="firstName"/>
+
+
+    <!-- </form> -->
+
+
+    <div onClick="UpdateValues()">Update</div>
+
+    <script>
+        // alert('Hello World');
+
+        var arr = ['test', 'sample', 'fake']
+        // arr[0] = 'test'
+
+        console.log('for loop');
+        for (var index = 0; index < arr.length; index++) {
+            var current = arr[index];
+            console.log(current)
+        }
+        
+        console.log('Native foreach')
+        arr.forEach( (current) => {
+            console.log(current);
+        });
+
+        var doesFakeExist = arr.some( (current) => {
+            return (current == 'fake')
+        })
+        console.log('does fake exist: ', doesFakeExist)
+
+        var doesSnakeExist = arr.some( (current) => {
+            return (current == 'snake')
+        })
+        console.log('does snake exist: ', doesSnakeExist)
+
+
+
+        var person = {
+            firstName: 'Aaron',
+            lastName: "Freeland's",
+            'email address': 'afreeland@gmail.com',
+            age: 31,
+            isAdjunct: true,
+            interest: ['web', 'software'],
+            work: {
+                company: 'Memorial',
+                position: 'software dev'
+            }
+        };
+
+        function Person(fname, lname){
+            this.firstName = fname;
+            this.lastName = lname;
+        }
+        
+
+        // Go get our div with an id of message
+        var message = document.getElementById('message')
+
+        // Get the exact value we want
+        document.querySelector('.msg .sub')
+
+        document.getElementById('firstName').addEventListener('keydown', (event) => {
+            if(event.keyCode == '13'){
+                // User hit the enter button o.O
+                console.log('User hit enter');
+                UpdateValues();
+            }
+
+        })
+
+
+        function UpdateValues(){
+            var _username = document.getElementById('firstName').value;
+            console.log(_username);
+            setUser(_username);
+        }
+
+        function setUser(username){
+            document.getElementById('welcome').innerHTML = 'Welcome, ' + username;
+            console.log(username);
+        }
+
+    </script>
+
+
+</body>
+</html>
