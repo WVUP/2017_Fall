@@ -1,0 +1,88 @@
+html, body{
+    margin: 0; 
+    padding: 0;
+    background-image: url("gify.gif");
+    background-repeat: no-repeat;
+    background-size: cover;}
+.container{
+    width: 960px;
+    margin:0 auto;
+    background: silver;
+}
+.nav{
+    height: 80px;
+    background: #babad0;
+    line-height: 80px;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.logo {
+    background: black;
+    color: white;
+    padding: 0 20px;
+}
+
+.menu{
+    padding-left: 40px;
+}
+
+.menu ul{
+    margin: 0;
+}
+.menu ul li{
+    display: inline-block;
+    background: cyan;
+    color:antiquewhite white;
+    padding: 0 10px;
+}
+
+.content{
+    background: grey;
+    height: 100%;
+}
+
+.leftPane{
+    width: 20%;
+    background: blue;
+    height: 100%;
+}
+
+.main{
+    width:80%;
+}
+
+.left{
+    float: left;
+}
+
+.welcome{
+    width: 90%;
+    background-image: url("thinking.png");
+    background-attachment: fixed;
+    color: rgb(236, 195, 195);
+    margin: 20px auto;
+    text-align: center;
+    height: 35%;
+    font-size: 13pt;
+}
+
+.rightText{
+    text-align: right;
+}
+
+
+.hellothere{
+    position: relative;
+    background-image: url("naruto.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(236, 195, 195);
+    text-align: center;
+    padding: 20px 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+}
