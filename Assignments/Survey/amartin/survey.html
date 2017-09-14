@@ -1,0 +1,84 @@
+<DOC TYPE! html>
+<html>
+<head><title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head><br><br>
+
+<body>
+    
+    <h1>Personal Information</h1><hr>
+
+    <p>
+        Please fill out the following:
+    </p>
+        <form action="#" method="Post"> 
+            
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last"/></td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" name="phone"/></td>
+                </tr>
+                <tr>
+                    <td>Street Address:</td>
+                    <td><input type="text" name="address"/></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city"/></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <select name="state" id="State">State:
+                            <option value="blank"></option>
+                            <option value="WV">WV</option>
+                            <option value="OH">OH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="age" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date" name="DOB" id="DOB"/></td>
+                </tr>
+                <td>What county are you from?</td>
+                <td>
+                    <input type="radio" value="Wood County" name="county">Wood County<br>
+                    <input type="radio" value="Ritchie County" name="county">Ritchie County<br>
+                    <input type="radio" value="Washington County" name="county">Washington County<br><br>
+                </td>
+                <tr>
+                <td>Which of these states have you traveled to?</td>
+                <td>
+                    <input type="checkbox" value="Vermont" name="States"/>Vermont</br>
+                    <input type="checkbox" value="Michigan" name="States"/>Michigan</br>
+                    <input type="checkbox" value="Colorado" name="States"/>Colorado</br>
+                    <input type="checkbox" value="Oregon" name="States"/>Oregon</br>
+                    <input type="checkbox" value="California" name="States"/>California</br></br>
+                </tr>
+                </td>
+                <tr>
+                    <td><input type="reset" value="Reset"></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            
+        </form>
+
+</body>
+
+</html>
