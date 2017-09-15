@@ -88,6 +88,9 @@
         document.querySelector('.msg .sub')
 
         document.getElementById('firstName').addEventListener('keydown', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            
             if(event.keyCode == '13'){
                 // User hit the enter button o.O
                 console.log('User hit enter');
