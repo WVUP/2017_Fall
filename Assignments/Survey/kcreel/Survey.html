@@ -24,8 +24,13 @@
             float: right;
             
         }
+        audio {
+            width: 80%;
+            float: right;
+        }
     </style>
 </head>
+
 <body>
     <font face="Arial">
         <h1>Thank you for taking the time to fill out this Survey!</h1>
@@ -39,17 +44,19 @@
                 <li><a href="#">Survey 3</a></li>
             </ul>
         </nav>
-        <form>
+        <form name="survey">
             <div>
                 What is your Name?
-                <input type="text" placeholder="First Name & Last Name" required>
+                <input type="text" placeholder="First Name & Last Name" name="triple">
+                <br>
+                <input type="button" name="tripleEffect" id="tripleEffect" onclick="ohBabyATriple();" onclick="setUser();">
                 <br>
                 <br>
             </div>
 
             <div>
                 Email:
-                <input type="text" placeholder="Email"required>
+                <input type="text" placeholder="Email" name="email">
                 <br>
                 <br>
             </div>
@@ -74,6 +81,14 @@
             <div>
                 What is your favorite color?
                 <input type="color" name="color" id="color" onchange="changeBackground();">
+                <br>
+                <br>
+                
+            </div>
+
+            <div>
+                What is your second favorite color?
+                <input type="color" name="color2" id="color2" onchange="changeFontColor();" >
                 <br>
                 <br>
                 
@@ -114,14 +129,37 @@
             
             
 
+            <div>
+                <input type="button" name="update" id="updateAll" value="Enter" onchange="updateValues();">
+            </div>
         </form>
         <form id="submit" method="get" action="SurveyTY.html">
             <button type="submit">Submit</button>
         </form>
+        <br>
+        <audio id="triplePlayer" src="audio/triple.mp3"  controls></audio>
         <script>
             
-            function changeBackground() {document.bgColor = document.getElementById("color").value;}
-
+            function changeBackground() {
+                document.bgColor = document.getElementById("color").value;
+            }
+            function changeFontColor() {
+                document.fgColor = document.getElementById("color2").value;
+            }
+            function ohBabyATriple () {
+                var triplePlayer = document.survey.triple.value;
+                document.getElementById("triple").src = "audio/" + triplePlayer + ".mp3";
+            }
+            function updateValues() {
+            var email = document.getElementById("email").value;
+            var scam = document.getElementById("scam").value;
+            console.log(email);
+            console.log(scam);
+            
+            }
+            function setUser(username){
+            document.getElementById('welcome').innerHTML = 'Welcome, ' + username;
+            console.log(username);}
         </script>
     </font>
 </body>
