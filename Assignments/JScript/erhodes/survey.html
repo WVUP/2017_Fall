@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dank Memes</title>
+    <link rel="stylesheet" href="survey.css">
+    
+</head>
+<body>
+
+        
+   
+    <div class ="background">
+        <div class ="nav welcome">
+            <h2 style="color:black">mEmE sUrVeY</h2>
+        </div>
+  
+        <form>
+
+            <div class="welcome rightText">
+                Last Name: <input type="text" placeholder="ex: Butcher" required>
+                <br /><br />
+                First Name: <input type="text" placeholder="ex: Levi" required id="firstName"/>
+                <br /><br />
+                Favorite Meme:
+                <textarea name="List of your favorite Memes" id="memeSubject" cols="30" rows="5">"The Bee Movie"</textarea>
+                <br /><br />
+                <p>Which subject is the 🅱est meme?</p>
+                <input type="radio" name="radio_colors" value="Naruto" id="Naruto"> <label for="Naruto">☁Naruto☁</label>
+                <input type="radio" name="radio_colors" value="Bee Movie" id="Bee Movie"> <label for="Bee Movie">🐝The Bee Movie🐝</label>
+                <input type="radio" name="radio_colors" value="Pepe" id="Pepe"> <label for="Pepe"> 🐸Pepe🐸</label>
+                <input type="radio" name="radio_colors" value="Levi" id="Levi"> <label for="Levi">👌Levi Butcher👌</label>
+                <input type="radio" name="radio_colors" value="Harambe" id="Harambe"> <label for="Harambe">🍌Harambe🍌</label>
+                <input type="radio" name="radio_colors" value="Other" id="Other"> <label for="Other">�Other�</label>
+
+                <br /><br />
+                <p>Please select the number of hours you dedicate to Memes. 
+                <input type="number" value="3" min="1" max="24"></p>
+                <br /><br />
+            
+        
+    
+        
+                <div class="hellothere rightText"></div>
+
+ 
+                </div>
+                </form>
+            </div>
+
+    </div>
+   
+
+    <script>
+    var memeSubject = document.getElementById('memeSubject').value;
+    
+    document.getElementById('firstName').addEventListener('keydown', (event) => 
+    {
+            event.stopPropagation();
+            
+            if(event.keyCode == '13')
+            {
+                console.log('User typed:');
+                UpdateValues();
+            }
+    })
+    
+
+    if(memeSubject === '"The Bee Movie"') 
+    {
+        alert('The Bee movie is my life blood.');        
+    } 
+    else 
+    {
+        alert('Awwww, but the beemovie is my favorite...');        
+    }
+    
+    function UpdateValues()
+    {
+        var _username = document.getElementById('firstName').value;
+        console.log(_username);
+    }
+    
+    </script> 
+</body>
+</html>
