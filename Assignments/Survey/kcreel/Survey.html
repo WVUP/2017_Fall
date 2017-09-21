@@ -45,9 +45,17 @@
             </ul>
         </nav>
         <form name="survey">
+            
+            <div>
+                Username:
+                <input type="text" placeholder="Enter Username" name="username" id="username">
+                <br>
+                <br>
+            </div>
+
             <div>
                 What is your Name?
-                <input type="text" placeholder="First Name & Last Name" name="triple">
+                <input type="text" placeholder="First Name & Last Name" name="triple" id="triple">
                 <br>
                 <input type="button" name="tripleEffect" id="tripleEffect" onclick="ohBabyATriple();" onclick="setUser();">
                 <br>
@@ -56,7 +64,7 @@
 
             <div>
                 Email:
-                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Email" name="email" id="email">
                 <br>
                 <br>
             </div>
@@ -151,15 +159,21 @@
                 document.getElementById("triple").src = "audio/" + triplePlayer + ".mp3";
             }
             function updateValues() {
-            var email = document.getElementById("email").value;
-            var scam = document.getElementById("scam").value;
-            console.log(email);
-            console.log(scam);
+                var email = document.getElementById("email").value;
+                    console.log(email);
+
+                var scam = document.getElementById("Scam").value;
+                    console.log(Scam);
             
             }
+            
+            
             function setUser(username){
-            document.getElementById('welcome').innerHTML = 'Welcome, ' + username;
-            console.log(username);}
+                var username = document.getElementById('welcome').value; 
+                console.log(username);
+                    
+            }
+            
         </script>
     </font>
 </body>
