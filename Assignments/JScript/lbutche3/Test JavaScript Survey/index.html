@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Survey</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <div class="box">
+         <p class="lo">Do you get to the cloud district very often</p>
+        </div>
+        <br>
+
+        Yo enter dog: <input type="text" id="firstName" placeholder="Anything"/>
+
+       
+
+       
+    
+
+    <script>
+
+        document.getElementById('firstName').addEventListener('keydown', (event) => {
+            // event.preventDefault();Messing up code
+            // event.stopPropagation();
+            
+        if(event.keyCode == '13'){
+            console.log('User hit enter');
+            updateValues();
+        }
+
+        }) 
+
+        function updateValues(){
+        var _input = document.getElementById("firstName").value;
+        console.log(_input);
+    }
+
+
+    </script>
+    
+</body>
+</html>

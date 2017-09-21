@@ -1,0 +1,18 @@
+html, body{
+    background: lightcoral;
+    padding: 0%;
+    margin: 1%;
+}
+
+.lo{
+    color: black;
+    font-size: 20;
+    font: bold;
+    text-align: center;
+}
+
+.box{
+    background-color: cyan;
+     border:  2px solid black;
+     border-radius: 100px;
+}
