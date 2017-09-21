@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Concat</title>
+</head>
+<body>
+
+    <h1>More JavaScript</h1>
+    
+    <div id="user"></div>
+
+    <div id="test"></div>
+
+
+    <div id="frag_test"></div>
+    
+
+    <script>
+
+        var arr = ['blue', 'green', 'red', 'lime'];
+
+        var html = '';
+
+        for (var index = 0; index < arr.length; index++) {
+            var color = arr[index];
+
+            html += '<p> This color is: <span style="color:' + color + '">' + color + '</span></p>';
+        }
+
+
+        setTimeout( () => {
+            document.getElementById('test').innerHTML = html;
+        }, 500);
+
+
+        var frag = document.createDocumentFragment();
+
+        for (var i = 0; i < arr.length; i++) {
+            var color = arr[i];
+            
+            var p = document.createElement('p');
+            p.innerHTML = 'This color is: '
+            
+            var mySpan = document.createElement('span')
+            mySpan.style.color = color;
+            mySpan.innerHTML = color;
+
+            p.appendChild(mySpan);
+
+            frag.appendChild(p);
+
+        }
+
+        setTimeout(() => {
+            document.getElementById('frag_test').appendChild(frag);
+        }, 500)
+
+
+        var myself = {
+            firstName: 'Aaron',
+            lastName: 'Freeland'
+        }
+
+        function Person(fname, lname){
+            this.firstName = fname;
+            this.lastName = lname;
+            this.el = document.getElementById('user');
+        }
+
+        Person.prototype = {
+            
+            customAlert: function(){
+                alert(this.firstName + ' ' + this.lastName);
+            },
+            
+            showLastName: function(){
+                console.log('your last name: ' + this.lastName);
+            },
+
+            customMesage: function(callback){
+                if(callback){
+                    //TODO: Get data from server
+                    setTimeout(() => {
+                        callback(this.firstName, this.lastName);
+                    }, 2000);
+                    
+                }
+            },
+
+            show: function(){
+                this.el.innerHTML = '<b>' + this.firstName + ' ' + this.lastName  + '</b>'
+            }
+
+        }
+
+        // Person.prototype.customAlert = function(){
+        //     alert(this.firstName + ' ' + this.lastName);
+        // }
+        
+
+        // Person.prototype.showLastName = function(){
+        //     console.log('your last name: ' + this.lastName);
+        // }
+
+
+
+    </script>
+
+
+</body>
+</html>
