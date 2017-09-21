@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aaron Cottrill`s super fun survey</title>
     <link rel="stylesheet" href="site.css" />
+    <script src= "scripts/functions.js"></script>
 </head>
 <body>
 
     <h2> My survey </h2>
     <form>
-     What should I call you? <input type = "text" placeholder= "first name" required>
+     What should I call you? <input onChange="log('name')" id = 'name' type = "text" placeholder= "first name" required>
+     
      <br/>
  
-     Please provide an id.<input type = "password" placeholder= "password" required>
+     Please provide an id.<input type = "password" onChange="log('password')"  id = 'password' placeholder= "password" required>
      <br/> 
  
-     Email: <input type = "email" placeholder = "yourname@gmail.com" required>
+     Email: <input type = "email"  onChange = "log('emailInput')" id = 'emailInput' placeholder = "yourname@gmail.com" required>
      
      <br/><br/>
      What dessert do you want?
      <br>
-     <input type = "radio", name = "snacks", id = "cookie" value = "cookie"> <label for="cookie">cookie</label>
-     <input type = "radio", name = "snacks", id = "cake" value = "cake"> <label for="cake">cake</label>
-     <input type = "radio", name = "snacks", id = "pie" value = "pie"> <label for="pie">pie</label>
+     <input type = "radio", onChange="log('cookie')" name = "snacks", id = "cookie" value = "cookie"> <label for="cookie">cookie</label>
+     <input type = "radio",  onChange="log('cake')" name = "snacks", id = "cake" value = "cake"> <label for="cake">cake</label>
+     <input type = "radio", onChange="log('pie')"  name = "snacks", id = "pie" value = "pie"> <label for="pie">pie</label>
  
  
      <br/><br/>
      Pick a Pokemon team.  
      <br>
-     <select name = "dd_path" id = "dd_path">
+     <select onChange="log('dd_path')", name = "dd_path" , id = "dd_path">
          <option value="red">red</option>
          <option value="blue" >blue</option>
          <option value="yellow" selected>yellow</option>
@@ -38,20 +40,20 @@
 
      Choose some songs. 
      <br>
-     <input type = "checkbox", name = "songs", value = "White and Nerdy : Weird Al Yankovic"> White and Nerdy : Weird Al Yankovic
-     <input type = "checkbox", name = "songs", value = "If 6 was 9 : Jimi Hendrix"> If 6 was 9 : Jimi Hendrix
-     <input type = "checkbox", name = "songs", value = "Sour Girl: Stone Temple Pilots "> Sour Girl: Stone Temple Pilots
+     <input type = "checkbox", id = 'songs' ,name = "songs", value = "White and Nerdy : Weird Al Yankovic"> White and Nerdy : Weird Al Yankovic
+     <input type = "checkbox",  id = 'songs' ,name = "songs", value = "If 6 was 9 : Jimi Hendrix"> If 6 was 9 : Jimi Hendrix
+     <input type = "checkbox",  id = 'songs' , name = "songs", value = "Sour Girl: Stone Temple Pilots "> Sour Girl: Stone Temple Pilots
      <br/><br/>
 
      Pick a number between one and five.
      <br>
-     <input type = "number" name = "number" value = "1" min = "1" max = "5">
+        <input type = "number" name = "oneToFive" value = "1" min = "1" max = "5">
      <br/><br/>
      Pick a date.
      <br>
-     <input type = "date" name = "date">
+     <input type = "date" onChange="log('date')" name = "date" id = 'date'>
      <br/><br/>
-     <textarea name="" id="" cols="30" rows="10">Why did you pick that date?</textarea>
+     <textarea name="Reason"  onChange="log('Reason')" id='Reason' cols="30" rows="10">Why did you pick that date?</textarea>
      <br></br>
  
      <input type = "reset" id = "reset" value = "Reset Form">
