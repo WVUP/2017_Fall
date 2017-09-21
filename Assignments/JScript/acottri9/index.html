@@ -18,7 +18,7 @@
      Please provide an id.<input type = "password" onChange="log('password')"  id = 'password' placeholder= "password" required>
      <br/> 
  
-     Email: <input type = "email"  id = 'email' placeholder = "yourname@gmail.com" required>
+     Email: <input type = "email"  onChange = "log('emailInput')" id = 'emailInput' placeholder = "yourname@gmail.com" required>
      
      <br/><br/>
      What dessert do you want?
@@ -31,23 +31,23 @@
      <br/><br/>
      Pick a Pokemon team.  
      <br>
-     <select onChange="log('dd_path')", name = "dd_path" , id = "dd_path">
+     <select onchange="changeImage('team','dd_path')", name = "dd_path" , id = "dd_path">
          <option value="red">red</option>
          <option value="blue" >blue</option>
          <option value="yellow" selected>yellow</option>
      </select>
      <br/><br/>
-
+     <img src="" id="team"></img>
      Choose some songs. 
      <br>
      <input type = "checkbox", id = 'songs' ,name = "songs", value = "White and Nerdy : Weird Al Yankovic"> White and Nerdy : Weird Al Yankovic
-     <input type = "checkbox", id = 'songs' ,name = "songs", value = "If 6 was 9 : Jimi Hendrix"> If 6 was 9 : Jimi Hendrix
-     <input type = "checkbox", id = 'songs' , name = "songs", value = "Sour Girl: Stone Temple Pilots "> Sour Girl: Stone Temple Pilots
+     <input type = "checkbox",  id = 'songs' ,name = "songs", value = "If 6 was 9 : Jimi Hendrix"> If 6 was 9 : Jimi Hendrix
+     <input type = "checkbox",  id = 'songs' , name = "songs", value = "Sour Girl: Stone Temple Pilots "> Sour Girl: Stone Temple Pilots
      <br/><br/>
 
      Pick a number between one and five.
      <br>
-     <input type = "number"  id = 'number' ,name = "number" , value = "1" ,min = "1" ,max = "5">
+        <input type = "number" name = "oneToFive" value = "1" min = "1" max = "5">
      <br/><br/>
      Pick a date.
      <br>
