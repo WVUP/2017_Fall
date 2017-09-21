@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Samantha's Survey</title>
+	
+	<link rel = "stylesheet" href = "style.css" />
+</head>
+<body>
+
+	<h1 id = 'welcome'>Welcome to my survey!</h1>
+	
+	<h2>I redid this to include JavaScript</h2>
+	
+	<p>For these questions you do not not have to put your real information in.</p>
+
+	
+	Please enter your name here: <input type = "text" id = "name" placeholder = "First Name" required>
+		
+	<br /><br />
+	<form>
+		<br />
+		
+		Make up a password and enter it here: <input type = "password" placeholder = "password">
+		
+		<br /><br />
+		
+		Make up an email and enter it here: <input type = "email" placeholder = "email@gmail.com">
+		
+		<br /><br />
+		
+		<p>Please select your most favorite color from the raidio buttons below.</p>
+		
+		<input type = "radio" name = "colors" value = "blue"> blue
+		<input type = "radio" name = "colors" value = "green"> green
+		<input type = "radio" name = "colors" value = "red"> red
+		<input type = "radio" name = "colors" value = "yellow"> yellow
+		<input type = "radio" name = "colors" value = "purple"> purple
+		<input type = "radio" name = "colors" value = "pink"> pink
+		
+		<br /><br />
+		
+		<input type = "submit" name = "button" value = "Submit">
+	</form>
+	
+	<script>
+		document.getElementById('name').addEventListener('keydown', (event) => {
+            event.stopPropagation();
+            
+            if(event.keyCode == '13')
+			{
+                console.log('User hit enter for name');
+                UpdateValues();
+            }
+
+        })
+
+
+        function UpdateValues()
+		{
+            var _username = document.getElementById('name').value;
+            console.log(_username);
+            setUser(_username);
+        }
+
+        function setUser(_username)
+		{
+            document.getElementById('welcome').innerHTML = 'Welcome, ' + _username;
+            console.log(_username);
+        }
+	</script>
+	
+	<div class = "container">
+		<img src = "https://img07.deviantart.net/2ad4/i/2017/067/c/2/inojin_yamanaka_by_stork_sai-db1lbcp.png" alt = "Image not found :(" width = "450px">
+	</div>
+	
+	<footer>This is Inojin</footer>
+
+</body>
+</html>

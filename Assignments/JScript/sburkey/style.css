@@ -1,0 +1,34 @@
+/*
+	Author: Samantha Burkey
+*/
+
+html, body
+{
+	background: #581845;
+	color: #33FFBD;
+}
+
+h2
+{
+	color: #BD33FF;
+}
+
+form
+{
+	color: #FFC0B3;
+}
+
+p
+{
+	color: #FF9680;
+}
+
+footer
+{
+	color: #5733FF;
+}
+
+.container
+{
+	display: inline-block;
+}
