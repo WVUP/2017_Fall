@@ -31,13 +31,13 @@
      <br/><br/>
      Pick a Pokemon team.  
      <br>
-     <select onChange="log('dd_path')", name = "dd_path" , id = "dd_path">
+     <select onchange="changeImage('team','dd_path')", name = "dd_path" , id = "dd_path">
          <option value="red">red</option>
          <option value="blue" >blue</option>
          <option value="yellow" selected>yellow</option>
      </select>
      <br/><br/>
-
+     <img src="" id="team"></img>
      Choose some songs. 
      <br>
      <input type = "checkbox", id = 'songs' ,name = "songs", value = "White and Nerdy : Weird Al Yankovic"> White and Nerdy : Weird Al Yankovic
