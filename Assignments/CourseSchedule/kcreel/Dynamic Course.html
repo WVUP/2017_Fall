@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Course List</title>
+    <style>
+        body {
+            background: radial-gradient(white, #598597);
+            width: 65%;
+            float: right;
+            
+        }
+        #green {
+            color: #1821A3
+        }
+        table {
+            border-color: #FF111C;
+            color: #062B38;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="myform">
+<b id="green">Please input the following information</b>
+<table>
+    <tr>
+        <td>Course ID:</td>
+        <td><input type="text" id="cid"></td>
+    </tr>
+    <tr>
+        <td>Professor:</td>
+        <td><input type="text" id="prof"></td>
+        
+    </tr>
+    <tr>
+        <td>Room Number:</td>
+        <td><input type="text" id="room"></td>
+    </tr>
+    <tr>
+        <td>Date:</td>
+        <td><input type="text" id="date"></td>
+    </tr>
+    <tr>
+        <td>Time:</td>
+        <td>
+            <input type="text" id="time">
+            <input type="button" id="add" value="Add" onclick="Javascript:addRow()">
+        </td>
+    </tr>
+    
+</table>
+<br>
+<br>
+</div>
+<div id="mydata">
+<b id="green">Magic Table v v v v</b>
+<table id="courseTable"  border="1" cellpadding="2">
+    <tr>
+        <td></td>
+        <td><b>Course ID</b></td>
+        <td><b>Professor</b></td>
+        <td><b>Room</b></td>
+        <td><b>Date</b></td>
+        <td><b>Time</b></td>
+        
+    </tr>
+</table>
+<br>
+</div>
+
+
+</body>
+<script>
+    function addRow() {
+         
+    var cid  = document.getElementById("cid");
+    var prof = document.getElementById("prof");
+    var room = document.getElementById("room");
+    var date = document.getElementById("date");
+    var time = document.getElementById("time");
+    var table = document.getElementById("courseTable");
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML= '<input type="button" value = "Delete" onClick="Javacsript:deleteRow(this)">';
+    row.insertCell(1).innerHTML= cid.value;
+    row.insertCell(2).innerHTML= prof.value;
+    row.insertCell(3).innerHTML= room.value;
+    row.insertCell(4).innerHTML= date.value;
+    row.insertCell(5).innerHTML= time.value;
+
+}
+
+function deleteRow(obj) {
+     
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("courseTable");
+    table.deleteRow(index);
+   
+}
+
+</script>
+</html>
