@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>~Course Survey~</title>
+    </head>
+    <body>
+    
+        <h1>Survey Time!</h1>
+        
+        <div id="course"></div>
+    
+        
+    
+        <script>
+            function Course(cname, crn, credits)
+            {
+                cname = "College Algebra";
+                crn = "123";
+                credits ="3";
+                //printCourse();
+                //console.log(["Course Number: " +this.crn + " Course Name: " + this.cname + " Course Credits: " +this.credits])
+            }
+            function printCourse()
+            {
+                console.log(["Course Number: " +this.crn + " Course Name: " + this.cname + " Course Credits: " +this.credits])
+            }
+            function show()
+            {
+                this.el = document.getElementById('course').innerHTML = ["Course Number: " +this.crn + " Course Name: " + this.cname + " Course Credits: " +this.credits];            
+            }
+        </script>
+    
+    
+    </body>
+    </html>
