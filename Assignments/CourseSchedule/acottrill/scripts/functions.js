@@ -7,14 +7,6 @@ var visible = [true];
 var amountStored = 0; 
 var html = "";
 var oldTableHeader = "";
-function addCourse(courseNameFormID,teacherLastNameFormID,courseNumFormID,semesterFormID)
-{
-    courseName[amountStored] = document.getElementById(courseNameFormID).value;
-    teacherLastName[amountStored] = document.getElementById(teacherLastNameFormID).value;
-    courseNum[amountStored] = document.getElementById(courseNumFormID).value;
-    semester[amountStored] = document.getElementById(semesterFormID).value;
-    amountStored++;
-}
 /*
 * Overloaded version to do it all in one go. 
 */
@@ -25,46 +17,7 @@ function addCourse(courseNameFormID,teacherLastNameFormID,courseNumFormID,semest
     courseNum[amountStored] = document.getElementById(courseNumFormID).value;
     semester[amountStored] = document.getElementById(semesterFormID).value;
     amountStored++;
-    var head = document.getElementById(tableHeadID);
-    var theTable = document.getElementById(tableID); 
-    if(amountStored == 1)
-    {
-     html += "<thead>" + head.innerHTML + "</thead>";
-     oldTableHeader = "<thead>" + head.innerHTML + "</thead>";
-    }
-    else
-    {
-        html += oldTableHeader;
-    }
-    
-    html += "<tbody>";
-    for(var i = 0; i < amountStored; i++)
-    {
-        if(courseName[i] != "")
-        {
-            html += "<tr> <td> " + courseName[i] + "</td>";
-            html += "<td> " + teacherLastName[i] + "</td>";
-            html += "<td> " + courseNum[i] + "</td>";
-            html += "<td> " + semester[i] + "</td> </tr>";
-        }
-    }
-    html += "</tbody>";
-    theTable.innerHTML = html;
-    html = "";
-}
-function removeCourse(rowToRemoveID)
-{
-    var rowToRemove = document.getElementById(rowToRemoveID).value;
-    visible[rowToRemove] = false;
-    //courseName[rowToRemove] = "";
-    //teacherLastName[rowToRemove] = "";
-    //courseNum[rowToRemove] = "";
-    //semester[rowToRemove] = "";
-}
-function restoreCourse(rowToRestoreID)
-{
-    var rowToRemove = document.getElementById(rowToRemoveID).value;
-    visible[rowToRemove] = true;
+    createTables(tableID,tableHeadID);
 }
 function showOnlyOneCourse(rowToRestoreID,tableID)
 {
@@ -75,42 +28,14 @@ function showOnlyOneCourse(rowToRestoreID,tableID)
         visible[i] = false;
     }
     visible[rowToRestore] = true;
-    html += oldTableHeader;
-    html += "<tbody>";
-    for(var i = 0; i < amountStored; i++)
-    {
-        if(visible[i] == true)
-        {
-            html += "<tr> <td> " + courseName[i] + "</td>";
-            html += "<td> " + teacherLastName[i] + "</td>";
-            html += "<td> " + courseNum[i] + "</td>";
-            html += "<td> " + semester[i] + "</td> </tr>";
-        }
-    }
-    html += "</tbody>";
-    theTable.innerHTML = html;
-    html = "";
+    updateTables(tableID);
 }
 function restoreCourse(rowToRestoreID,tableID)
 {
     var rowToRestore = document.getElementById(rowToRestoreID).value;
     var theTable = document.getElementById(tableID); 
     visible[rowToRestore] = true;
-    html += oldTableHeader;
-    html += "<tbody>";
-    for(var i = 0; i < amountStored; i++)
-    {
-        if(visible[i] == true)
-        {
-            html += "<tr> <td> " + courseName[i] + "</td>";
-            html += "<td> " + teacherLastName[i] + "</td>";
-            html += "<td> " + courseNum[i] + "</td>";
-            html += "<td> " + semester[i] + "</td> </tr>";
-        }
-    }
-    html += "</tbody>";
-    theTable.innerHTML = html;
-    html = "";
+    updateTables(tableID);
 }
 function removeCourse(rowToRemoveID,tableID)
 {
@@ -121,41 +46,7 @@ function removeCourse(rowToRemoveID,tableID)
     //teacherLastName[rowToRemove] = "";
     //courseNum[rowToRemove] = "";
     //semester[rowToRemove] = "";
-    html += oldTableHeader;
-    html += "<tbody>";
-    for(var i = 0; i < amountStored; i++)
-    {
-        if(visible[i] == true)
-        {
-            html += "<tr> <td> " + courseName[i] + "</td>";
-            html += "<td> " + teacherLastName[i] + "</td>";
-            html += "<td> " + courseNum[i] + "</td>";
-            html += "<td> " + semester[i] + "</td> </tr>";
-        }
-    }
-    html += "</tbody>";
-    theTable.innerHTML = html;
-    html = "";
-}
-function updateCourse(rowToUpdate,valueToUpdateID,newValue)
-{
-    var valueToUpdate = document.getElementById(valueToUpdateID).value;
-    if(valueToUpdate == "courseName")
-    {
-        courseName[rowToUpdate] = newValue;
-    }
-    else if(valueToUpdate == "teacherLastName")
-    {
-        teacherLastName[rowToUpdate] = newValue;
-    }
-    else if(valueToUpdate == "courseNum")
-    {
-        courseNum[rowToUpdate] = newValue;
-    }
-    else if(valueToUpdate == "semester")
-    {
-        semester[rowToUpdate] = newValue;
-    }
+    updateTables(tableID);
 }
 /*
 * Overloaded version to do it all in one go. 
@@ -182,22 +73,7 @@ function updateCourse(rowToUpdateID,valueToUpdateID,newValueID,tableID)
     {
         semester[rowToUpdate] = newValue;
     }
-    html += oldTableHeader;
-    html += "<tbody>";
-    for(var i = 0; i < amountStored; i++)
-    {
-        if(courseName[i] != "")
-        {
-            html += "<tr> <td> " + courseName[i] + "</td>";
-            html += "<td> " + teacherLastName[i] + "</td>";
-            html += "<td> " + courseNum[i] + "</td>";
-            html += "<td> " + semester[i] + "</td> </tr>";
-        }
-    }
-    html += "</tbody>";
-    console.log(html);
-    theTable.innerHTML = html;
-    html = "";
+    updateTables(tableID);
 }
 
 function createTables(tableID, tableHeadID)
@@ -217,7 +93,7 @@ function createTables(tableID, tableHeadID)
     html += "<tbody>";
     for(var i = 0; i < amountStored; i++)
     {
-        if(courseName[i] != "")
+        if(!(visible[i] == false))
         {
             html += "<tr> <td> " + courseName[i] + "</td>";
             html += "<td> " + teacherLastName[i] + "</td>";
@@ -229,7 +105,26 @@ function createTables(tableID, tableHeadID)
     theTable.innerHTML = html;
     html = "";
 }
-
+function updateTables(tableID, tableHeadID)
+{
+    var theTable = document.getElementById(tableID); 
+    html += oldTableHeader;
+    html += "<tbody>";
+    for(var i = 0; i < amountStored; i++)
+    {
+        if(!(visible[i] == false))
+        {
+            html += "<tr> <td> " + courseName[i] + "</td>";
+            html += "<td> " + teacherLastName[i] + "</td>";
+            html += "<td> " + courseNum[i] + "</td>";
+            html += "<td> " + semester[i] + "</td> </tr>";
+        }
+    }
+    html += "</tbody>";
+    console.log(html);
+    theTable.innerHTML = html;
+    html = "";
+}
 
 
             /*
