@@ -1,0 +1,160 @@
+html, body
+{
+    margin:0;
+    padding:0;
+    header:0;
+    background: #1d0f0c;
+    padding-bottom: 0px;
+    color: #1d0f0c;
+    font-family: Impact;
+    font-size: 100%;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1d0f0c;
+    color: #e1d1c1;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Impact;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #af8d8b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #1d0f0c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Impact;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #e1d1c1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #1d0f0c;
+}
+
+
+#body {
+    background:  #af8d8b;
+    padding: 10px, 20px;
+    margin: center;
+    
+}
+
+#bodytext{
+    font-weight:bold;
+}
+
+#justify{
+    text-align: justify;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#centerjustify
+{
+    text-align: justify;
+    margin: 0 auto;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+.contact
+{
+    background: #e1d1c1;
+    position: fixed;
+    padding-left: 20px;
+    left: 10%;
+    top: 65%;
+    width: 20%;
+    height: 15%;
+    font-family: impact;
+    color: #1d0f0c;
+    border: 2px solid #34201f;
+
+
+
+}
+
+.resumemain
+{
+    background: #e1d1c1;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    width: 45%;
+    height: 75%;
+    font-family: impact;
+    color: #1d0f0c;
+    border: 2px solid #34201f;
+    
+
+}
+
+.resumeside
+{
+    background: #e1d1c1;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 25%;
+    height: 50%;
+    font-family: impact;
+    color: #1d0f0c;
+    border: 2px solid #34201f;
+    
+}
+
+.box
+{
+    background: #664845;
+    right: 25%;
+    font-family: impact;
+    color: #1d0f0c;
+    font-weight:italic;
+    padding: 40px 20px;
+    margin: 40px;
+    border: 3px solid #1d0f0c;
+}
+
+#footer{
+    background: #e1d1c1;
+    font-family: impact;
+    position: fixed;
+}
+    
+#message {
+		visibility:hidden;
+		}	
+
+#message.show {
+		visibility:visible;
+		}

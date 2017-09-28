@@ -1,0 +1,103 @@
+// https://jsfiddle.net/jetweedy/upvfgck2/2/
+// https://stackoverflow.com/questions/7863210/using-switch-case-statement-to-change-an-image-from-a-drop-down-list-selection
+
+<html>
+        <head>
+        <title>Jennifer's Corner</title>
+        
+        <link rel="stylesheet" href="javascript.css"/>
+        
+        </head>
+        <body>
+        
+        <div id="body">
+            
+            <center><h1> Welcome to Jennifer's Corner!</h1></center>
+            <center><h3> Enjoy your stay!</h3></center>
+            <div class="dropdown">
+                    <button class="dropbtn">MENU</button>
+                    <div class="dropdown-content">
+                        <a href="sample.html" target="_new">Click here!</a>
+                        <a href="resume.html" target="_new">Jennifer's Resume</a>
+                        <a href="http://www.wvup.edu/" target="_new">Click here for WVUP's site.</a>
+                        <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp" target="_new">Link to code used for drop down menu!</a>
+                        <a href="http://colorpalettes.net/color-palette-1164/" target="_new">Color Pallete Link</a><br><br>               
+                                    
+                    </div>
+                        
+                            
+                </div>
+         </div>
+        <br>
+        
+        
+ <center> 
+                    
+ <br><br>
+
+                    
+                    <div class="anothercatgif"><br><br>
+                    <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" width="300" height="200"><br><br>
+             
+      
+        <select  onChange="getSchedule(this.value);">
+                <option  alt="Select Semester" value="0">Select</option>
+                <option  alt="Spring 2016" value="1">Spring 2016</option>
+                <option  alt="Summer 2016"   value="2">Summer 2016</option>
+                <option  alt="Fall 2016"  value="3">Fall 2016</option>
+                <option  alt="Spring 2017" value="4">Spring 2017</option>
+                <option  alt="Summer 2017" value="4">Summer 2017</option>
+                <option  alt="Fall 2017" value="4">Fall 2017</option>
+         <br><br>
+<script>
+var text;
+var semester ;
+var html = '';
+
+
+var person = prompt("Please enter your name.", "Jennifer");
+if (person != null) {
+    document.getElementById("demo").innerHTML =
+    alert("Hello " + person + "! Welcome to the course schedule database!");
+}
+
+function getSchedule(semester){
+switch(semester) {
+    case "1":
+     semester = 2;
+     // insert message for schedule here
+        break;
+    case "2":
+        text = "";
+        break;
+    case "3":
+        text = "";
+        break;
+    case "4":
+        text = "";
+        break;
+    case "5":  
+        text = "";
+        breakl    
+    case "6":  
+        text = "";
+        breakl
+
+    default:
+        text = "Please select a valid semester.";
+        break;
+
+}
+
+
+}
+
+</script>
+</div>
+        <br>
+        <div id ="footer">
+        
+                        <br><footer> All rights reserved to respective owners. ©2017</footer> 
+        </div>               
+        </body>
+        </html>
