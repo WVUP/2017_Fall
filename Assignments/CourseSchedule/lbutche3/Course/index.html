@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course CRUD</title>
+</head>
+<body>
+
+    <!-- <input type:"text" id="test"> -->
+    <div id="nameOfCourse">
+        <input type="text" id="course1" >
+        <br>
+        <input type="text" id="course2" >
+        <br>
+        <input type="text" id="course3" >
+        <br>
+        <input type="text" id="course4" >
+
+        <input type="submit" onclick="updateCourse()" >
+        <input type="submit" onclick="submitAll()">
+    </div>
+    <p id="test2"></p>
+
+    </div>
+    
+    
+
+    <script>
+        
+        var schedule = {
+           course1: new course,
+           course2: new course,
+           course3: new course,
+           course4: new course
+
+        }
+
+        var course = {
+            coursename: "unassigned"
+        }
+
+        function course(){
+            this.course = course;
+        }
+
+
+        function setCourse(newName){
+            course.coursename = newName;
+            //this.el.document.getElementById("nameOfCourse");
+        }
+
+        function show (){
+                //this.el.innerHTML = "<br>" + this.coursename;
+               // document.getElementById("nameOfCourse").innerHTML = "<br>" + this.coursename;
+                //this.innerHTML = "<br>" + this.coursename;
+                //this.test2.innerHTML = "<br>" + this.course;
+                document.getElementById("test2").innerHTML = "<br>" + course.coursename;
+            }
+
+
+        function updateCourse(){
+            setCourse(document.getElementById("course1").value);
+            show();
+        }
+
+        function submitAll(){
+            schedule.course1 = document.getElementById("course1").value;
+           schedule.course2 = document.getElementById("course2").value;
+           schedule.course3 = document.getElementById("course3").value;
+           schedule.course4 = document.getElementById("course4").value;
+           showAll();
+        }
+
+        function showAll(){
+            document.getElementById("test2").innerHTML = "<br>" + schedule.course1 + "<br>" + schedule.course2 + "<br>" +  schedule.course3 + "<br>" + schedule.course4;
+            
+        }
+
+       
+
+    </script>
+
+
+</body>
+</html>
