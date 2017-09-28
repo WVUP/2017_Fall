@@ -27,23 +27,32 @@
 	
 	<br><br>
 	
-	Please enter the course number of the course here: <input type = "text" id = "number" placeholder = "Course Number" required>
+    Please enter the course number of the course here: <input type = "text" id = "number" placeholder = "Course Number" required>
+    
+    <br><br>
+	
+	Please enter the professor of the course here: <input type = "text" id = "prof" placeholder = "Course Professor" required>
 	
 	<div id = "cName"></div>
 	
 	<br><br>
 	
-	<div id = "cNum"></div>
+    <div id = "cNum"></div>
+    
+    <br><br>
+	
+	<div id = "cProf"></div>
 	
 	<script>
 	
 		var course = 
 		{
 			cname: document.getElementById('name'),
-			cnum: document.getElementById('number')
+			cnum: document.getElementById('number'),
+            cprof: document.getElementById('prof')
 		}
 		
-		function Course(cname, cnum)
+		function Course(cname, cnum, cprof)
 		{
 	        this.coursename = cname;
 	        this.el = document.getElementById('name').addEventListener('keydown', (event) => 
@@ -68,14 +77,28 @@
 					UpdateValues();
 				}
 			});
+
+            this.courseprofessor = cprof;
+            this.el = document.getElementById('prof').addEventListener('keydown', (event) =>
+			{
+				event.stopPropagation();
+				
+				if(event.keyCode == '13')
+				{
+					console.log('User hit enter for the course professor');
+					UpdateValues();
+				}
+			});
 	    }
 		
 		function UpdateValues()
 		{
             var _coursename = document.getElementById('name').value;
 			var _coursenumber = document.getElementById('number').value;
+            var _courseprofessor = document.getElementById('prof').value;
             console.log(_coursename);
 			console.log(_coursenumber);
+            console.log(_courseprofessor);
         }
 
 	    Course.prototype = 
@@ -83,12 +106,13 @@
 	    	customAlert: function()
 			{
 	             alert(this.coursename + ' added to list.');
-				 alert(this.coursenumber + ' added to list.')
+				 alert(this.coursenumber + ' added to list.');
+                 alert(this._courseprofessor + ' added to list.');
 	        },
 	            
 	        showCourseName: function()
 			{
-	            console.log('Course name: ' + this.coursename + ' ' + this.coursenumber + ' has been set.');
+	            console.log('Course name: ' + this.coursename + ' ' + this.coursenumber + ' ' + this.courseprofessor + 'has been set.');
 	        },
 
 	        customMesage: function(callback)
@@ -99,6 +123,7 @@
 				   {
 	                   callback(this.coursename);
 					   callback(this.coursenumber);
+                       callback(this.courseprofessor);
 	               }, 2000);
 	                    
 	            }
@@ -106,16 +131,18 @@
 
 	        show: function()
 			{
-	        	this.el.innerHTML = '<b>' + this.coursename + '<b>' + this.coursenumber;
+	        	this.el.innerHTML = '<b>' + this.coursename + '<b>' + this.coursenumber + '<b>' + this.courseprofessor;
 	        }
 		}
 		
-		function setUser(_coursename, _coursenumber)
+		function setUser(_coursename, _coursenumber, _courseprofessor)
 		{
             document.getElementById('cName').innerHTML = 'Course ' + _coursename + ' added.';
 			document.getElementById('cNum').innerHTML = 'Course number ' + _coursenumber + ' added.';
+            document.getElementById('cProf').innerHTML = 'Course professor is ' + _courseprofessor;
             console.log(_coursename);
 			console.log(_coursenumber);
+            console.log(_courseprofessor);
         }
 	</script>
 
