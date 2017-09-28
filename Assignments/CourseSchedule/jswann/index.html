@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Javascript Survey</title>
+	<title>Course objects</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<style>
 		.blue 
 		{
 			color: #0088FF;
 		}
+		.red
+		{
+			color: #FF0000;
+		}
+
 		header, footer, section
 		{
 			margin-top: 2em;
@@ -19,7 +24,7 @@
 	</style>
 	<script src="index.js"></script>
 </head>
-<body class="container">
+<body class="container" onLoad="readData()">
 	<header>
 		<h1 class="display-4 blue">Course objects</h1>
 	</header>
@@ -30,15 +35,15 @@
 				<div class="row">
 					<div class="row col-6 form-group">
 						<label class="col-4 col-form-label col-form-label-lg">Course Title</label>
-						<input class="form-control col-8 form-control-lg" type="text" name="courseTitle" onChange="logger(this.name)" onload="readData(this.name)" required/>
+						<input class="form-control col-8 form-control-lg" type="text" name="courseTitle" onChange="logger(this.name)" required/>
 					</div>
 					<div class="row col-3 form-group">
 						<label class="col-6 col-form-label">CRN</label>
-						<input class="form-control col-6" name="crn" onChange="logger(this.name)" onload="readData(this.name)" required />
+						<input class="form-control col-6" name="crn" onChange="logger(this.name)" required />
 					</div>
 					<div class="row col-3 form-group">
 						<label class="col col-form-label">Instructor</label>
-						<input class="form-control col" name="instructor" onChange="logger(this.name)" onload="readData(this.name)" required/>
+						<input class="form-control col" name="instructor" onChange="logger(this.name)" required/>
 					</div>
 				</div>
 				<!-- <div class="row">
@@ -59,6 +64,7 @@
 					</div>
 				</div> -->
 			</section>
+			<p class="red"><strong>Please input values, click submit twice, and view console.</strong></p>
 			<!-- <section id="Questions">
 				<h2 class="blue">Questions</h2>
 				<div class="row form-group">

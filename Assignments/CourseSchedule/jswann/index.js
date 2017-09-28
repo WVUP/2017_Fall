@@ -17,18 +17,19 @@ function clickSubmit()
 	crnString = getQueryString('crn');
 	instructorString = getQueryString( 'instructor' );
 	this.item = new Course( title, crnString, instructorString );
+	log( this.item );
 }
-function readData( input )
+function readData()
 {
-	get( input ).value = getQueryString( input );
-	log( getQueryString(input));
+	//get( 'courseTitle' ).value = getQueryString( 'courseTitle' );
+	//get( 'crn' ).value = getQueryString( 'crn' );
+	//get( 'instructor' ).value = getQueryString( 'instructor' );
 }
 function Course( courseTitle, crn, instructor)
 {
 	this.title = courseTitle;
 	this.crn = crn;
 	this.instructor = instructor;
-	this.customAlert();
 }
 Course.prototype =
 {
@@ -37,7 +38,6 @@ Course.prototype =
 		logger( 'courseTitle' );
 		logger( 'crn' );
 		logger( 'instructor' );
-		alert( this.title + ' is taught by ' + this.instructor );
 	}
 	
 }
