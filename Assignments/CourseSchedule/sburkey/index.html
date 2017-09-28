@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta http-equiv =" X-UA-Compatible" content = "ie = edge">
+	<title>JavaScript Course Schedule</title>
+	
+	<style>
+	body, html
+	{
+		background: maroon;
+		color: lightblue;
+	}
+	
+	h1
+	{
+		color: blue;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<h1>Enter course name and other needed information below.</h1>
+	
+	Please enter the name of your course here: <input type = "text" id = "name" placeholder = "Course Name" required>
+	
+	<br><br>
+	
+    Please enter the course number of the course here: <input type = "text" id = "number" placeholder = "Course Number" required>
+    
+    <br><br>
+	
+	Please enter the professor of the course here: <input type = "text" id = "prof" placeholder = "Course Professor" required>
+	
+	<div id = "cName"></div>
+	
+	<br><br>
+	
+    <div id = "cNum"></div>
+    
+    <br><br>
+	
+	<div id = "cProf"></div>
+	
+	<script>
+	
+		var course = 
+		{
+			cname: document.getElementById('name'),
+			cnum: document.getElementById('number'),
+            cprof: document.getElementById('prof')
+		}
+		
+		function Course(cname, cnum, cprof)
+		{
+	        this.coursename = cname;
+	        this.el = document.getElementById('name').addEventListener('keydown', (event) => 
+			{
+            	event.stopPropagation();
+           
+            	if(event.keyCode == '13')
+				{
+                	console.log('User hit enter for course name');
+                	UpdateValues();
+            	}
+        	});
+			
+			this.coursenumber = cnum;
+			this.el = document.getElementById('number').addEventListener('keydown', (event) =>
+			{
+				event.stopPropagation();
+				
+				if(event.keyCode == '13')
+				{
+					console.log('User hit enter for course number');
+					UpdateValues();
+				}
+			});
+
+            this.courseprofessor = cprof;
+            this.el = document.getElementById('prof').addEventListener('keydown', (event) =>
+			{
+				event.stopPropagation();
+				
+				if(event.keyCode == '13')
+				{
+					console.log('User hit enter for the course professor');
+					UpdateValues();
+				}
+			});
+	    }
+		
+		function UpdateValues()
+		{
+            var _coursename = document.getElementById('name').value;
+			var _coursenumber = document.getElementById('number').value;
+            var _courseprofessor = document.getElementById('prof').value;
+            console.log(_coursename);
+			console.log(_coursenumber);
+            console.log(_courseprofessor);
+        }
+
+	    Course.prototype = 
+		{
+	    	customAlert: function()
+			{
+	             alert(this.coursename + ' added to list.');
+				 alert(this.coursenumber + ' added to list.');
+                 alert(this._courseprofessor + ' added to list.');
+	        },
+	            
+	        showCourseName: function()
+			{
+	            console.log('Course name: ' + this.coursename + ' ' + this.coursenumber + ' ' + this.courseprofessor + 'has been set.');
+	        },
+
+	        customMesage: function(callback)
+			{
+	            if(callback)
+				{
+	               setTimeout(() => 
+				   {
+	                   callback(this.coursename);
+					   callback(this.coursenumber);
+                       callback(this.courseprofessor);
+	               }, 2000);
+	                    
+	            }
+	        },
+
+	        show: function()
+			{
+	        	this.el.innerHTML = '<b>' + this.coursename + '<b>' + this.coursenumber + '<b>' + this.courseprofessor;
+	        }
+		}
+		
+		function setUser(_coursename, _coursenumber, _courseprofessor)
+		{
+            document.getElementById('cName').innerHTML = 'Course ' + _coursename + ' added.';
+			document.getElementById('cNum').innerHTML = 'Course number ' + _coursenumber + ' added.';
+            document.getElementById('cProf').innerHTML = 'Course professor is ' + _courseprofessor;
+            console.log(_coursename);
+			console.log(_coursenumber);
+            console.log(_courseprofessor);
+        }
+	</script>
+
+
+</body>
+</html>
