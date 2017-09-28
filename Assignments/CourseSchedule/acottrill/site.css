@@ -1,0 +1,112 @@
+/* Select by element */
+
+html, body
+{
+    text-align: center;
+    background: gainsboro;
+    margin:0;
+    padding:0;
+}
+
+
+h1
+{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 20;
+    text-align: center;
+}
+
+img
+{
+    text-align: center;
+}
+
+ table 
+ {
+ width: 100%; border: 4px solid #3c00ff; 
+ }
+table th 
+{
+	background: blue; color:white;
+}
+th, td 
+{ 
+	border: 1px solid silver; 
+}
+table tbody tr:nth-child(even) 
+{
+	background: blanchedalmond; 
+}
+.bold
+{
+    font-weight: bold;
+}
+.italic
+{
+    font-style: italic;
+}
+.text-center
+{
+    text-align: center;
+}
+.box
+{
+    color: white;
+    /*Allows for padding on all 4 sides of the element
+    *padding: 20px;
+    */
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.column
+{
+    background: blue;
+    width : 49%;
+    height : 14%;
+    color : white;
+    text-align: center;
+    display:inline-block;
+}
+.addrightmargin
+{
+    margin-right : 2%;
+}
+.clearfloat
+{
+    clear: both;
+}
+.floatleft
+{
+    float : left;
+    margin-right: 2%;
+}
+.floatright
+{
+    float : right;
+    margin-left: 3%;
+}
+.inline-block
+{
+	display:inline-block;
+}
+
+.video
+{
+	padding : 1em;
+	text-align: center;
+}
+
+video
+{
+	border : 0.5mm ridge black;
+	height : auto;
+	max-width : 100%;
+}

@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tables</title>
+        <link rel="stylesheet" href="site.css" />
+        <script src= "scripts/functions.js"></script>
+    </head>
+    <body>
+        <h2>To create a new element in the table at the bottom of the page fill out the form below.</h2>
+        <form = "text-center">
+        What is the course name? <input type = "text" id = "courseName" placeholder= "course name" required>
+        <br/>
+        What is the teacher last name? <input type = "text" id = "teacherLastName" placeholder= "teacher last name" required>
+        <br/>
+        What is the course number? <input type = "text"  id = "courseNum" placeholder = "ABC123" required>
+        <br/>
+        What is the semester? <input type = "text" id = "semester" placeholder= "semester" required>
+        <br/>
+        <input type = "reset" id = "reset" value = "Reset Form">
+        <input type = "button" onclick = "addCourse('courseName','teacherLastName','courseNum','semester', 'table', 'tableHead')" value = "Submit:">
+        </form>
+
+        <form class = "text-center">
+                What row needs updating? <input type = "number"  id = "rowToUpdate" value = "0" min = "0" max = "40">
+                <br/>
+                What field is incorrect? 
+                <select name = "dd_field" , id = "dd_field">
+                        <option value="courseName">course name</option>
+                        <option value="teacherLastName" >teacher last name</option>
+                        <option value="courseNum" selected>course number</option>
+                        <option value="semester">semester</option>
+                </select>
+                <br>
+                The correct value? <input type = "text" id = "newValue" placeholder= "correct value" required>
+                <br/>
+                <input type = "reset" value = "Reset Form">
+                <input type = "button" onclick = "updateCourse('rowToUpdate','dd_field','newValue','table')" value = "Update:">
+        </form>
+        <form = "text-center">
+            What row needs deleting? <input type = "number"  id = "rowToDelete" value = "0" min = "0" max = "40">
+            <br/>
+            <input type = "reset" value = "Reset Form">
+            <input type = "button" onclick = "removeCourse('rowToDelete','table')" value = "Update:">
+        </form>
+        <form = "text-center">
+            Which row should be restored? <input type = "number"  id = "rowToRestore" value = "0" min = "0" max = "40">
+            <br/>
+            <input type = "reset" value = "Reset Form">
+            <input type = "button" onclick = "restoreCourse('rowToRestore','table')" value = "Update:">
+        </form>
+        <form = "text-center">
+            Which row should be the only one displayed? <input type = "number"  id = "rowToRestore" value = "0" min = "0" max = "40">
+            <br/>
+            <input type = "reset" value = "Reset Form">
+            <input type = "button" onclick = "showOnlyOneCourse('rowToRestore','table')" value = "Update:">
+        </form>
+        <table id = "table">
+            <caption>Classes</caption>
+            <thead id = "tableHead"> 
+                <tr>
+                    <th>Course Name</th>
+                    <th>Teacher Last Name</th>
+                    <th>Course Number</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+            <tbody> 
+            </tbody>
+        </table>
+    </body>
+    </html>
