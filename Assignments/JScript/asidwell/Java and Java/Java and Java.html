@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -27,25 +27,43 @@
             color: goldenrod;
             text-align: unset
         }
+        
     </style>
 </head>
 <body>
     <h1>Zelda Survey</h1>
     <hr />
-    <form>
+    
+        <h1 id="welcome"></h1>
+                <div id="message">
+            Welcome
+        </div>
+        <br />
+                <div class="msg">Some more stuff</div>
+    <br />
+        <div class="Sub"> Sub 1</div>
+    <br />
+        <input type="text" name="firstname" placeholder="First Name" id="firstname"/>
+        <br />
+
         Q1:<h2>Have you ever played a game in the Zelda franchise?</h2>
-        <select name="Options" id="options">
+        
+                <select name="Options" id="options">
             <option value="Yes">If the answer is "Yes" then skip questions 2 and 3</option>
             <option value="No">If the answer is "No" then Only do Questions 2 and 3</option>
-        </select>
+       
+                 </select>
         <br /><br />
-        Q2:<h2> Would you ever play a Zelda game or one that's related to the frachise?</h2>
+        
+    Q2:<h2> Would you ever play a Zelda game or one that's related to the frachise?</h2>
         <select name="Options" id="options">
             <option value="Yes">Yes</option>
             <option value="No">If the answer is "No" then skip this survey</option>
         </select>
-        <br /><br />
-        Q3:<h2>What do you think of the Zelda franchise even though you've never played it?</h2>
+    
+    <br /><br />
+    
+    Q3:<h2>What do you think of the Zelda franchise even though you've never played it?</h2>
         <textarea name="" id="" cols="40" rows="10"></textarea>
         <br /><br />
         Q4:<h2>What's your favorite Zelda game on the Nintendo Entertainment System?(NES)</h2>
@@ -143,6 +161,25 @@
         <br /><br />
         <input type="submit" name="btn" value="Submit">
         <h1>Thank you so much for taking this survey!!</h1>
-    </form>
+   
+    
+        <div onclick="UpdateValues()">Update</div>
+    
+    <script>
+        var message = document.getElementById('message')
+    
+        function UpdateValues() {
+            var _username = document.getElementById('firstname').value;
+            console.log(_username);
+            setUser(_username);
+        }
+
+        function setUser(username) {
+            document.getElementById('Welcome').innerHTML = 'Welcome to my Zelda Survey thank you so much for choosing this one', + username;
+            console.log(username)
+
+        }
+
+    </script>
 </body>
 </html>
