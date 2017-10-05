@@ -86,11 +86,6 @@
     var cid  = document.getElementById("cid");
     var prof = document.getElementById("prof");
     var room = document.getElementById("room");
-    var dateM = document.getElementById("dateM");
-    var dateT = document.getElementById("dateT");
-    var dateW = document.getElementById("dateW");
-    var dateTr = document.getElementById("dateTr");
-    var dateF = document.getElementById("dateF");
     var start = document.getElementById("start");
     var end = document.getElementById("end");
     var table = document.getElementById("courseTable");
@@ -102,10 +97,55 @@
     row.insertCell(1).innerHTML= cid.value;
     row.insertCell(2).innerHTML= prof.value;
     row.insertCell(3).innerHTML= room.value;
-    row.insertCell(4).innerHTML= dateM.value + dateT.value + dateW.value + dateTr.value + dateF.value;
+    row.insertCell(4).innerHTML= dateM() + dateT() + dateW() + dateTr() + dateF();
     row.insertCell(5).innerHTML= start.value;
     row.insertCell(6).innerHTML= end.value;
 
+}
+function dateM(){
+    var date = document.getElementById("dateM").checked;
+    if (date == true){
+        return document.getElementById("dateM").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateT(){
+    var date = document.getElementById("dateT").checked;
+    if (date == true){
+        return document.getElementById("dateT").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateW(){
+    var date = document.getElementById("dateW").checked;
+    if (date == true){
+        return document.getElementById("dateW").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateTr(){
+    var date = document.getElementById("dateTr").checked;
+    if (date == true){
+        return document.getElementById("dateTr").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateF(){
+    var date = document.getElementById("dateF").checked;
+    if (date == true){
+        return document.getElementById("dateF").value;
+    }
+    else {
+        return '';
+    }
 }
 
 function deleteRow(obj) {

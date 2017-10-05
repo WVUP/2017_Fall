@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Zelda Survey</title>
+    <style>
+        body {
+            background-image: url("https://www.zeldadungeon.net/Zelda01/Walkthrough/01/002.png");
+            background-size: 12000px;
+        }
+
+        h1 {
+            color: goldenrod;
+            text-align: center
+        }
+
+        h3 {
+            color: lime
+        }
+
+        h2 {
+            color: red
+        }
+
+        form {
+            color: goldenrod;
+            text-align: unset
+        }
+    </style>
+</head>
+<body>
+    <h1>Zelda Survey</h1>
+    <hr />
+    <form>
+        Q1:<h2>Have you ever played a game in the Zelda franchise?</h2>
+        <select name="Options" id="options">
+            <option value="Yes">If the answer is "Yes" then skip questions 2 and 3</option>
+            <option value="No">If the answer is "No" then Only do Questions 2 and 3</option>
+        </select>
+        <br /><br />
+        Q2:<h2> Would you ever play a Zelda game or one that's related to the frachise?</h2>
+        <select name="Options" id="options">
+            <option value="Yes">Yes</option>
+            <option value="No">If the answer is "No" then skip this survey</option>
+        </select>
+        <br /><br />
+        Q3:<h2>What do you think of the Zelda franchise even though you've never played it?</h2>
+        <textarea name="" id="" cols="40" rows="10"></textarea>
+        <br /><br />
+        Q4:<h2>What's your favorite Zelda game on the Nintendo Entertainment System?(NES)</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda(NES)" >The Legend of Zelda
+            <br />
+        <input type="checkbox" name="videogames" value="Zelda II:The Adventure of Link(NES)"> Zelda II:The Adventure of Link
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A" > I don't have one
+            <br /><br />
+        Q5:<h2>What's your favorite Zelda game on the Super Nintendo(SNES)?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:A Link to The Past" >The Legend of Zelda: A Link to the Past
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q6:<h2>What's your favorite Zelda game on the Nintendo 64(N64)? </h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Ocarina of Time">The Legend of Zelda:Ocarina of Time
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Majora's Mask'">The Legend of Zelda:Majora's Mask
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q7:<h2>What's your favorite Zelda game on the Game Boy Color?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Oracle of Seasons">The Legend of Zelda:Oracle of Seasons        
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Oracle of Ages">The Legend of Zelda:Oracle of Ages
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q8:<h2>What's your favorite Zelda game on the Gamecube?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:The Wind Waker">The Legend of Zelda:The Wind Waker        
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Four Swords Adventures">The Legend of Zelda:Four Swords Adventures
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Twilight Princess">The Legend of Zelda:Twilight Princess
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q9:<h2>What's your favorite Zelda game on the Wii?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Twilight Princess Rereleased">The Legend of Zelda:Twilight Princess Re-released
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Skyward Sword">The Legend of Zelda:Skyward Sword
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q10:<h2>What's your favorite Zelda game on the Nintendo DS?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Phantom Hourglass">The Legend of Zelda:Phantom Hourglass
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Spirit Tracks">The Legend of Zelda:Spirit Tracks
+            <br />
+        <input type="checkbox" name="I don't have one" value="N/A"> I don't have one
+            <br /><br />
+        Q11:<h2>What's your favorite Zelda game on the Nintendo 3DS?</h2>
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:A Link Between Worlds">The Legend of Zelda:A Link Between Worlds
+            <br />
+        <input type="checkbox" name="videogames" value="The Legend of Zelda:Tri Force Heroes">The Legend of Zelda:Tri Force Heroes
+            <br />
+        <input type="checkbox" name="I dont have one" value="N/A" > I don't have one
+        <br /><br />
+        Q12:<h2>Have you played The Legend of Zelda: Breath of the Wild?</h2>
+        <select name="Options" id="options">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <h3>If yes then what did you think of it?</h3>
+        <textarea name="" id="" cols="40" rows="10"></textarea>
+        <br />
+        Q13:<h2>Who's your favorite Character from Zelda?</h2>
+        <select>
+        <option value="Link">Link</option>
+        <option value="Zelda">Zelda</option>
+        <option value="Midna">Midna</option>
+        <option value="Ganondorf">Ganondorf</option>
+        <option value="Other">Other</option>
+        </select>
+        <br /><br />
+        Q14:<h2>Which of these 4 Links is your favorite?</h2>
+        <select name="Options" id="options">
+            <option value="None of the above">None of the Above</option>
+            <option value="The Hero of Time Link">The Hero of Time Link(Ocarina of Time)</option>
+            <option value=" The Hylian Champion">The Hylian Champion Link(Breath of the Wild)</option>
+            <option value="The Hero of Legend Link">The Hero of Legend Link(Skyward Sword)</option>
+            <option value="The Hero of twilight Link">The Hero of Twilight Link(Twilight Princess)</option>
+        </select>
+        <br /><br />
+        Q15:<h2>Which piece of the Tri Force is your favorite?</h2>
+        <select name="Options2" id="Options">
+        <option value="Courage">The Tri Force of Courage</option>
+        <option value="Wisdom">The Tri Force of Wisdom</option>
+        <option value="Power">The Tri Force of Power</option>
+        <option value="I don't have one">I don't have one</option>
+        </select>
+        <br /><br />
+        <img src="Tri Force.gif" alt="Tri Force"
+        <br /><br />
+        <br /><br />
+        <input type="submit" name="btn" value="Submit">
+        <h1>Thank you so much for taking this survey!!</h1>
+    </form>
+</body>
+</html>
