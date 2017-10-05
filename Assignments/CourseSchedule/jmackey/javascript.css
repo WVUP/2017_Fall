@@ -87,50 +87,9 @@ html, body
 
 }
 
-.contact
+#box
 {
-    background: #e1d1c1;
-    position: fixed;
-    padding-left: 20px;
-    left: 10%;
-    top: 65%;
-    width: 20%;
-    height: 15%;
-    font-family: impact;
-    color: #1d0f0c;
-    border: 2px solid #34201f;
-
-
-
-}
-
-.resumemain
-{
-    background: #e1d1c1;
-    position: fixed;
-    right: 10%;
-    top: 10%;
-    width: 45%;
-    height: 75%;
-    font-family: impact;
-    color: #1d0f0c;
-    border: 2px solid #34201f;
-    
-
-}
-
-.resumeside
-{
-    background: #e1d1c1;
-    position: fixed;
-    left: 10%;
-    top: 10%;
-    width: 25%;
-    height: 50%;
-    font-family: impact;
-    color: #1d0f0c;
-    border: 2px solid #34201f;
-    
+    color: #af8d8b;
 }
 
 .box
@@ -150,11 +109,3 @@ html, body
     font-family: impact;
     position: fixed;
 }
-    
-#message {
-		visibility:hidden;
-		}	
-
-#message.show {
-		visibility:visible;
-		}
