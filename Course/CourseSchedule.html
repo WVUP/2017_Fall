@@ -1,0 +1,226 @@
+<!<!DOCTYPE 
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Course.css">
+    <title>Course Schedule</title>
+    <style>
+        body{
+            background-color: #0532FC;
+            }
+    </style>
+    <div id ="container">
+     <meta charset="utf-8">
+     <script src="course.js" type="application/javascript"></script>
+</head>
+<body onload="onLoad()">
+    
+    <h1>
+        Welcome to West Virginia University at Parkersburg!
+    </h1>
+    <main> <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="WVUP sign.jpg"  style="width:100%">
+              <div class="text">WVUP Welcome Sign</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Course/WVUP main.jpg" style="width:100%">
+              <div class="text">WVUP Main Building</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Course/WVUP Cap.jpg" style="width:100%">
+              <div class="text">WVUP Caperton Center</div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
+    <h2>
+        Course Schedule
+    <h2>
+    <main> 
+            <SCRIPT language="javascript">
+                    function addRow(tableID) 
+                    {
+            
+                        var table = document.getElementById(tableID);
+                        var rowCount = table.rows.length;
+                        var colCount = table.rows[0].cells.length;
+            
+                        var row = table.insertRow(rowCount);
+                        for(var i = 0; i < colCount; i++) 
+                        {
+                            var newcell = row.insertCell(i);
+                            newcell.innerHTML = table.rows[0].cells[i].innerHTML;
+                        }
+            
+                        row = table.insertRow(table.rows.length);
+                        for(var i = 0; i < colCount; i++) 
+                        {
+                            var newcell = row.insertCell(i);
+                            newcell.innerHTML = table.rows[1].cells[i].innerHTML;
+                        }
+            
+                        row = table.insertRow(table.rows.length);
+                        for(var i = 0; i < colCount; i++) 
+                        {
+                            var newcell = row.insertCell(i);
+                            newcell.innerHTML = table.rows[2].cells[i].innerHTML;
+                        }
+            
+                        row = table.insertRow(table.rows.length);
+                        for(var i = 0; i < colCount; i++) 
+                        {
+            
+                            var newcell = row.insertCell(i);
+                            if(i == (colCount - 1)) 
+                            {
+                                newcell.innerHTML = "<INPUT type=\"button\" value=\"Delete Row\" onclick=\"removeRow(this)\"/>";
+                            } else {
+                                newcell.innerHTML = table.rows[3].cells[i].innerHTML;
+                            }
+                        }
+                    }
+            
+                    /**
+                     * This method deletes the specified section of the table
+                     * OR deletes the specified rows from the table.
+                     */
+                    function removeRow(src) 
+                    {
+            
+                        var oRow = src.parentElement.parentElement;
+                        var rowsCount = 0;
+                        for(var index = oRow.rowIndex; index >= 0; index--) 
+                        {
+            
+                            document.getElementById("dataTable").deleteRow(index);
+                            if(rowsCount == (4 - 1)) 
+                            {
+                                return;
+                            }
+                            rowsCount++;
+                        }
+                        //once the row reference is obtained, delete it passing in its rowIndex
+                        /* document.getElementById("dataTable").deleteRow(oRow.rowIndex); */
+                    }
+                </SCRIPT>
+            </HEAD>
+            <BODY>
+                <form name="myForm">
+                    <TABLE id="dataTable" width="350px" border="1">
+                        <TR>
+                            <TD>
+                                CRN
+                            </TD>
+                            <TD>
+                                Select CRN
+                            </TD>
+                            <TD>
+                               <SELECT name="CRN">
+                                   <OPTION value="1">1488</OPTION>
+                                   <OPTION value="2">1723</OPTION>
+                                   <OPTION value="3">1200</OPTION>
+                                   <OPTION value="4">1834</OPTION>
+                               </SELECT>
+                            </TD>
+                            Select Title
+                            <TD>
+                                <SELECT name="Title">
+                                    <OPTION value="COMM">Speech 101</OPTION>
+                                    <OPTION value="ACCT">Accounting 101</OPTION>
+                                    <OPTION value="ART">Art 1</OPTION>
+                                    <OPTION value="ENG">English 102</OPTION>
+                                </SELECT>
+                            </TD>
+                            <TD>&nbsp;</TD>
+                            <TD>
+                                Select Instructor
+                            </TD>
+                            <TD>
+                               <SELECT name="Instructor">
+                                   <OPTION value="M">Mary </OPTION>
+                                   <OPTION value="J">James </OPTION>
+                                   <OPTION value="H">Hunter</OPTION>
+                                   <OPTION value="K">Kate</OPTION>
+                               </SELECT>
+                            </TD>
+                            <TD>
+                                Select Building
+                            </TD>
+                            <TD>
+                               <SELECT name="Building">
+                                   <OPTION value="MA">Main</OPTION>
+                                   <OPTION value="JA">Jackson</OPTION>
+                                   <OPTION value="CA">Caperton</OPTION>
+                                   <OPTION value="O">Online</OPTION>
+                               </SELECT>
+                           </TD>
+                            <TD>&nbsp;</TD>
+                            <TD>
+                                Select Credit Hours
+                            </TD>
+                            <TD>
+                                   <SELECT name="Credit">
+                                           <OPTION value="3">3</OPTION>
+                                           <OPTION value="4">4</OPTION>
+                                           <OPTION value="5">5</OPTION>
+                                           <OPTION value="1">1</OPTION>
+                                       </SELECT>
+                            </TD>
+                            <TD>
+                                Select Days
+                            </TD>
+                            <TD>
+                                   <SELECT name="Days">
+                                           <OPTION value="MO">Monday</OPTION>
+                                           <OPTION value="TU">Tuesday</OPTION>
+                                           <OPTION value="W">Wednesday</OPTION>
+                                           <OPTION value="TH">Thursday</OPTION>
+                                           <OPTION value="F">Friday</OPTION>
+                                           <OPTION value="A">Anytime</OPTION>
+                                       </SELECT>
+                           </TD>
+                            <TD>&nbsp;</TD>
+                            <TD>&nbsp;</TD>
+                            <TD>
+                                &nbsp;
+                            </TD>
+                            <TD>&nbsp;</TD>
+                            <TD>
+                                <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+                            </TD>
+                        </TR>
+                    </TABLE>
+       
+        <form><!------------Start Form------>
+            <label for="fName">First Name: </label>
+            <input type="text" id="fName" name="fName">
+            <label for="lName">Last Name: </label>
+            <input type="text" id="lName" name="lName">
+            <label for="Email">Email: </label>
+            <input type="text" id="Email" name="Email">
+            <label for="Phone">Phone Number: </label>
+            <input id ="smallnumber" type="number">
+            <p id ="numberMessage"></p>
+            <button onclick="checkNumber()">Submit</button>
+        </form>
+
+    </main>
+
+   <footer>Go Riverhawks!</footer>
+       
+</html> 
