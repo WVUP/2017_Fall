@@ -14,3 +14,5 @@ Things to not do:
 Things that are okay:
 - Inspect their structure and styles...and apply it in your own way
 - Helping each other with any elements that are a little trickier
+
+[Recreate the homepage](http://www.wvup.edu/)
