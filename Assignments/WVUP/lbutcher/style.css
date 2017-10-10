@@ -4,7 +4,7 @@ html, body{
 }
 
 .outlineMainPage {
-    background: gold;
+    /* background: darkblue; */
     margin: 0%;
     padding: 0%;
 }
@@ -12,6 +12,7 @@ html, body{
 nav {
     margin: 0%;
     padding: 0%;
+    background: darkblue;
     /* display: inline-block; */
 }
 
@@ -19,14 +20,30 @@ nav ul{
     margin: 0%;
     padding: 0%;
     font: menu;
+    font-size: small;
+
 }
 
 nav ul li{
     display: inline-table;
     list-style-type: none;
-    background: darkblue;
     color: gold;
     /* margin: 0%; */
-    padding: 1%;
-    
+    padding: 1% .5% 1.2% .5%;
+}
+
+#HomeMenu{
+    color: blue;
+    background: gold;
+}
+
+#SearchMenu{
+    float: right;
+}
+
+.column{
+    background: gold;
+    float: left;
+    width: 24%;
+    height: 100%;
 }
