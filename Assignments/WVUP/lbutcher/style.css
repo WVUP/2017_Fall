@@ -1,0 +1,32 @@
+html, body{
+    background: lightblue;
+    margin: 0% 8%;
+}
+
+.outlineMainPage {
+    background: gold;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    margin: 0%;
+    padding: 0%;
+    /* display: inline-block; */
+}
+
+nav ul{
+    margin: 0%;
+    padding: 0%;
+    font: menu;
+}
+
+nav ul li{
+    display: inline-table;
+    list-style-type: none;
+    background: darkblue;
+    color: gold;
+    /* margin: 0%; */
+    padding: 1%;
+    
+}
