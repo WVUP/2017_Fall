@@ -1,6 +1,7 @@
 html, body{
     background: lightblue;
     margin: 0% 8%;
+    height: 100%;
 }
 
 .outlineMainPage {
@@ -41,9 +42,18 @@ nav ul li{
     float: right;
 }
 
-.column{
+.leftColumn{
     background: gold;
     float: left;
     width: 24%;
     height: 100%;
+}
+
+.rightColumn{
+    background: red;
+}
+
+.Mainbody{
+    height: 100%;
+    display: inline;
 }
