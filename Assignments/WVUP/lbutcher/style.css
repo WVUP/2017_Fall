@@ -14,7 +14,6 @@ nav {
     margin: 0%;
     padding: 0%;
     background: darkblue;
-    /* display: inline-block; */
 }
 
 nav ul{
@@ -22,7 +21,7 @@ nav ul{
     padding: 0%;
     font: menu;
     font-size: small;
-
+    
 }
 
 nav ul li{
@@ -31,6 +30,7 @@ nav ul li{
     color: gold;
     /* margin: 0%; */
     padding: 1% .5% 1.2% .5%;
+   
 }
 
 #HomeMenu{
@@ -46,17 +46,23 @@ nav ul li{
     background: gold;
     float: left;
     width: 19%;
-    height: 100%;
+    height: auto;
 }
 
 .rightColumn{
     background: red;
     height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 
 .Mainbody{
-    /* height: 100%; */
-    display: inline;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: inline-flex;
 }
 
 .linkList{
@@ -64,6 +70,7 @@ nav ul li{
     /* align-content: right; */
     text-align: right;
     margin: 4%;
+    padding: 0%;
 }
 
 .boxLinks{
@@ -79,7 +86,47 @@ nav ul li{
 
 .topRightColumn{
     background-image: url(http://www.wvup.edu/wp-content/gallery/home_headers/president-and-manchin-header.png);
-    height: 40%;
+    height: 30%;
     background-repeat: no-repeat;
     background-size: 100%;
+    box-shadow: 50px;
+}
+
+#feed{
+    background: white;
+    height: 60%;
+    align-content: center;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+}
+
+#yourWVUP{
+    margin: 0%;
+    padding: 1% 4%;
+    width: auto;
+}
+
+#bottomLinks{
+    border-spacing: 10px;
+    background: white;;
+    height: 10%;
+    border-radius: 25px 25px 0px 0px;
+    margin: 0%;
+    padding: 0%;
+    /* text-align: center; */
+    
+    
+}
+
+#actualLinks{
+    /* display: flex; */
+    list-style-type: none;
+    margin: 1% 5%;
+}
+
+ul li{
+    display: inline;
+    padding: 1% .5% 1.2% .5%;
 }
