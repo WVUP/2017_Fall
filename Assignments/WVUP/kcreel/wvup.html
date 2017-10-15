@@ -92,6 +92,48 @@
             position: relative;
             z-index: 1;
         }
+        
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 1100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        
     </style>
 </head>
 <body>
@@ -104,36 +146,216 @@
                 </button>
                 <div class="collapse navbar-collapse dumb" id="navbarNavDropdown">
                     <ul class="navbar-nav dumb">
-                    <li class="nav-item active">
+                    <li id="navPiece" class="nav-item active">
                         <a  class="nav-link dumb myActive" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">About</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Academics</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Current Students</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Future Currents</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Future Students</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">High School Students</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Faculty & Staff</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Alumni & Giving</a>
-                    </li></div>
-                    <div id="navPiece"><li class="nav-item">
-                        <a class="nav-link dumb" href="#">Economic Development</a>
-                    </li></div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">About</a>
+                            <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a class="insideHead">Directories</a>
+                                            <ul>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    
+                                    
+                                        <div class="col-4">
+                                            <a class="insideHead">About WVU Parkersburg</a>
+                                            <ul>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="col-4">
+                                            <a class="insideHead">Safety and Security</a>
+                                            <ul class>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a class="insideHead">Human Resources</a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="insideHead">Social Justice</a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="insideHead"></a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a class="insideHead">Business Office</a>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="insideHead">Office of the President</a>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="insideHead">Board of Governors</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                                <a class="insideHead"></a>
+                                        </div>
+                                        <div class="col-4">
+                                                <a class="insideHead"></a>
+                                        </div>
+                                        <div class="col-4">
+                                                <a class="insideHead">Policies & Procedures</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                                <a class="insideHead">Marketing & Communications</a>
+                                        </div>
+                                        <div class="col-4">
+                                                <a class="insideHead">Jackson County Center</a>
+                                        </div>
+                                        <div class="col-4">
+                                                <ul>
+                                                    <li>Technology Resources</li>
+                                                    <li>Newsroom</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Academics</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Current Students</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Future Currents</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Future Students</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">High School Students</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Faculty & Staff</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Alumni & Giving</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Economic Development</a>
+                            <div class="dropdown-content">
+
+                            </div>
+                        </li>
+                </div>
                     <div id="navPiece"><li id="SearchNav"class="nav-item">
                         <a class="nav-link dumb" href="#">Search</a>
                     </li></div>
