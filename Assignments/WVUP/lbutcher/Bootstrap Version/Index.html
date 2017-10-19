@@ -37,6 +37,14 @@
         #leftSide{
             background: gold;
             height: 100%;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(gold), to(lightyellow));
+            background-image: -webkit-linear-gradient(top, gold, lightyellow);
+            background-image: -moz-linear-gradient(top, gold, lightyellow);
+            background-image: linear-gradient(to bottom, gold, lightyellow);
+        }
+        #topLeftSpace{
+            height: 30%;
+            background: white;
         }
      </style>
 </head>
@@ -62,8 +70,20 @@
         <!-- body -->
         <div class='row'>
             <div class='col-3' id="leftSide">
+                <div id="topLeftSpace">Hello Wrold</div>
 
+            </div>
 
+            <div id='leftSide'>
+                <ul>
+                    <li>Directions to Campus</li>
+                    <li>Employment Opportunities</li>
+                    <li>General Financial Aid Information</li>
+                    <li>Childcare Services</li>
+                    <li>Life at WVU Parkersburg</li>
+                    <li>Jackson County Center</li>
+                </ul>
+                
             </div>
         </div>
 
