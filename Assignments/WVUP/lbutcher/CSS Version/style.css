@@ -1,7 +1,7 @@
 html, body{
     background: lightblue;
-    margin: 0% 10%;
-    height: 100%;
+    margin: 0% 5%;
+    height: 110%;
 }
 
 .outlineMainPage {
@@ -14,6 +14,10 @@ nav {
     margin: 0%;
     padding: 0%;
     background: darkblue;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(darkblue));
+    background-image: -webkit-linear-gradient(top, blue, darkblue);
+    background-image: -moz-linear-gradient(top, blue, darkblue);
+    background-image: linear-gradient(to bottom, blue, darkblue);
 }
 
 nav ul{
@@ -40,6 +44,7 @@ nav ul li{
 
 #SearchMenu{
     float: right;
+    
 }
 
 .leftColumn{
@@ -50,7 +55,7 @@ nav ul li{
 }
 
 .rightColumn{
-    background: red;
+    background: gold;
     height: 100%;
     width: 100%;
     margin: 0%;
@@ -58,7 +63,7 @@ nav ul li{
 }
 
 .Mainbody{
-    height: 100%;
+    height: 120%;
     width: 100%;
     margin: 0%;
     padding: 0%;
@@ -86,7 +91,7 @@ nav ul li{
 
 .topRightColumn{
     background-image: url(http://www.wvup.edu/wp-content/gallery/home_headers/president-and-manchin-header.png);
-    height: 30%;
+    height: 33%;
     background-repeat: no-repeat;
     background-size: 100%;
     box-shadow: 50px;
@@ -94,7 +99,7 @@ nav ul li{
 
 #feed{
     background: white;
-    height: 60%;
+    height: 56%;
     align-content: center;
     padding: 0%;
     margin: 0%;
