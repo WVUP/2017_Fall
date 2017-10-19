@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WVU Parkersburg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+                .test {color: #E3B11F !important;background-color: #111683 !important;-webkit-transition: background-color .3s ease-in-out;-moz-transition: background-color .3s ease-in-out;-o-transition: background-color .3s ease-in-out;transition: background-color .3s ease-in-out }
+                body
+                {
+                  background: #9CBCDA;
+                }
+                .leftside{
+                  background: linear-gradient(#E3B11F, #e0ce9d);
+                  overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+                  width: 21%;
+                  float: left;
+                  height: 100%;
+                  z-index: -1;
+
+                }
+                .rightside
+                {
+                  background:white;
+                  float: right;
+                  height: 100%;
+                  width:79%;
+                  position: relative;
+                  overflow: auto; /*clip content that go outside dimensions of holding panel DIV*/
+                  z-index: -1;
+                }
+
+                #headerimage 
+                {
+                  display: none;
+                  size: fill;
+                  visibility: visible;
+                  top: 0;
+                  width:100%;
+                  height: 45%;
+                  float: right;
+                  background-repeat: no-repeat;
+                }
+
+                .yourwvup
+                {
+                  size: fill;
+                  visibility: visible;
+                  width:100%;
+                  height:40%;
+                  float: right;
+
+                }
+
+                #bellimage
+                {
+                  position:fixed;
+                  background: url("wvup_bell.gif");
+                  background-repeat: no-repeat;
+                  bottom: 5%;
+                  width:220px;
+                  height: 60%;
+                  z-index: 0;
+                }
+                
+                .navbar
+                {
+                  margin-bottom: 0%;
+                  background-color:#111683;
+                }
+
+                .navbar-default .navbar-nav>li>a 
+                {
+                  color: #E3B11F;
+                }
+
+                .navbar-brand, .nav > li > a 
+                {
+                  font-size: 15px;
+                  width: 100px;
+                  border-width: 10px;
+                }
+
+                .container-fluid
+                {
+                  background-color:#111683;
+
+                }
+
+                .plshelp
+                {
+                  position:absolute;
+                  color:#111683;
+                  padding:1%;
+                  font-size: 14px;
+                  float: right;
+                  z-index: 1;
+                }
+    </style>
+<!-- use hover to change color -->
+</head>
+<body>
+  <div class="container"> 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="active" href="#">Home</a> -->
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id ="colorpls">
+              <!-- <li class="active"><a href="#">Home <span class="sr-only"></span></a></li>                 -->
+              <li class=""><a href="#">Home <span class="sr-only"></span></a></li> 
+              <li class=""><a href="#">About <span class="sr-only"></span></a></li>
+              <li><a href="#">Academics</a></li>
+              <li><a href="#">Current Students</a></li> 
+              <li><a href="#">Future Students</a></li>
+              <li><a href="#">High School Students</a></li>
+              <li><a href="#">Faculty & Staff Students</a></li>
+              <li><a href="#">Alumni & Giving</a></li>
+              <li><a href="#">Economic Development</a></li>
+              <li><a href="#">Search</a></li>
+              
+              
+              
+              <!-- /<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testing Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form> -->
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="leftside">
+        <ul class="plshelp">
+          <li> Directions to campus</li>
+          <li> Employment Opportunities</li>
+          <li> General Financial Aid Information</li>  
+          <li> Life at WVU Parkersburg</li>  
+          <li>Programs of Study</li>
+          <li>Social Justice</li>
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2017/08/DEGREE-PROGRAMS.png" alt=""></li>
+          <br></br>
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2012/07/give-now-button3.png" alt=""></li>
+          <br></br>          
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2012/07/comm-ed-button2.png" alt=""></li>
+          <br></br>          
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2017/08/CAREER-COACH.png" alt=""></li>
+          <br></br>          
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2012/07/virtual-tour-button3.png" alt=""></li>
+          <br></br>          
+          <li><img src="http://www.wvup.edu/wp-content/uploads/2017/10/STUDENT-NEWSPAPER.png" alt=""></li>
+          
+          
+          
+
+        </ul>
+            <div id="bellimage"></div>
+      </div>
+      
+      <div class="rightside">     
+        <div class="header">
+          <!-- used photo from wvup website -->
+            <div id="headerimage" style="background-image: url(http://www.wvup.edu/wp-content/gallery/home_headers/president-and-manchin-header.png); display: block; background-size:contain">
+              <div id="logo"></div>
+            </div>  
+        </div>
+        <br></br>
+        <div id="yourwvup">
+              <img src="http://www.wvup.edu/wp-content/uploads/2016/08/Hub-Button-2016_blue.jpg">
+        </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
