@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Touchup</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .custom {
+            font-size: 11em;
+            color: #ba5fb3;
+            padding: 20px;
+            transition: all 600ms ease-in;
+        }
+        .custom:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript touchup</h1>
+    
+    <i class="fa fa-flask custom"></i>
+
+    <div id="course_element"></div>
+
+
+    <form name="myForm">
+        <input name="crn" placeholder="Enter course" required />
+        <input name="instructor" placeholder="Enter instructor" required />
+
+        <button type="button"  name="myButton" />Do Stuff </button>
+    </form>
+
+
+    <script>
+        // let myInputs = document.getElementsByClassName('input');
+
+        let _fields = ['crn', 'instructor'];
+
+        let myCourses = [];
+
+        myForm.myButton.addEventListener('click', (evt) => {
+            let courseToAdd = {};
+            
+            _fields.forEach((field) => {
+                courseToAdd[field] = myForm[field].value;
+            })
+            
+            myCourses.push(courseToAdd);
+            console.log(myCourses);
+        })
+
+        
+
+        var _course = {
+            crn: '',
+            instructor: '',
+            day: '',
+            logInstructor: () => {
+                console.log(this.instructor);
+            }
+        }
+
+        function logInstructor(crse){
+            console.log(crse.instructor);
+        }
+
+        // Serialize/deserialize
+        // JSON.parse(JSON.stringify(_course))
+
+        // Extend
+        var _clonedCourse = Object.assign({}, _course);
+
+
+        function Course(crn, instr, day){
+            this.crn = crn;
+            this.instructor = instr;
+            this.day = day;
+            this.elem = document.getElementById('course_element');
+        }
+
+        Course.prototype.log = function(){
+            console.log('crn info: ', this.crn)
+        }
+
+        Course.prototype.logInstructor = function(){
+            console.log('crn instr: ', this.instructor)
+            this.elem.innerHTML = 'Welcome, ' + this.instructor;
+            return this.instructor;
+        }
+
+        // Course.prototype  = {
+        //     log: () => {},
+        //     logInstructor: () => {}
+        // }
+
+
+    </script>
+
+</body>
+</html>

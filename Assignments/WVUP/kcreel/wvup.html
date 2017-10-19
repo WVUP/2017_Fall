@@ -1,0 +1,1663 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WVU Parkersburg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #9CBCDA;
+            font-family: "Comic Sans MS", cursive, sans-serif
+        }
+        nav{
+            background: linear-gradient(#7482D3, #00008D, #00008D);
+            -webkit-box-shadow: 0px 1px 2px 0 #888;
+                    box-shadow: 0px 1px 2px 0 #888;
+        }
+        .nav-item{
+            color: blue;
+        }
+        #mainBody{
+            box-shadow: 0px 0px 8px 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            
+        }
+        nav{
+            height: 45px;
+        }
+        #navPiece{
+            background: linear-gradient(#7482D3, #00008D, #00008D);
+            color: #E3B11F;
+            font-weight: normal;
+            font-size: 13px;
+            width: auto;
+            vertical-align: middle;    
+                
+
+        }
+        .dumb #navPiece a:hover{
+            background: darkblue;
+            color:white;
+        }
+        #navbarPad{
+            padding: 0 0 0 0;
+        }
+        .navbar-light .navbar-nav .dumb{
+            height: 45px;
+            color: #e3b11f;
+            
+        }
+        .myActive{
+            background-color: #E3B11F;
+            color: #00008D;
+            font-weight: normal;
+            font-size: 13px;
+            vertical-align: middle;
+        }
+        .leftsidestuff{
+            background-color: yellow;
+            background: linear-gradient(#e3b11f, #E0C476);
+            width: 20%;
+            float: left;
+            border-radius: 0 0 0px 20px;
+            color: darkblue;
+            -webkit-box-shadow: -2px 0 5px 0px #888;
+                    box-shadow: -2px 0 5px 0px #888;
+            z-index: -1;
+            padding: -15px;
+            height: 1789px;
+            }
+        .rightsidestuff{
+            position: relative;
+            background: white;
+            color: white;
+            width: 80%;
+            float: right;
+            border-radius: 0 0 20px 0px;
+            -webkit-box-shadow: 2px 0 5px 0px #888;
+                    box-shadow: 2px 0 5px 0px #888;
+            height: 1789px;
+            padding: 0px;
+        }
+        .dumb #SearchNav{
+            margin-left: 3%;
+        }
+        #BELLBOY{
+            position: fixed;
+            background: url("bell_graphic.gif") 0 0 no-repeat;
+            width: 220px;
+            height: 250px;
+            bottom: 10%;
+            z-index: 0;
+            
+        }
+        #b4bell{
+            position: relative;
+            z-index: 1;
+            text-align: right;
+        }
+        
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            
+            display: none;
+            position: absolute;
+            background: linear-gradient(#e3b11f, #E0C476);
+            min-width: 1135px;
+            
+            z-index: 5;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        .sectBody {
+            width: 80%;
+            margin-left: 20px;
+            border-radius: 15px;
+            background: linear-gradient( #E0C476, #DAC898)
+        }
+        .sectBody .sectHead {
+            background-color: white;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            height: 25px;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-right: 0px;
+            width: 108.5%;
+        }
+        .capNgown{
+            background: url("Cap.png");
+            height: 405px;
+            width: 200px;
+            position: relative;
+            
+        }
+        .header {
+            background: url("header.png");
+            height: 350px;
+            width: 880px;
+            position: static;
+            z-index: 3;
+        }
+        .logo {
+            background: url("wvuplogo.png") top right no-repeat;
+            position: static;
+            z-index: 4;
+            float: right;
+            height: 350px; 
+            width: 800px;
+        }
+        .bottomStuff {
+            background: white;
+            border-radius: 15px;
+            color: black;
+            font-size: 12px;
+            text-align: center;
+            position: absolute;
+            bottom: 1%;
+        }
+        div .top {
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+        }
+        .rightBod{
+            background: white;
+            color: black;
+            width: 700px;
+            margin: -15px;
+            padding: 0;
+            width: 60%;
+            margin-left: 10px;
+
+        }
+        .rightBod h1 {
+            font-size: 20px;
+            color: #00008D;
+            
+        }
+        #B4bell a:hover{
+            background: #00008d;
+            color: white;
+        }
+        .calendar{
+            width: 30%;
+            float: right;
+            margin-right: 15px;
+            position: relative;
+            color: darkblue;
+            background: linear-gradient(#5252FF, lightblue);
+            z-index: 4;
+            top: -3%;
+            height: 900px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"  id="mainBody">
+        <div>
+            <nav id="navbarPad" class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse dumb" id="navbarNavDropdown">
+                    <ul class="navbar-nav dumb">
+                    <li id="navPiece" class="nav-item active">
+                        <a  class="nav-link dumb myActive" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">About</a>
+                            <div class="dropdown-content" style="left: -94%;">
+                                    <div class="row">
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Directories</a>
+                                            <ul>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    
+                                    
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                            <ul>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Safety and Security</a>
+                                            <ul class>
+                                                <li>Board of Governors</li>
+                                                <li>Business & Economics Division</li>
+                                                <li>College Administration</li>
+                                                <li>Education</li>
+                                                <li>Faculty/Staff</li>
+                                                <li>Jackson County Center</li>
+                                                <li>Health Sciences Division</li>
+                                                <li>Offices</li>
+                                                <li>Science, Technology, Engineering, Math Division</li>
+                                                <li>Humanities, Fine Arts & Social Sciences</li>
+                                                <li>Workforce & Community</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Human Resources</a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Social Justice</a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Business Office</a>
+
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Office of the President</a>
+
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Board of Governors</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 sectBody">
+                                                <a class="insideHead sectHead"></a>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                                <a class="insideHead sectHead"></a>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                                <a class="insideHead sectHead">Policies & Procedures</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 sectBody">
+                                                <a class="insideHead sectHead">Marketing & Communications</a>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                                <a class="insideHead sectHead">Jackson County Center</a>
+                                        </div>
+                                        <div class="col-3 sectBody">
+                                                <ul>
+                                                     <li>Technology Resources</li>
+                                                    <li>Newsroom</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                </div>
+                <div id="navPiece">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dumb" href="#">Academics</a>
+                        <div class="dropdown-content" style="left: -126%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                                 <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Current Students</a>
+                            <div class="dropdown-content" style="left: -150.75%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Future Currents</a>
+                            <div class="dropdown-content" style="left: -268.5%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Future Students</a>
+                            <div class="dropdown-content" style="left: -362%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">High School Students</a>
+                            <div class="dropdown-content" style="left: -358.5%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Faculty & Staff</a>
+                            <div class="dropdown-content" style="left: -596.25%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Alumni & Giving</a>
+                            <div class="dropdown-content" style="left: -715.25%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                              <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dumb" href="#">Economic Development</a>
+                            <div class="dropdown-content" style="left: -594%;">
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Directories</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">About WVU Parkersburg</a>
+                                        <ul>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Safety and Security</a>
+                                        <ul class>
+                                            <li>Board of Governors</li>
+                                            <li>Business & Economics Division</li>
+                                            <li>College Administration</li>
+                                            <li>Education</li>
+                                            <li>Faculty/Staff</li>
+                                            <li>Jackson County Center</li>
+                                            <li>Health Sciences Division</li>
+                                            <li>Offices</li>
+                                            <li>Science, Technology, Engineering, Math Division</li>
+                                            <li>Humanities, Fine Arts & Social Sciences</li>
+                                            <li>Workforce & Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Human Resources</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Social Justice</a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead"></a>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Business Office</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Office of the President</a>
+
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                        <a class="insideHead sectHead">Board of Governors</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead"></a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Policies & Procedures</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Marketing & Communications</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <a class="insideHead sectHead">Jackson County Center</a>
+                                    </div>
+                                    <div class="col-3 sectBody">
+                                            <ul>
+                                               <li>Technology Resources</li>
+                                                <li>Newsroom</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+                    <div id="navPiece"><li id="SearchNav"class="nav-item">
+                        <a class="nav-link dumb" href="#">Search</a>
+                    </li></div>
+                    
+                    </ul>
+                </div>
+            
+            </nav>
+                <div id="BELLBOY"></div>
+                <div class="container leftsidestuff"> 
+                    <div class="capNgown"></div>
+                    
+                    <div id="b4bell">
+                        <a>Directions to Campus
+                               </a> <br>
+                        <a> Employment Opportunities
+                               </a> <br>
+                        <a> General Financial Aid Information
+                                </a> <br>
+                        <a>Childcare Services
+                               </a> <br>
+                        <a> Life at WVU Parkersburg
+                                </a> <br>
+                        <a>Jackson County Center
+                                </a> <br>
+                        <a>Programs of Study
+                                </a> <br>
+                        <a>Social Justice</a>
+                        <a><img src="DEGREE-PROGRAMS.png"></a> <br><br>
+                        <a><img src="give-now-button3.png"></a> <br><br>
+                        <a><img src="comm-ed-button2.png"></a> <br><br>
+                        <a><img src="CAREER-COACH.png"></a> <br><br>
+                        <a><img src="virtual-tour-button3.png"></a> <br><br>
+                        <a><img src="STUDENT-NEWSPAPER.png"></a> <br><br>
+                    </div>
+                </div>
+                <div class="container rightsidestuff">
+                    <div class="logo"></div>
+                    <div class="header"></div>
+                    <div class="calendar" style="text-align:center;">
+                        Calendar
+                        <br>
+                        <img src="calendar.png" alt="" style="margin-left:9px;">
+                        Events
+                        Oct 20, 2017
+                        Last Day to Apply to Graduate in December
+                        
+                        Oct 24, 2017
+                        BB&T Bank on Your Success
+                        WVU Parkersburg, College Activities Center
+                        
+                        Oct 30, 2017
+                        Priority Pre-Registration for Current Students
+                        
+                        Oct 30, 2017
+                        HLC Accreditation Town Hall Meeting- Criterion 4
+                        West Virginia University at Parkersburg
+                        
+                        Nov 1, 2017
+                        Direct Care Worker, Family Care Giver
+                        WVUP Parkersburg
+                        
+                        all events
+                    </div>
+                    <div>
+                        <img src="print-pdf-email.gif" style="float: right; margin-right: 50px; margin-top:20px;">
+                    </div>
+                    <div style="background:#005eb8; width: 522px; margin-right: 50px; float:right; margin-top:5px; padding:8px;">Students, meet with your advisor <a style="color:#E3B11F">NOW</a> to plan your spring 2018 schedule. 
+                        You must meet with your advisor to take advantage of priority registration which begins Monday, 
+                        Oct. 30! <a style="color:#e3b11f">Click here for the Spring 2018 course schedule.</a>
+                    </div>
+                    <br><br><br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <img src="http://www.wvup.edu/wp-content/uploads/2016/08/Hub-Button-2016_blue.jpg" width="550px" style="margin-top:55px;margin-left:30px;"><br><br>
+                    <div class="rightBod">
+                        <h1>Senator Manchin and WVU Parkersburg host the MOV Career Fair</h1>
+                        <p><img src="im1.jpg" alt="" style="width:150px; height:150px;">
+                            Approximately 105 businesses and organizations and 600 job seekers were on campus for the Mid-Ohio Valley (MOV) Career Fair presented by U.S. Senator Joe Manchin and West Virginia University at Parkersburg Wednesday, Oct. 11 from 10 a.m. to 2 p.m. in the WVU Parkersburg College Activities Center.
+                            The MOV Career Fair... <a href="#">Read More >></a>
+                        </p>
+
+                    </div>
+                    <div class="rightBod">
+                        <h1>Center for Teaching Excellence celebrates grand opening</h1>
+                        <p><img src="im2.jpg" alt="" style="width:150px; height:150px;">
+                                West Virginia University at Parkersburg’s Center for Teaching Excellence (CTE) 
+                                celebrated its grand opening Wednesday, Oct. 11 with a mixer event for faculty. 
+                                The CTE is hosting a week of events which began with a session on assessment vs. evaluation titled 
+                                “Really, What’s the Difference?” with Dr. Fletcher Lamkin, president... <a href="#">Read More >></a>
+                        </p>
+                    </div>
+                    <div class="rightBod">
+                        <h1>WVU at Parkersburg Foundation seeking tax deductible donations for student emergency fund</h1>
+                        <p><img src="im3.jpg" alt="" style="width:150px; height:150px;">
+                            The WVU at Parkersburg Foundation is seeking $30,000 in tax-deductible donations to provide students 
+                            with emergency financial assistance. The Foundation has been awarded $15,000 in tax credit vouchers 
+                            through the Neighborhood Investment Program (NIP). These vouchers are available to individuals or businesses 
+                            who donate a minimum of $500 to the Foundation’s... <a href="#">Read More >></a>
+                        </p>
+                    </div>
+                    <div class="rightBod">
+                            <a href="#">Older Entries >></a>
+                            <br>
+                            <a href="#" class="top">^ Return to Top ^</a>
+                    </div>
+                    
+                    <div class="bottomStuff">
+                        <a href="#">Find My ID</a>|<a href="#">Technology Resources</a>|<a href="#">WVUP Email</a>|
+                        <a href="#">OLSIS</a>|<a href="#">BlackBoard</a>|<a href="#">WPKM - Radio Station</a>
+                        <div>
+                                300 Campus Drive, Parkersburg, WV 26104-8647 | Voice: 304-424.8000 | Fax: 304-424.8315 | Toll-Free: 1-800-WVA-WVUP (WV/OH)
+                        </div>
+                        <div>
+                                Accredited by <a href="#">The Higher Learning Commission</a> and a member of the North Central Association of Colleges and Schools.
+                        </div>
+                        <div>
+                                A member institution of the <a href="#">Community and Technical College System of West Virginia</a>
+                        </div>
+                        <div>
+                                WVU Parkersburg is an affiliated institution of <a href="#">West Virginia University</a> | An <a href="#">Equal Opportunity/Affirmative Action</a> institution
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

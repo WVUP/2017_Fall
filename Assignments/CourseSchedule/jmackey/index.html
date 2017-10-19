@@ -1,24 +1,19 @@
-// https://jsfiddle.net/jetweedy/upvfgck2/2/
-// https://stackoverflow.com/questions/7863210/using-switch-case-statement-to-change-an-image-from-a-drop-down-list-selection
-
 <html>
         <head>
         <title>Jennifer's Corner</title>
         
         <link rel="stylesheet" href="javascript.css"/>
-        
+        <script src = "class.js" type="application/javascript"></script>        
         </head>
         <body>
         
         <div id="body">
             
-            <center><h1> Welcome to Jennifer's Corner!</h1></center>
-            <center><h3> Enjoy your stay!</h3></center>
+            <center><h1> THE REGISTRATION SYSTEM</h1></center>
+            <center><h3>Hello, advisors and professors!</h3></center>
             <div class="dropdown">
                     <button class="dropbtn">MENU</button>
                     <div class="dropdown-content">
-                        <a href="sample.html" target="_new">Click here!</a>
-                        <a href="resume.html" target="_new">Jennifer's Resume</a>
                         <a href="http://www.wvup.edu/" target="_new">Click here for WVUP's site.</a>
                         <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp" target="_new">Link to code used for drop down menu!</a>
                         <a href="http://colorpalettes.net/color-palette-1164/" target="_new">Color Pallete Link</a><br><br>               
@@ -36,63 +31,49 @@
  <br><br>
 
                     
-                    <div class="anothercatgif"><br><br>
-                    <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" width="300" height="200"><br><br>
+<div class="box"><br><br>
              
-      
-        <select  onChange="getSchedule(this.value);">
-                <option  alt="Select Semester" value="0">Select</option>
-                <option  alt="Spring 2016" value="1">Spring 2016</option>
-                <option  alt="Summer 2016"   value="2">Summer 2016</option>
-                <option  alt="Fall 2016"  value="3">Fall 2016</option>
-                <option  alt="Spring 2017" value="4">Spring 2017</option>
-                <option  alt="Summer 2017" value="4">Summer 2017</option>
-                <option  alt="Fall 2017" value="4">Fall 2017</option>
-         <br><br>
-<script>
-var text;
-var semester ;
-var html = '';
 
+        <table id="table" border="1">
+                        <tr>
+                                <th>   Class   </th>
+                                <th>   Professor   </th>
+                                <th>   Days   </th>
+                                <th> Times</th>
+                                <th>Section</th>
+                        </tr>
+                </table>
 
-var person = prompt("Please enter your name.", "Jennifer");
-if (person != null) {
-    document.getElementById("demo").innerHTML =
-    alert("Hello " + person + "! Welcome to the course schedule database!");
-}
+<br><br><br>
+Hello advisor's, please input your classes you would like to put up for regisration for next
+semester for your major, by entering the class code (Ex: CS101), the professor's last name,
+days using single letters (Ex: MWF = Monday, Wednesday, Friday), the time, and finally, the section code.
 
-function getSchedule(semester){
-switch(semester) {
-    case "1":
-     semester = 2;
-     // insert message for schedule here
-        break;
-    case "2":
-        text = "";
-        break;
-    case "3":
-        text = "";
-        break;
-    case "4":
-        text = "";
-        break;
-    case "5":  
-        text = "";
-        breakl    
-    case "6":  
-        text = "";
-        breakl
+Thank you!
+</br></br>
+Class: 
+<input type="text" name="class" id="class"/>
+                    <br><br>
 
-    default:
-        text = "Please select a valid semester.";
-        break;
+Professor:
+<input type="text" name = "professor" id="professor"/>
+                <br><br>
+Days: 
+<input type ="text" name = "days" id = "days"/><br><br>
 
-}
+Times: 
 
+<input type ="text" name ="times" id = "times"/><br><br>
 
-}
+Section:
 
-</script>
+<input type="text" name ="section" id ="section"/>
+        </br><br>
+
+<input type="button" value="Register Class" onclick="addClass()"
+ id="add"><br><br>
+
+</div>
 </div>
         <br>
         <div id ="footer">
