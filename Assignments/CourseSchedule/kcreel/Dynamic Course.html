@@ -40,12 +40,19 @@
     </tr>
     <tr>
         <td>Date:</td>
-        <td><input type="text" id="date"></td>
+        <td>M<input type="checkbox" id="dateM" value="M">T<input type="checkbox" id="dateT" value="T">W<input type="checkbox" id="dateW" value="W">R<input type="checkbox" id="dateTr" value="R">F<input type="checkbox" id="dateF" value ="F"></td>
     </tr>
     <tr>
-        <td>Time:</td>
+        <td>Start Time:</td>
         <td>
-            <input type="text" id="time">
+            <input type="time" id="start">
+            
+        </td>
+    </tr>
+    <tr>
+        <td>End Time:</td>
+        <td>
+            <input type="time" id="end">
             <input type="button" id="add" value="Add" onclick="Javascript:addRow()">
         </td>
     </tr>
@@ -58,12 +65,13 @@
 <b id="green">Magic Table v v v v</b>
 <table id="courseTable"  border="1" cellpadding="2">
     <tr>
-        <td></td>
-        <td><b>Course ID</b></td>
-        <td><b>Professor</b></td>
-        <td><b>Room</b></td>
-        <td><b>Date</b></td>
-        <td><b>Time</b></td>
+        <th></th>
+        <th>Course ID</th>
+        <th>Professor</th>
+        <th>Room</th>
+        <th>Date</th>
+        <th>Start</th>
+        <th>End</th>
         
     </tr>
 </table>
@@ -78,8 +86,8 @@
     var cid  = document.getElementById("cid");
     var prof = document.getElementById("prof");
     var room = document.getElementById("room");
-    var date = document.getElementById("date");
-    var time = document.getElementById("time");
+    var start = document.getElementById("start");
+    var end = document.getElementById("end");
     var table = document.getElementById("courseTable");
 
     var rowCount = table.rows.length;
@@ -89,9 +97,55 @@
     row.insertCell(1).innerHTML= cid.value;
     row.insertCell(2).innerHTML= prof.value;
     row.insertCell(3).innerHTML= room.value;
-    row.insertCell(4).innerHTML= date.value;
-    row.insertCell(5).innerHTML= time.value;
+    row.insertCell(4).innerHTML= dateM() + dateT() + dateW() + dateTr() + dateF();
+    row.insertCell(5).innerHTML= start.value;
+    row.insertCell(6).innerHTML= end.value;
 
+}
+function dateM(){
+    var date = document.getElementById("dateM").checked;
+    if (date == true){
+        return document.getElementById("dateM").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateT(){
+    var date = document.getElementById("dateT").checked;
+    if (date == true){
+        return document.getElementById("dateT").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateW(){
+    var date = document.getElementById("dateW").checked;
+    if (date == true){
+        return document.getElementById("dateW").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateTr(){
+    var date = document.getElementById("dateTr").checked;
+    if (date == true){
+        return document.getElementById("dateTr").value;
+    }
+    else {
+        return '';
+    }
+}
+function dateF(){
+    var date = document.getElementById("dateF").checked;
+    if (date == true){
+        return document.getElementById("dateF").value;
+    }
+    else {
+        return '';
+    }
 }
 
 function deleteRow(obj) {

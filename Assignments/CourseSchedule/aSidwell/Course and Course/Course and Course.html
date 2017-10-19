@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New course</title>
+	<style> 
+	body{background-image:url("doge.jpg")}
+	</style>
+</head>
+<body>
+<h2>Enter your course info here</h2>
+	
+	<input type="text" name="courseName" placeholder="Course Name" id="Name"/>
+		
+</br>
+	<input type="text" name="courseNumber" placeholder="Course Number" id="Number"/>
+		
+</br>
+
+	<input type="submit" name="btn" value="Submit">
+
+				<div id="cName"></div>
+
+				<div id="cNumber"></div>
+
+<script>
+	var CourseSchedule =
+	{
+		cName: document.getElementById('name'),
+		cNumber: document.getElementById('number')
+	}
+
+
+	function Course(cname, cnumber)
+	{
+		this.courseName = cName;
+		this.el = document.getElementById('name').addEventListener('keydown',(event) =>
+			{
+				event.stopPropagation();
+				
+					if(event.keycode == '13')
+						{
+							console.log('Student entered Course Name')
+									UpdateValues();
+						}
+			})
+	
+	};
+		this.coursenumber = cNumber;
+		this.el = document.getElementById('number').addEventListener('keydown',(event) =>
+				{
+				event.stopPropagation();
+				
+					if(event.keycode == '13')
+						{
+							console.log('Student entered Course Name')
+									UpdateValues();
+						})
+			});
+			
+			Function Show()
+				{
+					this.element.innerHTML = '<b>' + this.courseName + '<b>' + this.courseNumber;
+								}
+
+</script>
+</body>
+</html>
