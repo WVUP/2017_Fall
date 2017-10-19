@@ -1,0 +1,204 @@
+body
+{
+    background-color:#FFFFFF;
+}
+
+#container
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #0532FC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #D4FA00;
+    text-align: center;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:#0236C7;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #E3B11F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover 
+{
+    background-color: #0345FA;
+    color:#E3B11F;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #0236C7;
+    color: #E3B11F;
+}
+
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 15px 15px;
+    width: 25%;
+    background: #0236C7;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li 
+{
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 5px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 5px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 5px;
+    padding: 5px 0;
+    width: 25%;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 10%;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 7px 0;
+    background: #eee;
+    margin: 5px;
+    width: 25%;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:10px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active 
+{
+    padding: 5px;
+    background: #0236C7;
+    color:#E3B11F !important
+}
+
+#picture
+{
+    max-height: height auto;
+    max-width: width auto;
+    text-align: center;
+}
+
+main
+{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 12px 12px 12px #D4FA00;
+}
+
+footer
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #F4F5F7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -33,9 +33,8 @@ input
 }
 .nav 
 {
-    height: 80px;
     background: #4651c9;
-    line-height: 80px;
+    line-height: 25px;
 }
 .inline-block 
 {
@@ -45,7 +44,7 @@ input
 {
     background: #E3B11F;
     color: #111683;
-    padding: 0 10px;
+    padding: 0;
     margin:0;
 }
 .menu 
@@ -56,14 +55,13 @@ input
 .menu ul 
 {
     margin:0;
+    padding: 0;
 }
 .menu ul li 
 {
     display: inline-block;
     background:#0089ff;
     color:#E3B11F;;
-    padding: 0 10px;
-    margin: 0;
 }
 .menu ul li:hover
 {
