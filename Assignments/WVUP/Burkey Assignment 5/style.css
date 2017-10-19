@@ -1,0 +1,79 @@
+@import url('../responsive/style.css');
+
+html, body
+{
+	background: #9CBCDA;
+}
+
+h4
+{
+	color: #0223f9;
+}
+
+#wvup_campus
+{	
+	background-image: url(http://parkersburgcity.com/pc/wp-content/uploads/2015/08/COP-1078-WEB-BANNER-WVUP-BLUE-SKY.jpg);
+	width: 2000px;
+	height: 490px;
+}
+
+#button_menu
+{
+	display: block;
+	margin-left: 10%;
+}
+
+#right_Content
+{
+	float: right;
+	display: inline-block;
+	border: 1px solid #1e85bc;
+	border-radius: 10px;
+	min-height: 817px;
+	min-width: 230px;
+	background: #1e85bc;
+}
+
+#leftSidebar
+{
+	display: inline-block;
+	border: 1px solid #e2bf0b;
+	border-radius: 10px;
+	min-height: 817px;
+	background: #e2bf0b;
+}
+
+#container
+{
+	background: #9CBCDA;
+	max-width: 1100px;
+	margin-top: 0;
+	float: center;
+	margin-left: 22%;
+	margin-bottom: 0;
+}
+
+#content_rightSide
+{
+	float: center;
+}
+
+#homeContent
+{
+	font-size: 12px;
+}
+
+#mainContent
+{
+	overflow: hidden;
+	float: center;
+	background: white;
+}
+
+#footer
+{
+	border: 1px solid #9CBCDA;
+	overflow: hidden;
+	margin-top: 5px;
+	background: #9CBCDA;
+}
