@@ -1,0 +1,26 @@
+
+// VERY SPECIFIC fix for problem on home page with pagination created by  
+// plugin used for displaying post list.  On FRONT PAGE only, plugin generates
+// a Link that does not work because it doesn't include '/home/'.  On subsequent
+// pages of the posts, it works fine. So this just specifically targets the link
+// to page 2 from page 1 on the front/home page of the site. includes two functions
+// so both production and development sites are covered.
+
+
+jQuery(document).ready(function(){
+
+	jQuery('.pfpNav a[href*="wvup.dev/page/2"]').each(function(){
+		var theLink = jQuery(this).attr('href');
+		// alert("Link Does Not Contain 'HOME' " + theLink);
+		jQuery(this).attr('href','/home/page/2');
+
+	});
+
+	jQuery('.pfpNav a[href*="wvup.edu/page/2"]').each(function(){
+		var theLink = jQuery(this).attr('href');
+		// alert("Link Does Not Contain 'HOME' " + theLink);
+		jQuery(this).attr('href','/home/page/2');
+
+	});
+
+});
