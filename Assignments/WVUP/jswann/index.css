@@ -1,0 +1,71 @@
+html body
+{
+  background: rgb(139,179,210);
+}
+.container
+{
+  background: #FFF;
+}
+.row div
+{
+  padding: 0 0;
+}
+#left-bar ul
+{
+  list-style-type: none;
+}
+#left-bar
+{
+  background: rgb(219,167,39);
+}
+#left-bar ul li.img
+{
+  margin-bottom: 12px;
+}
+
+#headerimage 
+{
+  display: none;
+  size: fill;
+  visibility: visible;
+  top: 0;
+  width:100%;
+  height: 45%;
+  float: right;
+  background-repeat: no-repeat;
+}
+.yourwvup
+{
+  size: fill;
+  visibility: visible;
+  width:100%;
+  height:40%;
+  float: right;
+}
+#bellimage
+{
+  position:fixed;
+  background: url("wvup_bell.gif");
+  background-repeat: no-repeat;
+  bottom: 5%;
+  width:220px;
+  height: 60%;
+  z-index: 0;
+}
+
+.navbar
+{
+  background: linear-gradient(rgb(48,49,178), rgb(14,2,113));
+  margin: 0 0;
+  padding: 0 0 !important;
+}
+ul.navbar-nav li a 
+{
+  font-size: 12px;
+  color:rgb(219,163,26) !important;
+}
+ul.navbar-nav li.active
+{
+  color: rgb(14,2,113) !important;
+  background: rgb(219,163,26);
+}
