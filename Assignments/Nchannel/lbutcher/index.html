@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Information, Management, Inventory, & Order Sync| nChannel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <style>
         .topLink{
         text-align: right;
@@ -28,11 +28,34 @@
             position: absolute;
             float: right;
             padding: 0 0 0 39%;
+            width: 70%;
         }
+        #belowHeader{
+            background:  #9cdcf2;
+            align-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-style: border: 1 solid black;
+        }
+        #partTheSea{
+            padding: 5% 0 0 0;
+        }
+        #dotDiv{
+            background-image: url("dot-pat.png");
+            padding: 3% 0 0 0;
+        }
+        #container3{
+            background: #ee7541;
+            text-align: center;
+            color: white;
+            padding: 1% 0;
+        }
+
     </style>    
 </head>
 <body>
-        
+        <!-- Header -->
     <div class="container-fluid header">
         <nav>
             <div class="row">
@@ -59,14 +82,44 @@
 
              <div class="row" id="outsideNav">
                 <div class="col-12 topLink">
-                    <button>chat now</button>
-                    <button>get a quote</button>
-                    <button>1-800-714-0882</button>
-                    <button>Search</button>
+                    <button class="btn btn-warning">chat now</button>
+                    <button class="btn btn-primary">get a quote</button>
+                    <button class="btn btn-danger">1-800-714-0882</button>
+                    <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
              </div>
         </nav>
     </div>
 
+    <!-- sell more.. online and in store -->
+    <div class="container-fluid" id="belowHeader">
+        <div id="partTheSea">
+            <h2>Sell more...online and in store.</h2>
+        </div>
+        <div>
+            <p>Increase revenue by selling more products in more channel like eCommerce<br>
+                 webstores and marketplaces. Grow without the growing pains.
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-warning">Learn more</button>
+        </div>
+        <div id="dotDiv">
+            <img src="connect.png" alt="">
+        </div>
+    </div>
+
+    <!-- 3rd container -->
+    <div class="container-fluid" id='container3'>
+        <div>
+           <h2>Solutions that help your business grow...</h1>
+        </div>
+    </div>
+
+    <!-- 4 container -->
+    <div class="container-fluid" id='container4'>
+        
+
+    </div>
 </body>
 </html>
