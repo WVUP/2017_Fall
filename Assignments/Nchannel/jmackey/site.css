@@ -1,0 +1,185 @@
+
+
+
+html{
+  background:  #3b3e4b
+}
+
+#container{
+    background: #3b3e4b;
+    min-width: 960px;
+    margin-right: 50%;
+    
+   
+}
+
+#header{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #7f8291;
+    text-align: right;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+
+
+#body {
+
+
+    font-weight: 700;
+    text-align: right;
+    z-index: 10;
+    position: relative;
+    padding: 75px 0;
+    width: 100%;
+}
+#header {
+
+    float: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#primarysolutions{
+
+    padding: 0 0 50px 0;
+    margin: 0;
+    background-color: #f4f4f4;
+
+}
+
+#solutions {
+
+    background: #9cdcf2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-width: 1280px;
+    
+    overflow: hidden;
+
+  
+}
+
+.h1{
+
+
+    font-family: "Kreon", "Times New Roman";
+    color: #FFF;
+    font-size: 34px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 30pt;
+}
+
+.p{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    line-height: 22pt;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#ps{
+
+    background-color: #FFF;
+    border: 2px solid #e8e8e8;
+    min-height: 100px;
+    padding: 30px;
+    font: inherit;
+    
+    overflow: hidden;
+    
+   
+}
+
+.h2{
+    color: #6b6b6b;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    line-height: 20pt;
+}
+
+.p2 {
+
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    text-align: right;
+}
+
+#heading{
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #6b6b6b;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-weight: 700;
+    line-height: 29pt;
+
+}
+
+#block{
+
+
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+
+.the-logo{
+
+    position: absolute;
+    left: 20px;
+
+   
+}
+
+#capabilities{
+
+    background-color: #FFF;
+    border: 2px solid #e8e8e8;
+    min-height: 100px;
+    padding: 30px;
+    font: inherit;
+    overflow: hidden;
+    background: #e8e8e8;
+    font-family: "Kreon", "Times New Roman", serif;
+}
+
+
+#casestudy{
+
+    padding: 70px 0 80px 0;
+    background-image: url(solutions-clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#box{
+
+    width: 100%;
+    border: 3px solid #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 15px 20px 16px 20px;
+    min-height: 120px;
+    position: relative;
+    width: 500px;
+    font-family: "Kreon", "Times New Roman", serif;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
