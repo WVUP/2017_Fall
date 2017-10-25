@@ -20,15 +20,17 @@
         .header{
             background: rgb(58, 56, 56);
             padding: 0 15%;
+            position: fixed;
+            width: 100%;
         }
         #topInfo{
             overflow: auto;
         }
         #outsideNav{
             position: absolute;
-            float: right;
-            padding: 0 0 0 39%;
-            width: 70%;
+            /* float: right; */
+            /* padding: 0 0 0 39%; */
+            width: 72%;
         }
         #belowHeader{
             background:  #9cdcf2;
@@ -36,7 +38,8 @@
             text-align: center;
             color: white;
             font-weight: bold;
-            font-style: border: 1 solid black;
+            padding: 7% 0 0 0;
+            /* font-style: border: 1 solid black; */
         }
         #partTheSea{
             padding: 5% 0 0 0;
@@ -51,12 +54,41 @@
             color: white;
             padding: 1% 0;
         }
-
+        #container4{
+            background: white;
+            /* margin: 0 30%; */
+            padding: 5% 20%;
+        }
+        .pictureWithText{
+            display: -webkit-inline-box;
+            width: 25%;
+        }
+        .imageBesideTest{
+            position: absolute;
+        }
+        .textBesideImage{
+            padding: 0 25%;
+        }
+        #container5{
+            background: lightgray;
+            padding: 0 18%;
+        }
+        .pushDown{
+            text-align: center;
+            padding: 4% 0 0 0;  
+        }
+        .boxListItem{
+            background: white;
+            border: black;
+            padding: 2% 5%;
+            width: 25%;
+            margin: 1% 0;
+        }
     </style>    
 </head>
 <body>
         <!-- Header -->
-    <div class="container-fluid header">
+    <div class="container-fill header">
         <nav>
             <div class="row">
                 <div class="col topLink">
@@ -92,6 +124,7 @@
     </div>
 
     <!-- sell more.. online and in store -->
+    <!-- ADD A FONT SHADOW EFFECT -->
     <div class="container-fluid" id="belowHeader">
         <div id="partTheSea">
             <h2>Sell more...online and in store.</h2>
@@ -117,9 +150,76 @@
     </div>
 
     <!-- 4 container -->
-    <div class="container-fluid" id='container4'>
+    <div class="container-fill" id='container4'>
+        
+        <div class="row"  style="padding: 0 0 3% 0">
+            <div class="col-6">
+                <img src="reporting_home.png" alt="" class="imageBesideTest">
+                <div class="textBesideImage">
+                    <h5>Sell More Products</h5>    
+                    <h6>PRODUCT INFORMATION MANAGEMENT</h6>
+                    <P>Adding products to your catalog means adding complexity. But, not if you have a system to clean up supplier catalogs and manage large amounts of product data.</P>
+                </div>
+             </div>
         
 
+            <div class="col-6">
+                <img src="accoutning_home.png" alt="" class="imageBesideTest">
+                <div class="textBesideImage">
+                    <h5>Sell In More Places</h5>
+                    <h6>MULTICHANNEL LISTING</h6>
+                    <P>List your products in multiple eCommerce webstores and marketplaces (like Amazon & eBay) to generate more revenue form the products you sell.</P>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding: 0 0 3% 0">
+            <div class="col-6">
+                    <img src="ProductSync.png" alt="" class="imageBesideTest">
+                    <div class="textBesideImage">
+                        <h5>Synchronize Inventory</h5>    
+                        <h6>REAL-TIME INVENTORY MANAGEMENT</h6>
+                        <P>Synchronize inventory counts across your eCommerce webstore, marketplaces, and brick & mortar store, so you never sell something you don't have.</P>
+                    </div>
+             </div>
+                <div class="col-6">
+                    <img src="orderWorkFlow.png" alt="" class="imageBesideTest">
+                    <div class="textBesideImage">
+                        <h5>Centralize Orders</h5>
+                        <h6>MULTICHANNEL ORDER MANAGEMENT</h6>
+                        <P>Manage all of your orders from all of your channels in one place. Improve your customer experience and fulfillment efficiency.</P>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="text-align: center">
+                <button class="btn btn-primary">View All Features</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id='container5'>
+        <div class="pushDown">
+            <h3>Explore the App</h3>
+        </div>
+        <div>
+            <div class="boxListItem">
+                <a>Learn About nChannel</a>
+            </div>
+            <div class="boxListItem">
+                <a>Product Information management</a>
+            </div>
+            <div class="boxListItem">
+                <a>Publish Products Directly to Shopify</a>
+            </div>
+            <div class="boxListItem">
+                <a>Manage Supplier Product Catalogs</a>
+            </div>
+            <div class="boxListItem">
+                <a>Clean Up and Manage Product Data</a>
+            </div>   
+        </div>
     </div>
 </body>
 </html>
