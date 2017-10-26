@@ -22,7 +22,15 @@ html body
 {
   margin-bottom: 12px;
 }
-
+#wvup_logo
+{
+    background: url(http://wvup.edu/images/wvuplogo.png) top right no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #headerimage 
 {
   display: none;
