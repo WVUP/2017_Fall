@@ -1,0 +1,564 @@
+
+
+
+html{
+  background:  #3b3e4b
+}
+
+
+
+
+#container{
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 20px;
+    position: relative;
+    
+   
+}
+
+#header{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #7f8291;
+    text-align: right;
+    padding-bottom: 20px;
+    background: #3b3e4b;
+}
+
+#homebody{
+
+
+    
+    background-color: #FFF;
+
+
+}
+#wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+
+
+#body {
+
+
+    font-weight: 700;
+    text-align: right;
+    z-index: 10;
+   
+    padding: 75px 0;
+    width: 100%;
+}
+#header {
+
+    float: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#primarysolutions{
+
+    padding: 0 0 50px 0;
+    margin: 0;
+    background-color: #f4f4f4;
+
+}
+
+#solutions {
+
+    background: #9cdcf2;
+    width: 100%;
+    padding: 0;
+    padding-top: 100px;
+    margin: 0;
+    min-width: 1280px;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+  
+}
+
+.h1{
+
+
+    font-family: "Kreon", "Times New Roman";
+    color: #FFF;
+    font-size: 34px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 30pt;
+    text-align: center;
+}
+
+.p{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    line-height: 22pt;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#ps{
+
+    background-color: #FFF;
+    border: 2px solid #e8e8e8;
+    min-height: 100px;
+    padding: 30px;
+    font: inherit;
+    
+    overflow: hidden;
+    
+   
+}
+
+.h2{
+    color: #6b6b6b;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    line-height: 20pt;
+}
+
+.p2 {
+
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    text-align: right;
+}
+
+#heading{
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #6b6b6b;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-weight: 700;
+    line-height: 29pt;
+
+}
+
+#block{
+
+
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+
+.the-logo{
+
+    position: absolute;
+    left: 20px;
+
+   
+}
+
+#capabilities{
+
+    background-color: #FFF;
+    border: 2px solid #e8e8e8;
+    min-height: 100px;
+    padding: 30px;
+    font: inherit;
+    overflow: hidden;
+    background: #e8e8e8;
+    font-family: "Kreon", "Times New Roman", serif;
+}
+
+
+#casestudy{
+
+    padding: 70px 0 80px 0;
+    background-image: url(solutions-clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+#explore{
+
+    background-color: #f4f4f4;
+    padding: 75px 0 0 0;
+    margin: 0;
+}
+
+
+
+
+#box{
+
+    width: 100%;
+    border: 3px solid #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 15px 20px 16px 20px;
+    min-height: 120px;
+    position: relative;
+    width: 500px;
+    font-family: "Kreon", "Times New Roman", serif;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.btn
+{
+    background-color: #ee7541;
+    font-size: 18px;
+    border-radius: 0px 10px 0px 10px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 12px 20px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    color: #FFF;
+    
+    
+}
+
+a{
+
+
+    text-decoration: none;
+    color: white;
+}
+
+#banner{
+
+    background-color: #EE7441;
+    padding: 28px 0 30px 0;
+    text-align: center;
+    
+}
+
+.h4
+{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 30pt;
+    display: block;
+    
+}
+
+.sub
+{
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    color: #ee7541;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+
+
+
+}
+
+
+
+#connect{
+
+    background-position: bottom;
+    background-image: url(clear.png);
+   
+    
+
+}
+
+#clear{
+width: 100%;
+position: relative;
+max-width: 940px;
+margin: 0 auto;
+padding: 0 20px;
+background-repeat: repeat;
+background-image: url(dot-pat.png);
+background-position: center center;
+box-sizing: border-box;
+
+
+}
+
+#computer{
+    position: relative;
+
+    width: 100%;
+    padding-top: 61.775701%;
+    background-size: cover;
+    
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 20px;
+    position: relative;
+
+
+
+}
+.screen{
+
+   
+    position: absolute;
+    top:    11.0438729%;
+    bottom: 14.6747352%;
+    left:   13.364486%;
+    right:  13.364486%;
+    overflow: hidden;
+    background-image:url("nchannel-intro-vid-screen.png");
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.mac{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+     background-image:url("imac.png");
+    background-repeat: no-repeat;
+    
+}
+
+.sidebarlist{    
+    
+    cursor: pointer;
+    border: 2px solid #e8e8e8;
+    background-color: #FFF;
+    text-align: center;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16pt;
+    color: #6b6b6b;
+    padding: 13px 5px 14px 5px;
+    margin: 21px 0 0 0;
+    position: relative;
+
+    width: 30%;
+
+}
+
+
+#support{
+
+
+    min-height: 500px;
+    background-image: url(orange-back.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    background-color: #ee7541;
+    padding: 115px 0 0 0;
+    text-align: center;
+}
+
+.phone{
+
+    font-size: 38px;
+    margin: 20px 0 0 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 45px;
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+
+
+#contactbox{
+
+    width: 329px;
+    float: left;
+    border: 3px solid #FFF;
+    text-align: right;
+    padding-left: 10px;
+    margin: 0 1.5%;
+    padding: 15px 20px 16px 20px;
+    min-height: 120px;
+    position: relative;
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    border-radius: 0px 10px 0px 10px;
+
+
+}
+
+
+.contactbtn{
+
+    background-color: #22b0e6;
+    text-shadow: none;
+    margin: 0 20px 0 0;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    line-height: 14pt;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 12px 20px;
+    display: inline-block;
+    border-radius: 0px 10px 0px 10px;
+
+}
+
+
+#contact-boxes{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 35px 0 0 0;
+  
+    
+
+}
+
+
+#testimonials
+{
+ background: #fff;
+ font-family: "Kreon", "Times New Roman", serif;
+ padding-top: 50px;
+ padding: 0 40px;
+ margin: 0 auto;
+ padding: 70px 0;
+ 
+}
+
+.testp{
+
+    padding: 0 40px;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+
+}
+
+.htest
+{
+
+    color: #6b6b6b;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 39pt;
+    font-size: 34px;
+    text-align: right;
+    width: 34%;
+ 
+    
+}
+.ptest
+{
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    width: 66%;
+    float: left;
+    padding: 7px 0 0 40px;
+    max-width: 525px;
+
+}
+
+.bubble{
+
+
+    width: 20%;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #22b0e6;
+    padding: 28px 30px 31px 35px;
+    border-radius: 0px 20px 0px 20px;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.bubbletext{
+
+font-weight: 700;
+font-family: "Kreon", "Times New Roman", serif;
+color: #FFF;
+line-height: 22pt;
+font-size: 20px;
+}
+
+
+#logos{
+    text-align: center;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding-left: 10px;
+
+
+
+}
+
+#testcontainer{
+
+margin: 0;
+position: relative;
+left: 0;
+overflow: hidden;
+padding-top: 50px;
+
+
+}
+
+
+
+#how{
+
+background: #ffff;
+font-family: "Kreon", "Times New Roman", serif;
+padding-top: 50px;
+padding-bottom: 50px;
+overflow: hidden;
+
+
+
+}
+
+.how2{
+
+    color: #6b6b6b;
+    margin-left: 10px;
+    font-family: "Kreon", "Times New Roman", serif;
+
+}
+
+
+.building
+{
+
+
+    float: left;
+    padding: 10px;
+}

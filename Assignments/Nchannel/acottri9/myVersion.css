@@ -1,0 +1,63 @@
+/*
+Aaron Cottrill`s 
+*/
+html
+{
+    font-family: Helvetica;
+    /*
+    display:inline-block;
+    */
+}
+div
+{
+     display:inline-block
+}
+input
+{
+    background-color:white;
+    color:black;
+}
+input:hover
+{
+    color:blue;
+}
+.nav
+{
+    background-color: grey;
+    color : white;
+
+}
+.learnSection
+{
+    background-color: cyan;
+    color : white;
+
+}
+.interruptSection
+{
+    background-color:red;
+    color:white;
+}
+.roundedButton
+{
+    border-radius: 12px;
+    font-variant: italic;
+    color:white;
+}
+.roundedButton:hover
+{
+    border-radius: 12px;
+    font-variant: italic;
+    color:white;
+    background-color:black
+}
+.explore
+{
+    background-color:whitesmoke;
+    color:grey;
+}
+.connect
+{
+    background-color:navy;
+    color:white;
+}
