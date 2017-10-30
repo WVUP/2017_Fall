@@ -8,19 +8,24 @@ html
     display:inline-block;
     */
 }
+ul { list-style-type: none; }
 div
 {
+	/*
      display:inline-block
+	 */
 }
 input
 {
     background-color:white;
     color:black;
 }
+
 input:hover
 {
     color:blue;
 }
+
 .nav
 {
     background-color: grey;
@@ -40,9 +45,17 @@ input:hover
 }
 .roundedButton
 {
-    border-radius: 12px;
+    border-radius: 8px;
     font-variant: italic;
     color:white;
+}
+.blueBackground
+{
+    background-color : blue;
+}
+.redBackground
+{
+    background-color : red;
 }
 .roundedButton:hover
 {
@@ -51,10 +64,30 @@ input:hover
     color:white;
     background-color:black
 }
+ul.fancy-list li:before 
+{
+    /*
+    font-family: Wingdings;
+    */
+    /*
+    content: "f00c";
+    color: red;
+    */
+    content: "\2713";
+    color: #F5B54B;
+}
+ul.fancy-list 
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    list-style: none;
+}
 .explore
 {
     background-color:whitesmoke;
     color:grey;
+    display:block;
 }
 .connect
 {
