@@ -266,12 +266,99 @@
         .body7{
             text-align: center;
             color: white;
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: bold;
         }
         .phone7{
             text-align: center;
             color: white;
             font-size: 35px;
+        }
+        .box7{
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: 3px solid white;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .questions{
+            position: fixed;
+            z-index: 20;
+            background-color: #ebad06;
+            color: white;
+            border-top-right-radius: 10px;
+            bottom: 0;
+            right: 8%;
+            height: 45px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            box-shadow: 2px -2px 10px grey;
+        }
+        .head8{
+            float: right;
+        }
+        .msg8{
+            float: right;
+        }
+        .body8{
+            background-color: #00b2ee;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .questions:hover {
+            height: 55px;
+        }
+        .head82{
+            text-align: right;
+            font-size: 30px;
+            color: #3b3e4b;
+            font-weight: bold;
+        }
+        .body82{
+            color: #3b3e4b;
+            font-size: 18px;
+            margin-top: 8px;
+        }
+        .body8 {
+            color: white;
+            height: 200px;
+            padding: 10%;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .head8 {
+            font-size: 24px;
+            color: #3b3e4b;
+        }
+        .email7{
+            background-color: #00b2ee;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 35px;
+        }
+        .chat7{
+            background-color: #00b2ee;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 35px;
+        }
+        .circle10{
+            background-color: orange;
+            border-radius: 50%;
+            width:10px;
+            height:25px;
+            margin: 2%;
+        }
+        .head10 {
+            color: white;
+            font-size: 20px;
+        }
+        .text10{
+            color: #7f8291;
         }
     </style>
 </head>
@@ -391,15 +478,15 @@
     <div class="container-fluid row6" style="background: white">
         <div class="container">
             <div class="row">
-                <img src="ShesA.jpg" alt="" class="col-4">
+                <img src="ShesA.jpg" alt="" class="col-4" style="width:100px; height:270px;">
                 <div class="col-4"> 
-                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Real-time integration to a multitude of endpoint systems.</div></div><br><br>
-                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</div></div><br><br>
-                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Direct API-based product connectors with advanced product listing features.</div></div>
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Real-time integration to a multitude of endpoint systems.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Direct API-based product connectors with advanced product listing features.</div></div>
                 </div>
                 <div class="col-4"> 
-                    <div>How our platform works...</div>
-                    <div>
+                    <div style="font-size:18px; font-weight:bold; color: #6b6b6b;">How our platform works...</div>
+                    <div style="color: #6b6b6b;">
                             nChannel's platform is truly software-as-a-service. We integrate through APIs wherever possible, 
                             and install very little on any local computers (for ERPs and POS systems). We've experienced the pains 
                             of evolutions of retail integration. So, we built a platform that works like it should. Learn more about 
@@ -417,36 +504,141 @@
             <div class="body7">people who can provide direction and answer any questions you might have. </div>
             <div class="body7">No voicemails and we provide 100% local USA support.</div>
             <div class="phone7">
-                <div class="row">
+                <div class="row" style="width: 40%; margin-left: 30%;">
                     <div class="col-2">
-                        <div style="border-radius:50%; background:#ee7541; width:36px;"><i class="fa fa-phone" aria-hidden="true"></i></div> 
+                        <div style="border-radius:50%; background:#a74f28; width:36px; height:36px; font-size:22px; padding-top:7px;"><i class="fa fa-phone" aria-hidden="true"></i></div> 
                     </div>
                     <div class="col-10"> 1-844-533-1333</div>
+                </div>
+            </div>
+            <div class="row" style="color:white; width:80%; margin-left:10%; margin-right:10%;">
+                <div class="col box7">
+                    <div style="font-size:20px;">Email Us for More Info</div>
+                    <div class="row">
+                        <div class="email7 col-3">email us</div>
+                        <div class="body72 col-6">We have a solution for any scenario.</div>
+                    </div>
+                </div>
+                <div class="col box7">
+                    <div style="font-size:20px;">Chat with Us Online</div>
+                    <div class="row">
+                        <div class="chat7 col-3">chat now</div>
+                        <div class="body72 col-6">Chat with us during business hours (ET).</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid row8" style="background: white">
         <div class="container">
-            Yet Another white body
+            <div class="row">
+                <div class="col-4 head82">Helping Our Customers Grow</div>
+                <div class="col-8 body82">
+                    We've definitely done this before! We've helped a multitude of customers in a multitude of industries grow their businesses. 
+                    Check out some of the case studies below to get an idea of what kind of solution we can provide for you.</div>
+            </div>
+            <div class="row" style="margin:5%;">
+                <div class="col"></div>
+                <div class="col"></div>
+                
+                <div class="col" style="">
+                    <img src="sales1.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="sales3.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="sales2.png" alt="">
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="body8">
+                        There's no question. We could not have achieved this growth without our nChannel platform. 
+                        It paid for itself fast. Now it saves hours and money every day.
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="head8">Mike's Archery</div>
+                            <div class="msg8">Owner and GM, Bryan Dickess</div>
+                            <a href="#" class="msg8">Download Case Study</a>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-5">
+                    <div class="body8">
+                        We make specials show up faster, and specify in advance when they start and stop. 
+                        Even better, once we attract a new customer from a less-agile retailer, we keep them.
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="head8">Midwest Photo Exchange</div>
+                            <div class="msg8">President, Moishe Appelbaum</div>
+                            <a href="#" class="msg8">Download Case Study</a>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid row9" style="background: #f4f4f4">
-        <div class="container">
-            Grey
+        <div class="container" >
+            <div style="padding-top:5%; padding-bottom:5%;"><img src="photo9.png" alt=""></div>
         </div>
     </div>
     <div class="container-fluid row10" style="background: #3b3e4b">
         <div class="container">
-            Dark Grey
+            <div class="row">
+                <div class="col">
+                    <div class="head10">Connect</div>
+                    <div class="row" style="width:60%;">
+                        <div class="circle10 col-2"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="circle10 col-2"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="circle10 col-2">in</div>
+                        <div class="circle10 col-2"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                        <div class="circle10 col-2"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="head10">Multichannel Insights</div>
+                    <div class="text10">November 2, 2017</div>
+                    <div style="color:white;">Project Management Tips for Creating a Successful eCommerce Website</div>
+                    <a href="#">View Article</a>
+                </div>
+                <div class="col">
+                    <div class="head10">Explore More</div>
+                    <div class="row">
+                        <div class="col-6 text10">about</div>
+                        <div class="col-6 text10">careers</div>
+                        <div class="col-6 text10">security</div>
+                        <div class="col-6 text10">pci compliance</div>
+                        <div class="col-6 text10">privacy policy</div>
+                        <div class="col-6 text10">industries</div>
+                        <div class="col-6 text10">for investors</div>
+                        <div class="col-6 text10">contact</div>
+                        <div class="col-6 text10">press releases</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid row11" style="background: #333643">
-        <div class="container">
-            Darker Grey
+        <div class="container" style="text-align:center; color:white; font-size:15px; padding-top:15px; padding-bottom:15px; font-weight:bold;">
+            Copyright C 2016 | All Rights Reserved, nChannel
         </div>
     </div>
-    <script>
+    <div class="questions">
+        <a> Questions? Chat with us!</a>
+    </div>
+
+    <!-- <script>
         window.onscroll = function (oEvent) {
             var mydivpos = document.getElementById("navHide").offsetTop;
             var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
@@ -456,6 +648,6 @@
             else
                 document.getElementById("navhidden").className = "none";
         };
-    </script>
+    </script> -->
 </body>
 </html>
