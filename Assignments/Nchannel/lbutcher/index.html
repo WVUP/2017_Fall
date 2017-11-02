@@ -75,15 +75,44 @@
         }
         .pushDown{
             text-align: center;
-            padding: 4% 0 0 0;  
+            padding: 4% 0 4% 0;  
         }
         .boxListItem{
             background: white;
             border: black;
-            padding: 2% 5%;
-            width: 25%;
-            margin: 1% 0;
+            padding: 5% 0%;
+            width: auto;
+            font-size: 10pt;
+            margin: 10% 0;
+            text-align: center;
+            height: auto;
+            font-weight: bold;
         }
+        .computerBox{
+            background-image: url("imac.png");
+            width: 100%;
+            height: 80%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #container6{
+            background: white;
+            padding: 5% 18%;
+            color: gray;
+        }
+        .textBesideImage2{
+            padding: 0 50%;
+            width: 100%;
+
+        }
+        .specialList{
+            list-style:none; 
+            list-style-image: "fa-check"
+        }
+        .imageBesideText2{
+            position: absolute;
+        }
+
     </style>    
 </head>
 <body>
@@ -203,23 +232,64 @@
         <div class="pushDown">
             <h3>Explore the App</h3>
         </div>
-        <div>
-            <div class="boxListItem">
-                <a>Learn About nChannel</a>
+        <div class="row">
+            <div class="col-4">
+                <div class="boxListItem">
+                    <a>Learn About nChannel</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Product Information Management</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Publish Products Directly to Shopify</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Manage Supplier Product Catalogs</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Clean Up and Manage Product Data</a>
+                </div>   
             </div>
-            <div class="boxListItem">
-                <a>Product Information management</a>
+        
+            <div class="col-8">
+                
+                <div class="computerBox">
+                    <!-- Add the other images within computerBox -->
+                    <img src="" alt="" class="imageBesideText">
+                </div>
             </div>
-            <div class="boxListItem">
-                <a>Publish Products Directly to Shopify</a>
-            </div>
-            <div class="boxListItem">
-                <a>Manage Supplier Product Catalogs</a>
-            </div>
-            <div class="boxListItem">
-                <a>Clean Up and Manage Product Data</a>
-            </div>   
         </div>
     </div>
+
+    <div class="container-fill" id="container6">
+        <div class="row">
+            <div class="col-8">
+                
+                <img src="building.jpg" alt="" class="imageBesideText2">
+                <div class="textBesideImage2">
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Real-time integration to a multiude of endpoint systems.</p>
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</p>
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Direct API-based product connectors with advanced product listing features.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h5><strong>How our platform works...</strong></h5>
+                <p>
+                nChannel's platform is truly software-as-a-service. 
+                We integrate through APIs wherever possible, and install
+                 very little on any local computers (for ERPs and POS systems). 
+                 We've experienced the pains of evolutions of retail integration. 
+                 So, we built a platform that works like it should. 
+                 Learn more about all of the systems we can integrate.
+                </p>
+
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+
+            
+        </div>
+    </div>
+
 </body>
 </html>
