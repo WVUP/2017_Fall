@@ -13,12 +13,7 @@ h1
     text-align:center;
 }
 ul { list-style-type: none; }
-div
-{
-	/*
-     display:inline-block
-	 */
-}
+
 .nav
 {
     background-color: grey;
@@ -31,7 +26,7 @@ div
 {
     background-color: cyan;
     color : white;
-
+    padding-top:50px;
 }
 .interruptSection
 {
@@ -52,10 +47,20 @@ div
 {
     background-color : red;
 }
+.yellowBackground
+{
+    background-color: yellow;
+}
 .greyBackground
 {
     background-color : lightgrey;
 }
+.white
+{
+	color:white;
+	text-decoration: none;
+}
+
 .roundedButton:hover
 {
     border-radius: 12px;
@@ -88,8 +93,26 @@ ul.fancy-list
     color:grey;
     display:block;
 }
+.navText
+{
+    text-align: right;
+    text-decoration: none; 
+}
 .connect
 {
     background-color:navy;
     color:white;
+	text-decoration: none;
+}
+.noStyle
+{
+    text-decoration: none;
+}
+.quoteText
+{
+    width:500px;
+    height:100px;
+     background-color: blue;
+     color:white;
+      border:1px solid #000; 
 }
