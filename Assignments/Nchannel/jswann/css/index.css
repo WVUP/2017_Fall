@@ -1,0 +1,302 @@
+.container-fluid
+{
+    margin: 0;
+    padding: 0;
+}
+.wrap
+{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 940px;
+}
+#header
+{
+    background-color: #3b3e4b;
+}
+#header a
+{
+    color:#7f8291;
+}
+#very-top
+{
+    font-size: 11px;
+    text-align: right;
+}
+#header nav 
+{
+    height: 100px;
+    font-size: 16px;
+    font-family: Serif, Times;
+}
+#header nav .row
+{
+    height: 100%;
+}
+.the-logo
+{
+    margin: 32px 0 0 0;
+    padding-left: 0px;
+}
+#header nav #nav-links
+{
+    text-align: right;
+    margin: 42px 0 0 0;
+}
+#header nav #nav-links a
+{
+    vertical-align: middle;
+    margin: 0 0 0 24px;
+
+}
+#hero
+{
+    background:  #9cdcf2;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 72px 0 0 0;
+}
+#contact-shortcuts
+{
+    position: relative;
+    float: right;
+    right: 0px;
+}
+#contact-shortcuts button
+{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+button#icon-search div
+{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#hero button
+{
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+#top-half h2
+{
+    margin-bottom: 24px;
+}
+#top-half p
+{
+    width: 75%;
+    margin: 0 auto;
+}
+#top-half h2, #top-half p
+{
+    font-family: Serif, Times;
+    text-shadow: 0px 0px 7px #000;
+    line-height: 32px;
+}
+#hero #dots
+{
+    background-image: url("../dot-pat.png");
+}
+#solutions-help{
+    background: #ee7541;
+    text-align: center;
+    color: white;
+    font-family: Serif, Times;
+    padding: 18px 0px;
+}
+#categories 
+{
+    background: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 128px 0px;
+}
+#categories p
+{
+
+}
+#categories .service-category
+{
+    margin: 0 0 48px 0;
+}
+.service-category img
+{
+    vertical-align: top;
+    margin: 0 18px 0 0;
+}
+#categories .info
+{
+    width: 60%;
+    display: inline-block;
+    padding-right: 24px;
+}
+#categories h5 
+{
+    font-family: Serif, Times;
+    color: #666;
+}
+#categories h6
+{
+    color: orange;
+    font-size: 12px;
+}
+#categories p
+{
+    font-size: 14px;
+    color: #999;
+}
+#ExploreApp
+{
+    width: 100%;
+    background: rgb(241, 241, 241);
+}
+#ExploreApp h2 
+{
+    font-family: Serif, Times !important;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    margin-bottom: 36px;
+}
+#ExploreApp .wrap
+{
+    margin: 0 auto !important;
+    max-width: 1040px;
+    width: 100%;
+    padding: 100px 0;
+}
+#ExploreApp .left
+{
+    width: 320px;
+    display: inline-block;
+}
+#ExploreApp .right 
+{
+    width: 648px;
+    display: inline-block;
+    vertical-align: top;
+}
+#ExploreApp .left ul li 
+{
+    font-size: 15px;
+    text-align: center;
+    background: white;
+    border: 1px solid #BBB;
+    border-radius: 6px;
+    width: 324px;
+    height: 48px;
+    padding-top: 10px;
+    margin-bottom: 24px;
+}
+#ExploreApp .left ul
+{
+    list-style-type: none;
+    padding: 0;
+    padding-top: 16px;
+}
+#HowPlatformWorks .wrap 
+{
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+#HowPlatformWorks .wrap div
+{
+    display: inline-block;
+    margin-right: 24px;
+    color: #999;
+}
+#HowPlatformWorks .wrap div:first-child
+{
+    vertical-align: top;
+}
+#HowPlatformWorks .wrap div:nth-child(2)
+{
+    vertical-align: top;
+    width: 250px;
+}
+#HowPlatformWorks .wrap div:nth-child(3)
+{
+    width: 250px;
+}
+#HowPlatformWorks h5
+{
+    color: #666;
+}
+#Support
+{
+    height: 500px;
+    min-height: 500px;
+    background-image: url("../orange-back.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ee7541;
+    padding: 115px 0 0 0;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+#Support .text
+{
+    font-weight: bold;
+    max-width: 645px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#Support .text h2
+{
+    color: #FFF;
+    font-family: Serif, Times;
+    font-size: 30px;
+    line-height: 30pt;
+}
+#Support .text p
+{
+    font-family: Serif, Times;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-weight: 14px;
+}
+#Support h3 
+{
+    color: white;
+    font-size: 2.5em;
+    font-family: Serif, Times;
+    margin-bottom:48px;
+}
+#Support .contact .wrapper
+{
+    width: 900px;
+    margin: 0 auto;
+}
+#Support .contact *
+{
+    font-family: Serif, Times;
+    color: white;
+}
+#Support .contact .column
+{
+    border: 2px solid white;
+    padding: 14px;
+    width: 400px;
+    display:inline-block;
+    border-radius: 0px 20px 0px 20px;
+}
+#Support .contact .column:first-child
+{
+    margin-right: 40px;
+}
+#Support .contact h4
+{
+    font-weight: bold;
+}
+#Support .contact a
+{
+
+}
