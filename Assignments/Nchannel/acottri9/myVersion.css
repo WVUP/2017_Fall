@@ -88,6 +88,11 @@ ul.fancy-list
     color:grey;
     display:block;
 }
+.navText
+{
+    text-align: right;
+    text-decoration: none; 
+}
 .connect
 {
     background-color:navy;
