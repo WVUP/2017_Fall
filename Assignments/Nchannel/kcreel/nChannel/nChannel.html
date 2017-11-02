@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.png" style="width: 200%; height: 200%;">
-    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
         body {
-            font-family: "Kreon", "Times New Roman", serif;
+            
         }
         .row1{
             min-height:56px;
             position: fixed;
+            z-index: 200;
         }
         .row2{
             text-align: center;
@@ -32,34 +34,52 @@
             color: white;
         }
         .row4{
-            min-height:534px;
+            margin: 80px;
+            z-index: -20;
+            min-height: 534px;
+            position: relative;
         }
         .row5{
             min-height:600px;
+            position: relative;
+            z-index: -20;
         }
         .row6{
             min-height:300px;
+            position: relative;
+            z-index: -20;
         }
         .row7{
             padding-top: 115px;
             min-height:500;
+            background-image: url("orange-back.jpg");
+            position: relative;
+            z-index: -20;
         }
         .row8{
             padding-bottom: 70px;
             padding-top: 70px;
             min-height:638;
+            position: relative;
+            z-index: -20;
         }
         .row9{
             padding-top: 30px;
             padding-bottom: 30px;
             min-height:324;
+            position: relative;
+            z-index: -20;
         }
         .row10{
             padding-top: 30px;
             min-height:351px;
+            position: relative;
+            z-index: -20;
         }
         .row11{
             min-height:21px;
+            position: relative;
+            z-index: -20;
         }
         .head {
             padding-top: 200px;
@@ -81,7 +101,7 @@
             text-shadow: 0 0 0 ;
             padding-top: 5px;
             margin-top: 20px; 
-            margin-bottom: 40px;;
+            margin-bottom: 40px;
         }
         .navTop{
             position: relative;
@@ -100,42 +120,74 @@
             padding-right: 10px;
             color: #7f8291;
             bottom: 0px;
+            line-height: 3;
         }
         .frumunda1 {
             position: fixed;
             display: inline-block;
             margin-top: 61px;
-            right: 650px;
+            right: 791px;
+            height: 45px;
             top: 0;
-            max-height: 45px;
-            min-width: 300px;
+            max-height: 36px;
+            min-width: 90px;
+            background-color: #ebad06;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            
         }
         .frumunda2 {
             position: fixed;
             display: inline-block;
             margin-top: 61px;
-            right: 565px;
+            right: 525px;
+            height: 45px;
             top: 0;
-            max-height: 45px;
-            min-width: 300px;
+            max-height: 36px;
+            min-width: 146px;
+            background-color: #ee7541;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
         .frumunda3 {
             position: fixed;
             display: inline-block;
             margin-top: 61px;
-            right: 445px;
+            right: 678px;
             top: 0;
-            max-height: 45px;
-            min-width: 300px;
+            height: 45px;
+            max-height: 36px;
+            min-width: 105px;
+            background-color: #00b2ee;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
         .frumunda4 {
             position: fixed;
             display: inline-block;
+            padding-top: 4px;
             margin-top: 61px;
-            right: 362px;
+            right: 479px;
+            height: 45px;
             top: 0;
-            max-height: 45px;
-            min-width: 300px;
+            max-height: 36px;
+            min-width: 40px;
+            background-color: #3b3e4b;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #7f8291;
         }
         .navHide{
             display: none;
@@ -155,21 +207,71 @@
             float: right;
         }
         .parleft{
+            margin-left: 5%;
             float: left;
         }
         .parHead{
-            float: right;
+            float: left;
+            font-size: 18px;
         }
         .parmsg{
-            float: right;
+            float: left;
+            font-size: 11px;
+            color:#ee7541;
+            font-weight: bold;
         }
         .parbody{
-            float: right;
+            float: left;
         }
         .feat{
-            margin-top: ;
-            position: relative;
-            bottom: 0px;
+            background: #00b2ee;
+            height: 40px;
+            width: 187px;
+            margin-left: 31%;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 0 0 0 ;
+            padding-top: 5px;
+            padding-left: 9px;
+            margin-top: 290px; 
+            margin-bottom: 40px;
+            color: white;
+            font-size: 18px;
+        }
+        .learn2{
+            background: #00b2ee;
+            height: 40px;
+            width: 125px;
+            padding-left: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 0 0 0 ;
+            padding-top: 5px;
+            margin-top: 20px; 
+            margin-bottom: 40px;
+            color: white;
+        }
+        .body6{
+            float: right;
+        }
+        .head7{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+        .body7{
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+        .phone7{
+            text-align: center;
+            color: white;
+            font-size: 35px;
         }
     </style>
 </head>
@@ -185,19 +287,19 @@
             </div>
             <ul>
                 <li class="navBot">
-                    <a href="#" style="color: #7f8291; text-decoration: none;">insights</a> 
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">insights</a> 
                 </li>
                 <li class="navBot">
-                    <a href="#" style="color: #7f8291; text-decoration: none;">pricing</a> 
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">pricing</a> 
                 </li>
                 <li class="navBot">
-                    <a href="#" style="color: #7f8291; text-decoration: none;">connectors</a> 
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">connectors</a> 
                 </li>
                 <li class="navBot">
-                    <a href="#" style="color: #7f8291; text-decoration: none;">solutions</a> 
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">solutions</a> 
                 </li>
                 <li class="navBot">
-                    <a href="#" style="color: #7f8291; text-decoration: none;">overview</a> 
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">overview</a> 
                 </li>
             </ul>
         </div>
@@ -206,8 +308,8 @@
         <div class="container">
             <div class="">
                 <div class="frumunda1">chat now</div>
-                <div class="frumunda3">1-800-714-0882</div>
-                <div class="frumunda2">get a quote</div>
+                <div class="frumunda2">1-800-714-0882</div>
+                <div class="frumunda3">get a quote</div>
                 <div class="frumunda4"><i class="fa fa-search" aria-hidden="true"></i></div>
             </div>
             <div class="head">Sell more...online and in store.</div>
@@ -222,59 +324,106 @@
     </div>
     <div class="container-fluid row3" style="background: #ee7541">
         <div class="container">
-            <div style="text-align:center; font-size:32px;">Solutions that help your business grow...</div>
+            <div style="text-align:center; font-size:32px;">Explore our most popular integrations</div>
         </div>
     </div>
     <div class="container-fluid row4" style="background: white">
         <div class="container">
-            <div class="parleft col-6 row">
-                <div class="col-4"><img src="clip.png" alt="" style="padding-bottom:30px;"></div>
-                <div class="col-8"> 
-                    <div class="parHead">Sell More Products</div>
-                    <div class="parmsg">PRODUCT INFORMATION MANAGEMENT</div>
-                    <div class="parbody">Adding products to your catalog means adding complexity. But, not if you have a system to clean up supplier catalogs and manage large amounts of product data.</div>
+            <div>
+                <div class="row">
+                    <div class="parleft col-5">
+                        
+                        <div class="row"> 
+                            <div class="col-4"><img src="small-shopify-logo.png" alt="" style="padding-bottom:30px;"></div>
+                            <div class="col-8">
+                                <div class="parHead">Shopify</div></br>
+                                <div class="parmsg">SELL MORE ON SHOPIFY</div><br>
+                                <div class="parbody">Use our Shopify connector to integrate your webstore with your fulfillment systems. Eliminate the need for manual data entry so you can focus on growing your business.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parright col-6 ">
+                        <div class="row">
+                            <div class="col-4"><img src="small-magento-logo.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">Magento</div><br>
+                                <div class="parmsg">IMPROVE CUSTOMER EXPERIENCE</div><br>
+                                <div class="parbody">Use our Magento connector for either Magento 1.x or 2.0 to centralize your operations for better order and inventory management. Improve your customer experience so you can overcome your competition.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="parleft col-5 ">
+                        
+                        <div class="row">
+                            <div class="col-4"><img src="small-netsuite-logo.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">NetSuite</div><br>
+                                <div class="parmsg">MULTICHANNEL ORDER MANAGEMENT</div><br>
+                                <div class="parbody">Use our NetSuite connector to integrate your ERP with your sales channels. Automate order processing so you can fulfill orders quicker and always deliver on time.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="parright col-6">
+                        
+                        <div class="row">
+                            <div class="col-4"><img src="Micro-Dynamics-NAV-e1401305420976.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">Microsoft Dynamics NAV</div><br>
+                                <div class="parmsg">REAL-TIME INVENTORY MANAGEMENT</div><br>
+                                <div class="parbody">Use our Microsoft Dynamics NAV connector to sync inventory between your ERP and all your sales channel. Ensure inventory levels are always accurate and stop overselling.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="parleft col-6 row">
-                <div class="col-4"><img src="recycle.png" alt="" style="padding-bottom:30px;"></div> 
-                <div class="col-8">
-                    <div class="parHead">Synchronize Inventory</div>
-                    <div class="parmsg">REAL-TIME INVENTORY MANAGMENT</div>
-                    <div class="parbody">Synchronize inventory counts across your eCommerce webstore, marketplaces, and brick & mortar store, so you never sell something you don't have.</div>
-                </div>
-            </div>
-            <div class="parright col-6 row">
-                <div class="col-4"><img src="acc.png" alt="" style="padding-bottom:30px;"></div> 
-                <div class="col-8">
-                    <div class="parHead">Sell In More Places</div>
-                    <div class="parmsg">MULTICHANNEL LISTING</div>
-                    <div class="parbody">List your products in multiple eCommerce webstores and marketplaces (like Amazon & eBay) to generate more revenue form the products you sell.</div>
-                </div>
-            </div>
-            <div class="parright col-6 row">
-                <div class="col-4"><img src="transfer.png" alt="" style="padding-bottom:30px;"></div> 
-                <div class="col-8">
-                    <div class="parHead">Centralize Orders</div>
-                    <div class="parmsg">MULTICHANNEL ORDER MANAGEMENT</div>
-                    <div class="parbody">Manage all of your orders from all of your channels in one place. Improve your customer experience and fulfillment efficiency.</div>
-                </div>
-            </div>
-            <div class="feat">View All Features</div>
+            <div class="feat">See All Integrations</div>
         </div>
     </div>
     <div class="container-fluid row5" style="background: #f4f4f4">
         <div class="container">
-            Grey Section
+            <div style="font-weight:3000; color:#333643; font-size:30px; text-align:center; padding-top: 70px; padding-bottom:30px;">Explore the App</div>
+            <img src="YouThought.PNG" alt="">
         </div>
     </div>
     <div class="container-fluid row6" style="background: white">
         <div class="container">
-            Another White Body
+            <div class="row">
+                <img src="ShesA.jpg" alt="" class="col-4">
+                <div class="col-4"> 
+                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Real-time integration to a multitude of endpoint systems.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check " aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6"> Direct API-based product connectors with advanced product listing features.</div></div>
+                </div>
+                <div class="col-4"> 
+                    <div>How our platform works...</div>
+                    <div>
+                            nChannel's platform is truly software-as-a-service. We integrate through APIs wherever possible, 
+                            and install very little on any local computers (for ERPs and POS systems). We've experienced the pains 
+                            of evolutions of retail integration. So, we built a platform that works like it should. Learn more about 
+                            all of the systems we can integrate.
+                    </div>
+                    <div class="learn2">learn more</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid row7" style="background: orange">
+    <div class="container-fluid row7" style="">
         <div class="container">
-            Orange Tech Support
+            <div class="head7">24/7 Customer Support</div>
+            <div class="body7">Talk to an nChannel expert anytime—we are here to help. We are a team of real </div>
+            <div class="body7">people who can provide direction and answer any questions you might have. </div>
+            <div class="body7">No voicemails and we provide 100% local USA support.</div>
+            <div class="phone7">
+                <div class="row">
+                    <div class="col-2">
+                        <div style="border-radius:50%; background:#ee7541; width:36px;"><i class="fa fa-phone" aria-hidden="true"></i></div> 
+                    </div>
+                    <div class="col-10"> 1-844-533-1333</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid row8" style="background: white">
