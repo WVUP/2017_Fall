@@ -5,39 +5,558 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Information, Management, Inventory, & Order Sync| nChannel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <style>
-        #inLineLinks{
-            list-style-type: none;
+        .topLink{
+        text-align: right;
+        display: inline;
      }
+        .logo-header{
+            height: auto;
+            width: 30%;
+            margin: 0%;
+            padding:  0% ;
+        }
+        .header{
+            background: rgb(58, 56, 56);
+            padding: 0 15%;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        #topInfo{
+            overflow: auto;
+        }
+        #outsideNav{
+            position: absolute;
+            /* float: right; */
+            /* padding: 0 0 0 39%; */
+            width: 72%;
+        }
+        #belowHeader{
+            background:  #9cdcf2;
+            align-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 7% 0 0 0;
+            /* font-style: border: 1 solid black; */
+        }
+        #partTheSea{
+            padding: 5% 0 0 0;
+        }
+        #dotDiv{
+            background-image: url("dot-pat.png");
+            padding: 3% 0 0 0;
+        }
+        #container3{
+            background: #ee7541;
+            text-align: center;
+            color: white;
+            padding: 1% 0;
+        }
+        #container4{
+            background: white;
+            /* margin: 0 30%; */
+            padding: 5% 20%;
+        }
+        .pictureWithText{
+            display: -webkit-inline-box;
+            width: 25%;
+        }
+        .imageBesideTest{
+            position: absolute;
+        }
+        .textBesideImage{
+            padding: 0 25%;
+        }
+        #container5{
+            background: lightgray;
+            padding: 0 18%;
+        }
+        .pushDown{
+            text-align: center;
+            padding: 4% 0 4% 0;  
+        }
+        .boxListItem{
+            background: white;
+            border: black;
+            padding: 5% 0%;
+            width: auto;
+            font-size: 10pt;
+            margin: 10% 0;
+            text-align: center;
+            height: auto;
+            font-weight: bold;
+        }
+        .computerBox{
+            background-image: url("imac.png");
+            width: 100%;
+            height: 80%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #container6{
+            background: white;
+            padding: 5% 18%;
+            color: gray;
+        }
+        .textBesideImage2{
+            padding: 0 50%;
+            width: 100%;
+        }
+        .specialList{
+            list-style:none; 
+            list-style-image: "fa-check"
+        }
+        .imageBesideText2{
+            position: absolute;
+        }
+        #container7{
+            background-color: orangered;
+            padding: 7% 25%;
+            text-align: center;
+            color: white;
+            background-image: url("orange-back.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .boxInformation{
+            text-align: left;
+            background: transparent;
+            border-radius: 0pt 15pt 0pt 15pt;
+            border-color: white;
+            border-style: solid;
+            padding: 2% 4%;
+            font-size: 11pt;
+        }
+        #container8{
+            background: white;
+            padding: 5% 20%;
+            text-align: center;
+            align-content: center;
+        }
+        .blueBox{
+            background: #22b0e6;
+            color: white;
+            border-radius: 0pt 15pt 0pt 15pt;
+            padding: 5% 5%;
+            text-align: left;
+        }
+        .personInfo{
+            text-align: right;
+            margin: 2% 2%;
+            padding: 2% 0;
+        }
+
+        #container9{
+            background: lightgray;
+            padding: 5% 15%;
+        }
+
+        #container10{
+            background: rgb(24, 23, 23);
+            padding: 3% 15%;
+            color: white;
+        }
+        .exploreMoreList{
+            list-style: none;
+            display: flex;
+        }
+
+        .exploreMoreList, li{
+            padding: 0 10% 0 0%;
+           
+        }
+
+        #container11{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 2% 0;
+        }
+
     </style>    
 </head>
 <body>
-    
-    <div class="container" >
+        <!-- Header -->
+    <div class="container-fill header">
         <nav>
-            <div>
-                <!-- nchannel picture spot -->
+            <div class="row">
+                <div class="col topLink">
+                    <a href="#">contact</a>
+                    <a>|</a>
+                    <a href="#">support</a>
+                </div>
             </div>
 
-            <div>
-                <ul id='inLineLinks'>
-                <li>contact</li>
-                <li>support</li>
-                </ul>
-            </div>
+            <div class="row">
+                <div class='logo-header col-7'>
+                        <img src="logo.png" alt="">
+                    </div>
+                
+                <div class="col-5 topLink">
+                    <a href="#">overviews</a>
+                    <a href="#">solutions</a>
+                    <a href="#">connectors</a>
+                    <a href="#">pricing</a>
+                    <a href="#">insights</a>
+                </div>
+             </div>
 
-            <div>
-                <ul id='inLineLinks'>
-                    <li>overview</li>
-                    <li>solutions</li>
-                    <li>connectors</li>
-                    <li>pricing</li>
-                    <li>insights</li>
-                </ul>
-            </div>
-
+             <div class="row" id="outsideNav">
+                <div class="col-12 topLink">
+                    <button class="btn btn-warning">chat now</button>
+                    <button class="btn btn-primary">get a quote</button>
+                    <button class="btn btn-danger">1-800-714-0882</button>
+                    <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+             </div>
         </nav>
+    </div>
+
+    <!-- sell more.. online and in store -->
+    <!-- ADD A FONT SHADOW EFFECT -->
+    <div class="container-fluid" id="belowHeader">
+        <div id="partTheSea">
+            <h2>Sell more...online and in store.</h2>
+        </div>
+        <div>
+            <p>Increase revenue by selling more products in more channel like eCommerce<br>
+                 webstores and marketplaces. Grow without the growing pains.
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-warning">Learn more</button>
+        </div>
+        <div id="dotDiv">
+            <img src="connect.png" alt="">
+        </div>
+    </div>
+
+    <!-- 3rd container -->
+    <div class="container-fluid" id='container3'>
+        <div>
+           <h2>Solutions that help your business grow...</h1>
+        </div>
+    </div>
+
+    <!-- 4 container -->
+    <div class="container-fill" id='container4'>
+        
+        <div class="row"  style="padding: 0 0 3% 0">
+            <div class="col-6">
+                <img src="reporting_home.png" alt="" class="imageBesideTest">
+                <div class="textBesideImage">
+                    <h5>Sell More Products</h5>    
+                    <h6>PRODUCT INFORMATION MANAGEMENT</h6>
+                    <P>Adding products to your catalog means adding complexity. But, not if you have a system to clean up supplier catalogs and manage large amounts of product data.</P>
+                </div>
+             </div>
+        
+
+            <div class="col-6">
+                <img src="accoutning_home.png" alt="" class="imageBesideTest">
+                <div class="textBesideImage">
+                    <h5>Sell In More Places</h5>
+                    <h6>MULTICHANNEL LISTING</h6>
+                    <P>List your products in multiple eCommerce webstores and marketplaces (like Amazon & eBay) to generate more revenue form the products you sell.</P>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding: 0 0 3% 0">
+            <div class="col-6">
+                    <img src="ProductSync.png" alt="" class="imageBesideTest">
+                    <div class="textBesideImage">
+                        <h5>Synchronize Inventory</h5>    
+                        <h6>REAL-TIME INVENTORY MANAGEMENT</h6>
+                        <P>Synchronize inventory counts across your eCommerce webstore, marketplaces, and brick & mortar store, so you never sell something you don't have.</P>
+                    </div>
+             </div>
+                <div class="col-6">
+                    <img src="orderWorkFlow.png" alt="" class="imageBesideTest">
+                    <div class="textBesideImage">
+                        <h5>Centralize Orders</h5>
+                        <h6>MULTICHANNEL ORDER MANAGEMENT</h6>
+                        <P>Manage all of your orders from all of your channels in one place. Improve your customer experience and fulfillment efficiency.</P>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="text-align: center">
+                <button class="btn btn-primary">View All Features</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id='container5'>
+        <div class="pushDown">
+            <h3>Explore the App</h3>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="boxListItem">
+                    <a>Learn About nChannel</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Product Information Management</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Publish Products Directly to Shopify</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Manage Supplier Product Catalogs</a>
+                </div>
+                <div class="boxListItem">
+                    <a>Clean Up and Manage Product Data</a>
+                </div>   
+            </div>
+        
+            <div class="col-8">
+                
+                <div class="computerBox">
+                    <!-- Add the other images within computerBox -->
+                    <img src="" alt="" class="imageBesideText">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id="container6">
+        <div class="row">
+            <div class="col-8">
+                
+                <img src="building.jpg" alt="" class="imageBesideText2">
+                <div class="textBesideImage2">
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Real-time integration to a multiude of endpoint systems.</p>
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</p>
+                    <p style="width: 200"><i class="fa fa-check" style="color: red" aria-hidden="true"></i> Direct API-based product connectors with advanced product listing features.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h5><strong>How our platform works...</strong></h5>
+                <p>
+                nChannel's platform is truly software-as-a-service. 
+                We integrate through APIs wherever possible, and install
+                 very little on any local computers (for ERPs and POS systems). 
+                 We've experienced the pains of evolutions of retail integration. 
+                 So, we built a platform that works like it should. 
+                 Learn more about all of the systems we can integrate.
+                </p>
+
+                <button class="btn btn-primary">Learn More</button>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container-fill" id="container7">
+        <div class="row">
+            <div class="col-12">
+                <h2><Strong>24/7 Customer Support</Strong></h2>
+            </div>
+        </div>
+       <div class="row">
+           <div class="col-12">
+                <p>
+                    Talk to an nChannel expert anytime—we are here to help. 
+                    We are a team of real people who can provide direction and 
+                    answer any questions you might have. No voicemails and we 
+                    provide 100% local USA support
+                </p>
+            </div>
+       </div>
+       <div class="row">
+           <div class="col-12">
+                <h2><i class="fa fa-phone" aria-hidden="true"></i> 1-844-533-1333</h2>
+           </div>
+       </div>
+        <br>
+       <div class="row">
+            <div class="col-6">
+                <div class="boxInformation">
+                    <h5>Email Us for More Info</h5>
+                    <button class="btn btn-primary" style="position: absolute">email us</button>
+                    <p style="padding: 0 0 0 35%">We have a solution for any scenario.</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="boxInformation">
+                    <h5>Chat with Us Online</h5>
+                    <button class="btn btn-primary" style="position: absolute">chat not</button>
+                    <p style="padding: 0 0 0 35%">Chat with us during business hours (ET).</p>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="container-fill" id="container8">
+        
+        <div class="row">
+            <div class="col-5">
+                <h2 style="text-align: right"><strong>Helping Our Customers Grow</strong></h2>
+            </div>
+            <div class="col-7">
+                <p style="text-align: left">We've definitely done this before! We've helped a multitude
+                     of customers in a multitude of industries grow their businesses.
+                      Check out some of the case studies below to get an idea of what
+                       kind of solution we can provide for you.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4" style="text-align: right">
+                <img src="sales1.png" alt="">
+            </div>
+            <div class="col-4" style="text-align:center">
+                <img src="sales3.png" alt="">
+            </div>
+            <div class="col-4" style="text-align: left">
+                <img src="sales2.png" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="blueBox">
+                    <p><strong>There's no question. We could not have achieved this
+                         growth without our nChannel platform. It paid for 
+                         itself fast. Now it saves hours and money every day.
+                        </strong></p>
+                </div>
+                <div style="display: flex">
+                    <div class="personInfo">
+                        <h5>Mike's Archery</h5>
+                        <cite>Owner and GM, Bryan Dickness</cite>
+                        <a href="#">Download Case Study</a>
+                        <!-- <img src="mike.png" alt=""> -->
+                    </div>
+                    <div>
+                        <img src="mike.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="blueBox">
+                    <p>
+                        <strong>We make specials show up faster, 
+                        and specify in advance when they start 
+                        and stop. Even better, once we attract 
+                        a new customer from a less-agile retailer, 
+                        we keep them.
+                    </strong></p>
+                </div>
+                <div style="display: flex">
+                    <div class="personInfo">
+                        <h5>Midwest Photo Exchange</h5>
+                        <cite>President, Moishe Appelbaum</cite>
+                        <a href="#">Download Case Study</a>
+                    </div>
+                    <div>
+                        <img src="Midwest-Photo-Exchange-Moishe.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id="container9">
+        <div class="row">
+            <div class="col-3">
+                <img src="shopify-partner-logo_onwhite.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="netsuite-suitecloud-partner.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="microsoft-partner.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="ebay-compatible-app.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="Bigcommerce-Partner-Badge-BW.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="right-now-ebay.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="LS-Final-2.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="2017.TopCommerceSeal-3.png" style="width: 175px; height: 128px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id="container10">
+        <div class="row">
+            <div class="col-3">
+                <h4>Connect</h4>
+                <div style="display: inline">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4>Multichannel Insights</h4>
+                <h6>November 2, 2017</h6>
+                <p>Project Management Tips for Creating
+                     a Successful eCommerce Website</p>
+                <a href="#">View Article</a>
+            </div>
+            <div class="col-5">
+                <h4>Explore More</h4>
+               <div>
+                   <ul class="exploreMoreList">
+                       <li>about</li>
+                       <li>careers</li>
+                   </ul>
+               </div>
+               <div>
+                   <ul class="exploreMoreList">
+                       <li>security</li>
+                       <li>pci compliance</li>
+                   </ul>
+               </div>
+               <div >
+                    <ul class="exploreMoreList">
+                        <li>privacy policy</li>
+                        <li>industries</li>
+                    </ul>
+               </div>
+               <div>
+                    <ul class="exploreMoreLIst">
+                        <li>for investors</li>
+                        <li>contact</li>
+                    </ul>
+               </div>
+               <div>
+                   <ul class="exploreMoreLIst">
+                       <li>press releases</li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-fill" id="container11">
+        <h4>Copyright © 2016 | All Rights Reserved, nChannel</h4>
     </div>
 
 </body>

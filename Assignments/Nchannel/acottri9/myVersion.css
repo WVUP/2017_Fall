@@ -8,32 +8,25 @@ html
     display:inline-block;
     */
 }
-div
+h1
 {
-	/*
-     display:inline-block
-	 */
+    text-align:center;
 }
-input
-{
-    background-color:white;
-    color:black;
-}
-input:hover
-{
-    color:blue;
-}
+ul { list-style-type: none; }
+
 .nav
 {
     background-color: grey;
     color : white;
-
+    position: fixed;
+    width: 100%;
+    height: 5%;
 }
 .learnSection
 {
     background-color: cyan;
     color : white;
-
+    padding-top:50px;
 }
 .interruptSection
 {
@@ -42,10 +35,32 @@ input:hover
 }
 .roundedButton
 {
-    border-radius: 12px;
+    border-radius: 8px;
     font-variant: italic;
     color:white;
 }
+.blueBackground
+{
+    background-color : blue;
+}
+.redBackground
+{
+    background-color : red;
+}
+.yellowBackground
+{
+    background-color: yellow;
+}
+.greyBackground
+{
+    background-color : lightgrey;
+}
+.white
+{
+	color:white;
+	text-decoration: none;
+}
+
 .roundedButton:hover
 {
     border-radius: 12px;
@@ -53,13 +68,43 @@ input:hover
     color:white;
     background-color:black
 }
+ul.fancy-list li:before 
+{
+    /*
+    font-family: Wingdings;
+    */
+    /*
+    content: "f00c";
+    color: red;
+    */
+    content: "\2713";
+    color: #F5B54B;
+}
+ul.fancy-list 
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    list-style: none;
+}
 .explore
 {
     background-color:whitesmoke;
     color:grey;
+    display:block;
+}
+.navText
+{
+    text-align: right;
+    text-decoration: none; 
 }
 .connect
 {
     background-color:navy;
     color:white;
+	text-decoration: none;
+}
+.noStyle
+{
+    text-decoration: none;
 }

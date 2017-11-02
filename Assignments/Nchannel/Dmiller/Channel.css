@@ -1,0 +1,27 @@
+.header-section {
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: block;
+    z-index: 10000000;
+    width: 100%;
+}
+.text-center{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #9cdcf2;
+    -webkit-text-fill-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+.text-left{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: left;
+}

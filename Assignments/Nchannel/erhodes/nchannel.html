@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Information Management, Inventory & Order Sync | nChannel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+    
+    .header
+    {
+        position: fixed;
+        z-index: 100000;
+        width: 100%;
+        background-color: 3b3e4b;
+        color: 7f8291;
+    }
+
+    .container-fluid
+    {
+        height: 13%;
+    }
+
+    .nchanLog
+    {
+        position: absolute;
+        float: left;
+        bottom: 0px;
+        width: 200px;
+        padding: 15px;
+        
+    }
+
+    .rightside
+    {
+        text-align: right;
+        display: inline;
+    }
+
+    .rightsideBottom
+    {
+        position: absolute;
+        float: right;
+        text-align: right;
+        bottom: 0%;
+        padding: 15px;
+
+    }
+
+    .rightsideTop
+    {
+        position: absolute;
+        float: right;
+        text-align: right;
+        top: 0%;
+
+    }
+
+
+    .rightsideBottom > a
+    {
+        color:7f8291;
+        margin-left: 25px;
+    }
+
+    .rightsideTop > a
+    {
+        color:7f8291;
+        margin-left: 25px;
+    }
+
+    .rightsideBottom > a:hover
+    {
+        color:white;
+        background-color:transparent;
+        text-decoration: none;
+    }
+
+    .rightsideTop > a:hover
+    {
+        color:white;
+        background-color:transparent;
+        text-decoration: underline;
+    }
+
+    #sellMore
+    {
+        background-color: #9cdcf2;
+        width: 100%;
+        padding: 20%;
+        text-align: center;
+    }
+
+    #sellMore > h1
+    {
+        position:absolute;
+        left: 38%;
+        top: 25%;
+        font-size: 35px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        color: FFF;
+    }
+
+    #sellMore > p
+    {
+        position:absolute;
+        left: 33%;
+        top: 30%;
+        font-size: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        color: FFF;
+
+    }
+
+    #sellMore > a
+    {
+        color: FFF;
+        background-color: ee7541;
+        font-style: italic;
+        font-weight: bolder;
+        padding: 1%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+
+
+    }
+
+    #sellMore > a:hover
+    {
+        color:FFF;
+        background-color:grey;
+        text-decoration: none;
+    }
+
+    .nbox
+    {
+        max-width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        bottom: 206px;
+        left: 26%;
+        padding-top: 48px;
+
+    }
+
+    #explore
+    {
+        color: FFF;
+        background-color: ee7541;
+        text-align: center;
+        padding: 15px;
+        height: auto;
+    }
+    
+    #features
+    {
+        height: auto;
+        margin: 50px 0;
+    }
+
+    .inteimgs
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .content
+    {
+        display: inline-block;
+
+    }
+
+    .content > h1
+    {
+        color:7f8291;
+        font-size: 20px;
+        margin: 0 0 3px 0;
+        
+    }
+
+    .content > h3
+    {
+        font-weight: 900;
+        color: #ee7541;
+        font-size: 12px;
+        margin: 0 0 5px 0;
+    }
+
+    .content > p
+    {
+        color:7f8291;
+        font-size: 16px;
+        margin: 0 0 5px 0;
+    }
+        
+    .wrap
+    {
+        width: 45%;
+        margin: 0 auto;
+    }
+   
+    .wrap > a
+    {
+        color: FFF;
+        display: inline-block;
+        background-color: #22b0e6;
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+        padding: 10px 20px 12px 20px;
+        margin-top:5%;
+        margin-bottom: 5%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+
+    .wrap > a:hover
+    {
+        color:FFF;
+        background-color:grey;
+        text-decoration: none;
+    }
+
+    #exptheapp
+    {
+        background-color: #f4f4f4;
+        height: auto;
+        width: 100%;
+    }
+
+    .col > h3
+    {
+        margin: 50px 0 50px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        color: 7f8291;
+    }
+  
+    .tail
+    {
+        position:fixed;
+        bottom: 0;
+        z-index: 100000;
+        width: 10%;
+        box-shadow: 2px -2px 10px grey;
+
+        background-color: 3b3e4b;
+        color: FFF;
+        background: rgb(235, 173, 6);
+        right: 8%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="container">
+            <img class="nchanLog" src="nHeader.png" alt="">
+            <div class="row">
+                <div class="col-7 rightsideTop">
+                    <a href="#">contact</a>
+                    <a>|</a>
+                    <a href="#">support</a>
+                </div>
+            </div>
+            <div class="row rightside">
+                <div class="col-7 rightsideBottom">
+                    <a href="#"> overview </a>
+                    <a href="#"> solutions </a>
+                    <a href="#"> connectors </a>
+                    <a href="#"> pricing </a>
+                    <a href="#"> insight </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id ="sellMore">
+        <h1>Sell more...online and in store.</h1>
+        <p> Increase revenue by selling more products in more channels like eCommerce<br> 
+            webstores and marketplaces. Grow without the growing pains.
+        </p>
+        <a href="#">learn more</a>
+        <img class="nbox" src="nbox.png" alt="">
+    </div>
+    <div class="container-fluid" id ="explore">
+        <h2>Explore our most popular integrations</h2>    
+    </div>
+    
+    <div class="container-fluid" id="features">
+        <div class="row wrap">
+            <div class="col">
+                <img width="108" height="108" src="https://www.nchannel.com/wp-content/uploads/2014/02/small-shopify-logo.png" class="inteimgs" alt="">
+                <div class="content">
+                    <h1>Shopify</h1>
+                    <h3>SELL MORE ON SHOPIFY</h3>
+                    <p>Use our Shopify connector to <br>integrate your webstore with your<br> fulfillment systems. Eliminate the<br> need for manual data entry so you<br> can focus on growing your<br> business.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img width="108" height="108" src="https://www.nchannel.com/wp-content/uploads/2014/02/small-magento-logo.png" class="inteimgs" alt="">
+                <div class="content">
+                <h1>Magento</h1>
+                <h3>IMPROVE CUSTOMER EXPERIENCE</h3>
+                <p>Use our Magento connector for <br>either Magento 1.x or 2.0 to <br>centralize your operations for<br> better order and inventory <br> management. Improve your <br>customer experience so you can <br>overcome your competition.</p>
+                </div>
+            </div>
+        </div>
+                  
+        <div class="row wrap">
+            <div class="col">
+                <img width="108" height="108" src="https://www.nchannel.com/wp-content/uploads/2014/02/small-netsuite-logo.png" class="inteimgs" alt="">
+                <div class="content">
+                    <h1>NetSuite</h1>
+                    <h3>MULTICHANNEL ORDER MANAGEMENT</h3>
+                    <p>Use our NetSuite connector to <br> integrate your ERP with your<br> sales channels. Automate order<br> processing so you can fulfill<br> orders quicker and always<br> deliver on time.</p>   
+                </div>
+            </div>
+            <div class="col">
+                <img width="108" height="76" src="https://www.nchannel.com/wp-content/uploads/2014/02/Micro-Dynamics-NAV-e1401305420976.png" class="inteimgs" alt="">
+                <div class="content">
+                    <h1>Microsoft Dynamics NAV</h1>
+                    <h3>REAL-TIME INVENTORY MANAGEMENT</h3>
+                    <p>Use our Microsoft Dynamics <br> NAV connector to sync inventory <br> between your ERP and all your <br> sales channel. Ensure inventory <br> levels are always accurate and <br> stop overselling.</p>   
+                </div>
+            </div>
+        </div>
+        <div class="wrap" style="text-align: center">
+            <a href="#">See All Integrations</a>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="exptheapp">
+        <div class="row wrap">
+            <div class="col">
+                <h3>Explore the App</h3>
+                <img src="newpc.png" class="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="tail">
+        <a> Questions? Chat with us!</a>
+    </div>
+
+    
+</body>
+</html>

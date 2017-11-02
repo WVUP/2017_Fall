@@ -1,41 +1,59 @@
-setCal()
-
-function leapYear(year)
-if (year % 4 == 0) // basic rule
-    return true // is leap year
-    /* else */ // else not needed when statement is "return"
-    return false // is not leap year
+Calendar.prototype.generateHTML = function(){
     
-function getDay(month, year)
-{
-    var ar = new Array(12)
-    ar[0] = 31 // January
-    ar[1] = (leapYear(year)) ? 29 : 28 // February
-    ar[2] = 31 // March
-    ar[3] = 30 // April
-    ar[4] = 31 // May
-    ar[5] = 30 // June
-    ar[6] = 31 // July
-    ar[7] = 31 // August
-    ar[8] = 30 // September
-    ar[9] = 31 // October
-    ar[10] = 30 // November
-    ar[11] = 31 // December
+      // get first day of month
+      var firstDay = new Date(this.year, this.month, 1);
+      var startingDay = firstDay.getDay();
+      
+      // find number of days in month
+      var monthLength = cal_days_in_month[this.month];
+      
+      // compensate for leap year
+      if (this.month == 1) { // February only!
+        if((this.year % 4 == 0 && this.year % 100 != 0) || this.year % 400 == 0){
+          monthLength = 29;
+        }
+      }
+      
+      // do the header
+      var monthName = cal_months_labels[this.month]
+      var html = '<table class="calendar-table">';
+      html += '<tr><th colspan="7">';
+      html +=  monthName + "&nbsp;" + this.year;
+      html += '</th></tr>';
+      html += '<tr class="calendar-header">';
+      for(var i = 0; i <= 6; i++ ){
+        html += '<td class="calendar-header-day">';
+        html += cal_days_labels[i];
+        html += '</td>';
+      }
+      html += '</tr><tr>';
+    
+      // fill in the days
+      var day = 1;
+      // this loop is for is weeks (rows)
+      for (var i = 0; i < 9; i++) {
+        // this loop is for weekdays (cells)
+        for (var j = 0; j <= 6; j++) { 
+          html += '<td class="calendar-day">';
+          if (day <= monthLength && (i > 0 || j >= startingDay)) {
+            html += day;
+            day++;
+          }
+          html += '</td>';
+        }
+        // stop making rows if we've run out of days
+        if (day > monthLength) {
+          break;
+        } else {
+          html += '</tr><tr>';
+        }
+      }
+      html += '</tr></table>';
+    
+      this.html = html;
+    }
 
 
-    return ar[month]
-}
-ar[0] = "January"
-ar[1] = "February"
-ar[2] = "March"
-ar[3] = "April"
-ar[4] = "May"
-ar[5] = "June"
-ar[6] = "July"
-ar[7] = "August"
-ar[8] = "September"
-ar[9] = "October"
-ar[10] = "November"
-
-
-}
+    Calendar.prototype.getHTML = function() {
+        return this.html;
+      }
