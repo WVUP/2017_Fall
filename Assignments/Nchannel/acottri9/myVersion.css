@@ -108,3 +108,11 @@ ul.fancy-list
 {
     text-decoration: none;
 }
+.quoteText
+{
+    width:500px;
+    height:100px;
+     background-color: blue;
+     color:white;
+      border:1px solid #000; 
+}
