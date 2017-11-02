@@ -25,6 +25,7 @@ html{
     padding-bottom: 20px;
     background: #3b3e4b;
     height: 85px;
+    top: 0;
 }
 
 .chatnow 
@@ -91,6 +92,7 @@ html{
 
     
     background-color: #FFF;
+    padding-top: 100px;
 
 
 }
@@ -211,7 +213,7 @@ html{
     
         z-index: 100000;
         margin: 0 auto;
-        top: 113px;
+        top: 105px;
         right: 100px;
         padding-bottom: 50px;
       
@@ -340,7 +342,7 @@ html{
 .connectimg{
 
   position: absolute;
-  margin-left: 35%;
+  margin-left: 27%;
   padding-top: 40px;
 
 
@@ -472,19 +474,40 @@ a{
 #explore{
     
         background-color: #f4f4f4;
-        padding: 75px 0 0 0;
+        padding: 55px 0 0 0;
         min-height: 960px;
     }
     
 
 .mac{
     
-  
+   
     float: right;
-    position: relative;
+    position: absolute;
+    overflow: hidden;
+    right: 25%;
+    z-index: 10;
+    
     
 
     
+}
+
+#wires{
+    position: absolute;
+    top: 38px;
+    right: -80px;
+    z-index: 1;
+
+
+}
+
+#explore-column{
+    float: left;
+    padding: 0 90px 0 0;
+    width: 30%;
+    position: relative;
+
 }
 
 .sidebarlist{    
@@ -501,9 +524,8 @@ a{
     padding: 10px 5px 14px 4px;
     margin: 21px 0 0 0;
     position: relative;
-list-style: none;
-    width: 15%;
-
+    list-style: none;
+   
 }
 
 
@@ -712,18 +734,31 @@ background: #ffff;
 font-family: "Kreon", "Times New Roman", serif;
 padding-top: 50px;
 padding-bottom: 50px;
+width: 300px;
 overflow: hidden;
 
 
 
 }
 
-.how2{
+.howcolumn1{
+    color: #6b6b6b;
+    
+    font-family: "Kreon", "Times New Roman", serif;
+    min-width: 300px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.howcolumn2{
 
     color: #6b6b6b;
-    margin-left: 10px;
+    
     font-family: "Kreon", "Times New Roman", serif;
-
+    min-width: 300px;
+    overflow: hidden;
+    float: right;
 }
 
 
@@ -733,6 +768,7 @@ overflow: hidden;
 
     float: left;
     padding: 10px;
+    width: 300px;
 }
 
 #footer{
