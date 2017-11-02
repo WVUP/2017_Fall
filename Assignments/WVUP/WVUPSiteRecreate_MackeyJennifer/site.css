@@ -59,12 +59,13 @@ a:active {
     float: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: bold;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
     
 }
 
@@ -78,8 +79,9 @@ a:active {
     text-align: center;
     overflow: hidden; 
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .34);
 }
 
@@ -91,7 +93,7 @@ a:active {
     background: linear-gradient( #E3B326, rgba(238, 204, 105, 0.6));
     text-align: right;
     float: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-radius: 10px;
     margin: 0;
     margin-bottom: 0;
@@ -111,7 +113,7 @@ a:active {
     padding-top: 15px;
     background: #FFFFFF;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-radius: 10px;
     color: gray;
     font-size: 75%;
@@ -196,6 +198,7 @@ a:active {
     margin-top: -70px;
     position: relative;
     z-index: 100;
+    color: black;
 }
     
 #news{
@@ -236,7 +239,7 @@ a:active {
     text-align: left;
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 
