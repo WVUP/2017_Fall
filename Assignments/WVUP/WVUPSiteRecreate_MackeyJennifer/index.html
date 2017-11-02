@@ -102,7 +102,13 @@
                 <div id="yourwvup"><img src="Hub-Button-2016_blue.jpg" height=200px></div>
 
                 <div id="calendar"> 
-                    <script src ="site.js"></script>
+                        
+                    
+                    <script type="text/javascript">
+                        var cal = new Calendar();
+                        cal.generateHTML();
+                        document.write(cal.getHTML());
+                      </script>
                 </div>
 
                 <div id="news">
@@ -133,10 +139,29 @@
                             <br><br>
 
                     </div>
+                </div>
+                    <div id ="leftsidebar">
+                        <nav>
+                <img src="icon-default.png">
+                       
+                    
+                    <p class="sidebarlinks">
+                        <li>Directions to Campus</li>
+                        <li>Employment Oppurtunities</li>
+                        <li>General Financial Aid Information</li>
+                        <li>Childcare Services</li>
+                        <li>Life and WVU Parkersburg</li>
+                        <li>Jackson County Center</li>
+                        <li>Programs of Study</li>
+                        <li>Social Justice</li>
+                    </p>
+                        </nav>
+                    <div id="bell" ><img src="bell_graphic.gif"></div>
     
+                        
+                   
 
-
-            </div> 
+            
             <div id="footer">
                 Find My ID | Technology Resources | WVUP Email | OLSIS | BlackBoard | WPKM - Radio Station <br><br>
                 
@@ -146,26 +171,7 @@
                 WVU Parkersburg is an affiliated institution of West Virginia University | An Equal Opportunity/Affirmative Action institution
         </div>
 
-            <div id ="leftsidebar">
-                    <nav>
-            <img src="icon-default.png">
-                   
-                
-                <p class="sidebarlinks">
-                    <li>Directions to Campus</li>
-                    <li>Employment Oppurtunities</li>
-                    <li>General Financial Aid Information</li>
-                    <li>Childcare Services</li>
-                    <li>Life and WVU Parkersburg</li>
-                    <li>Jackson County Center</li>
-                    <li>Programs of Study</li>
-                    <li>Social Justice</li>
-                </p>
-                    </nav>
-                <div id="bell" ><img src="bell_graphic.gif"></div>
-
-                    
-                  </div>
+            
                     
             </div>
 </body>

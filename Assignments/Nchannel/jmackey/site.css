@@ -24,7 +24,67 @@ html{
     text-align: right;
     padding-bottom: 20px;
     background: #3b3e4b;
+    height: 85px;
 }
+
+.chatnow 
+{
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 24pt;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFF;
+    margin: 0 0 0 5px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #ebad06 !important;
+    overflow: hidden;
+
+
+}
+
+.getquote {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 24pt;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFF;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+    background-color: #00b2ee;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+.callnumber{
+
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 24pt;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFF;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+    background-color: #ee7541;
+    border-radius: 0px 0px 5px 5px;
+
+
+
+}
+
+
+
 
 #homebody{
 
@@ -37,7 +97,7 @@ html{
 #wrapper {
     width: 100%;
     margin: 0;
-    padding: 0;
+  
     background-color: #cfcfcf;
 }
 
@@ -48,8 +108,7 @@ html{
     font-weight: 700;
     text-align: right;
     z-index: 10;
-   
-    padding: 75px 0;
+
     width: 100%;
 }
 #header {
@@ -57,15 +116,136 @@ html{
     float: 0;
     width: 100%;
     margin: 0;
+    position: fixed;
+    z-index: 10000;
 }
+
+
+
+
+
+.nav{
+    
+        font-family: "Kreon", "Times New Roman", serif;
+        color: #7f8291;
+        position: absolute;
+        right: 20%;
+        
+        top: 0px;
+        list-style: none;
+        overflow: hidden;
+        float: right;
+       
+    }
+    
+    .ov 
+    {
+        font-size: 16px;
+        display: table;
+        height: 100%;
+        float: right;
+        padding: 20px 10px;
+        list-style: none;
+    
+    }
+    
+    .in 
+    {
+        font-size: 16px;
+        display: table;
+        height: 100%;
+        float: right;
+        padding: 20px 10px;
+        list-style: none;
+    
+    }
+    
+    
+    
+    .pr 
+    {
+        font-size: 16px;
+        display: table;
+        height: 100%;
+        float: right;
+        padding: 20px 10px;
+        list-style: none;
+    
+    }
+    
+    
+    
+    .co 
+    {
+        font-size: 16px;
+        display: table;
+        height: 100%;
+        float: right;
+        padding: 20px 10px;
+        list-style: none;
+    
+    }
+    
+    
+    
+    
+    .so
+    {
+        font-size: 16px;
+        display: table;
+        height: 100%;
+        float: right;
+        padding: 20px 10px;
+        list-style: none;
+    
+    }
+    
+    
+    
+    
+    
+    
+#fixedbuttons{
+        height: 36px;
+        position: fixed;
+    
+        z-index: 100000;
+        margin: 0 auto;
+        top: 113px;
+        right: 100px;
+        padding-bottom: 50px;
+      
+    
+    }
+
+
+.fa-search  {
+	width: 60px;
+	height: 60px;
+	display: block;
+	
+    left: 10px;
+	padding: 10px;
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
 
 #primarysolutions{
 
+    
     padding: 0 0 50px 0;
     margin: 0;
     background-color: #f4f4f4;
 
 }
+
+
+
 
 #solutions {
 
@@ -75,7 +255,7 @@ html{
     padding-top: 100px;
     margin: 0;
     min-width: 1280px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     overflow: hidden;
 
   
@@ -96,11 +276,11 @@ html{
     color: #FFF;
     font-family: "Kreon", "Times New Roman", serif;
     font-size: 20px;
-    margin: 10px 0 0 0;
+    margin: 10px 0px 10px 100px;
     line-height: 22pt;
     font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    padding-left: 25%;
+    padding-left: 15%;
     padding-right: 25%;
 }
 
@@ -111,7 +291,6 @@ html{
     min-height: 100px;
     padding: 30px;
     font: inherit;
-    
     overflow: hidden;
     
    
@@ -150,11 +329,24 @@ html{
 #block{
 
 
-    width: 50%;
+    width: 40%;
     float: left;
     padding: 10px;
 
+   
+
 }
+
+.connectimg{
+
+  position: absolute;
+  margin-left: 35%;
+  padding-top: 40px;
+
+
+}
+
+
 
 .the-logo{
 
@@ -167,13 +359,14 @@ html{
 #capabilities{
 
     background-color: #FFF;
-    border: 2px solid #e8e8e8;
+    
     min-height: 100px;
-    padding: 30px;
-    font: inherit;
+    padding: 20px;
+    
     overflow: hidden;
-    background: #e8e8e8;
     font-family: "Kreon", "Times New Roman", serif;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 
@@ -188,12 +381,6 @@ html{
 
 
 
-#explore{
-
-    background-color: #f4f4f4;
-    padding: 75px 0 0 0;
-    margin: 0;
-}
 
 
 
@@ -256,6 +443,19 @@ a{
     
 }
 
+.h3
+{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 30pt;
+    display: block;
+    
+}
+
+
+
+
 .sub
 {
     font-family: "Roboto", "Helvetica", sans-serif;
@@ -269,77 +469,27 @@ a{
 
 }
 
-
-
-#connect{
-
-    background-position: bottom;
-    background-image: url(clear.png);
-   
+#explore{
     
-
-}
-
-#clear{
-width: 100%;
-position: relative;
-max-width: 940px;
-margin: 0 auto;
-padding: 0 20px;
-background-repeat: repeat;
-background-image: url(dot-pat.png);
-background-position: center center;
-box-sizing: border-box;
-
-
-}
-
-#computer{
-    position: relative;
-
-    width: 100%;
-    padding-top: 61.775701%;
-    background-size: cover;
+        background-color: #f4f4f4;
+        padding: 75px 0 0 0;
+        min-height: 960px;
+    }
     
-    margin: 0 auto;
-    max-width: 940px;
-    padding: 0 20px;
-    position: relative;
-
-
-
-}
-.screen{
-
-   
-    position: absolute;
-    top:    11.0438729%;
-    bottom: 14.6747352%;
-    left:   13.364486%;
-    right:  13.364486%;
-    overflow: hidden;
-    background-image:url("nchannel-intro-vid-screen.png");
-    background-repeat: no-repeat;
-    
-
-}
-
 
 .mac{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-size: cover;
-     background-image:url("imac.png");
-    background-repeat: no-repeat;
+    
+  
+    float: right;
+    position: relative;
+    
+
     
 }
 
 .sidebarlist{    
     
-    cursor: pointer;
+ 
     border: 2px solid #e8e8e8;
     background-color: #FFF;
     text-align: center;
@@ -348,11 +498,11 @@ box-sizing: border-box;
     font-size: 16px;
     line-height: 16pt;
     color: #6b6b6b;
-    padding: 13px 5px 14px 5px;
+    padding: 10px 5px 14px 4px;
     margin: 21px 0 0 0;
     position: relative;
-
-    width: 30%;
+list-style: none;
+    width: 15%;
 
 }
 
@@ -393,7 +543,7 @@ box-sizing: border-box;
     float: left;
     border: 3px solid #FFF;
     text-align: right;
-    padding-left: 10px;
+    padding-left: 20px;
     margin: 0 1.5%;
     padding: 15px 20px 16px 20px;
     min-height: 120px;
@@ -412,8 +562,8 @@ box-sizing: border-box;
     text-shadow: none;
     margin: 0 20px 0 0;
     position: absolute;
-    top: 55px;
-    left: 20px;
+    bottom: 10px;
+    left: 10px;
     line-height: 14pt;
     font-family: "Roboto", "Helvetica", sans-serif;
     font-weight: 700;
@@ -445,6 +595,7 @@ box-sizing: border-box;
  padding: 0 40px;
  margin: 0 auto;
  padding: 70px 0;
+ overflow: hidden;
  
 }
 
@@ -481,6 +632,7 @@ box-sizing: border-box;
     float: left;
     padding: 7px 0 0 40px;
     max-width: 525px;
+    overflow: hidden;
 
 }
 
@@ -497,6 +649,7 @@ box-sizing: border-box;
     float: left;
     margin-left: 10px;
     margin-top: 10px;
+    bottom: 40px;
 
 }
 
@@ -508,6 +661,16 @@ color: #FFF;
 line-height: 22pt;
 font-size: 20px;
 }
+
+#persontest{
+    overflow: hidden;
+    
+    margin: 25px 0 0 0;
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+
+}
+
 
 
 #logos{
@@ -521,15 +684,24 @@ font-size: 20px;
 
 }
 
+.logospan{
+    width: 24%;
+    vertical-align: top;
+  
+    padding: 25px 25px;
+
+
+
+}
+
+
 #testcontainer{
 
 margin: 0;
 position: relative;
-left: 0;
+left: 10px;
 overflow: hidden;
 padding-top: 50px;
-
-
 }
 
 
@@ -562,3 +734,155 @@ overflow: hidden;
     float: left;
     padding: 10px;
 }
+
+#footer{
+    background-color: #3b3e4b;
+    overflow: hidden;
+    padding: 35px 0 0 0;
+    padding-top: 15%;
+}
+
+.howcolumn1
+{
+
+    overflow: hidden;
+    float: left;
+    margin: 0 1.5%;
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+.fa
+{
+
+    padding: 0 3% 0 35px;
+    position: relative;
+    margin: 0 0 25px ;
+    overflow: hidden;
+
+
+} 
+
+.fa-check{
+color: #ee7541;
+top: 1px;
+font-size: 42px;
+overflow: hidden;
+
+
+}
+
+.howp{
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+
+
+}
+
+.howp2{
+
+    width: 30%;
+    overflow: hidden;
+    margin: 0 1.5%;
+    color: #6b6b6b;
+   
+
+}
+
+.howcolumn2
+{
+    width: 40%;
+    overflow: hidden;
+    float: right;
+    margin: 0 1.5%;
+    font-family: "Roboto", "Helvetica", sans-serif;
+
+}
+
+
+.insights{
+
+    width: 33.33%;
+    overflow: hidden;
+    padding: 0 20px 2px 0;
+    float: right;
+    top: 10px;
+}
+
+.connect{
+
+    width: 33.33%;
+    padding: 0 20px 2px 0;
+    float: left;
+    margin-right: 10px;
+
+}
+
+
+.ip{
+    margin: -4px 0 0 0;
+    color: #FFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    max-width: 240px;
+
+
+}
+
+.icon{
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+}
+
+.fa-facebook-official
+{
+    color: #ee7541;
+    top: 1px;
+    font-size: 42px;
+    
+
+}
+
+.fa-twitter-square{
+    color: #ee7541;
+    top: 1px;
+    font-size: 42px;
+
+
+
+}
+
+.fa-linkedin-square{
+    color: #ee7541;
+    top: 1px;
+    font-size: 42px;
+
+
+
+}
+
+.fa-youtube-square{
+    color: #ee7541;
+    top: 1px;
+    font-size: 42px;
+
+
+}
+
+
+.fa-google-plus-official{
+    color: #ee7541;
+    top: 1px;
+    font-size: 42px;
+
+
+
+}
+
