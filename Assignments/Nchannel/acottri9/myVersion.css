@@ -13,12 +13,7 @@ h1
     text-align:center;
 }
 ul { list-style-type: none; }
-div
-{
-	/*
-     display:inline-block
-	 */
-}
+
 .nav
 {
     background-color: grey;
@@ -101,4 +96,8 @@ ul.fancy-list
 {
     background-color:navy;
     color:white;
+}
+.noStyle
+{
+    text-decoration: none;
 }
