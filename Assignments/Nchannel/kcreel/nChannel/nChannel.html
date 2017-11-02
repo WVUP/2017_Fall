@@ -13,6 +13,9 @@
         body {
             
         }
+        .hover:hover{
+            cursor: pointer;
+        }
         .row1{
             min-height:56px;
             position: fixed;
@@ -121,6 +124,9 @@
             color: #7f8291;
             bottom: 0px;
             line-height: 3;
+        }
+        .frumunda:hover{
+            cursor: pointer;
         }
         .frumunda1 {
             position: fixed;
@@ -261,7 +267,8 @@
         .head7{
             text-align: center;
             color: white;
-            font-size: 25px;
+            font-size: 30px;
+            font-weight: bold;
         }
         .body7{
             text-align: center;
@@ -337,6 +344,10 @@
             margin-left: 10px;
             margin-right: 10px;
             height: 35px;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+            font-style: italic;
         }
         .chat7{
             background-color: #00b2ee;
@@ -345,13 +356,18 @@
             margin-left: 10px;
             margin-right: 10px;
             height: 35px;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+            font-style: italic;
         }
         .circle10{
-            background-color: orange;
+            background-color: #ee7541;
             border-radius: 50%;
             width:10px;
             height:25px;
             margin: 2%;
+            line-height: 2px;
         }
         .head10 {
             color: white;
@@ -370,7 +386,7 @@
                 <div class="navTop">support</div>
             </div>
             <div>
-                <img src="n.png" alt="" style="float:left; bottom:0px;" width="110px" >
+                <img class="hover" src="n.png" alt="" style="float:left; bottom:0px;" width="110px" >
             </div>
             <ul>
                 <li class="navBot">
@@ -394,15 +410,15 @@
     <div class="container-fluid row2" style="background: #9cdcf2 ">
         <div class="container">
             <div class="">
-                <div class="frumunda1">chat now</div>
-                <div class="frumunda2">1-800-714-0882</div>
-                <div class="frumunda3">get a quote</div>
-                <div class="frumunda4"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="frumunda frumunda1">chat now</div>
+                <div class="frumunda frumunda2">1-800-714-0882</div>
+                <div class="frumunda frumunda3">get a quote</div>
+                <div class="frumunda frumunda4"><i class="fa fa-search" aria-hidden="true"></i></div>
             </div>
             <div class="head">Sell more...online and in store.</div>
             <div>Increase revenue by selling more products in more channels like eCommerce <br>webstores and marketplaces. 
             Grow without the growing pains.</div>
-            <div class="learn">learn more</div>
+            <div class="learn hover">learn more</div>
             <div class="curlyPic">
                 
                 <div><img src="connect.png" alt=""></div>
@@ -466,7 +482,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feat">See All Integrations</div>
+            <div class="feat hover">See All Integrations</div>
         </div>
     </div>
     <div class="container-fluid row5" style="background: #f4f4f4">
@@ -492,7 +508,7 @@
                             of evolutions of retail integration. So, we built a platform that works like it should. Learn more about 
                             all of the systems we can integrate.
                     </div>
-                    <div class="learn2">learn more</div>
+                    <div class="learn2 hover">learn more</div>
                 </div>
             </div>
         </div>
@@ -515,14 +531,14 @@
                 <div class="col box7">
                     <div style="font-size:20px;">Email Us for More Info</div>
                     <div class="row">
-                        <div class="email7 col-3">email us</div>
+                        <div class="email7 col-3 hover">email us</div>
                         <div class="body72 col-6">We have a solution for any scenario.</div>
                     </div>
                 </div>
                 <div class="col box7">
                     <div style="font-size:20px;">Chat with Us Online</div>
                     <div class="row">
-                        <div class="chat7 col-3">chat now</div>
+                        <div class="chat7 col-3 hover">chat now</div>
                         <div class="body72 col-6">Chat with us during business hours (ET).</div>
                     </div>
                 </div>
@@ -598,12 +614,13 @@
             <div class="row">
                 <div class="col">
                     <div class="head10">Connect</div>
-                    <div class="row" style="width:60%;">
-                        <div class="circle10 col-2"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                        <div class="circle10 col-2"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                        <div class="circle10 col-2">in</div>
-                        <div class="circle10 col-2"><i class="fa fa-youtube" aria-hidden="true"></i></div>
-                        <div class="circle10 col-2"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                    <div class="row" style="width:70%;">
+                        <div class="circle10 col"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="circle10 col"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="circle10 col">in</div>
+                        <div class="circle10 col"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                        <div class="circle10 col"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                        <div class="col"></div>
                     </div>
                 </div>
                 <div class="col">
@@ -615,15 +632,15 @@
                 <div class="col">
                     <div class="head10">Explore More</div>
                     <div class="row">
-                        <div class="col-6 text10">about</div>
-                        <div class="col-6 text10">careers</div>
-                        <div class="col-6 text10">security</div>
-                        <div class="col-6 text10">pci compliance</div>
-                        <div class="col-6 text10">privacy policy</div>
-                        <div class="col-6 text10">industries</div>
-                        <div class="col-6 text10">for investors</div>
-                        <div class="col-6 text10">contact</div>
-                        <div class="col-6 text10">press releases</div>
+                        <div class="col-6 text10 hover">about</div>
+                        <div class="col-6 text10 hover">careers</div>
+                        <div class="col-6 text10 hover">security</div>
+                        <div class="col-6 text10 hover">pci compliance</div>
+                        <div class="col-6 text10 hover">privacy policy</div>
+                        <div class="col-6 text10 hover">industries</div>
+                        <div class="col-6 text10 hover">for investors</div>
+                        <div class="col-6 text10 hover">contact</div>
+                        <div class="col-6 text10 hover">press releases</div>
                     </div>
                 </div>
             </div>
