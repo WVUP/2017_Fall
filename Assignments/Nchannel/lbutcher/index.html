@@ -132,6 +132,39 @@
         #container8{
             background: white;
             padding: 5% 20%;
+            text-align: center;
+            align-content: center;
+        }
+        .blueBox{
+            background: #22b0e6;
+            color: white;
+            border-radius: 0pt 15pt 0pt 15pt;
+            padding: 5% 5%;
+            text-align: left;
+        }
+        .personInfo{
+            text-align: right;
+            margin: 2% 2%;
+            padding: 2% 0;
+        }
+
+        #container9{
+            background: lightgray;
+            padding: 5% 15%;
+        }
+
+        #container10{
+            background: rgb(24, 23, 23);
+            padding: 3% 15%;
+            color: white;
+        }
+        .exploreMoreList{
+            list-style: none;
+            display: flex;
+        }
+
+        .exploreMoreList, li{
+            padding: 0 10%;
         }
 
     </style>    
@@ -355,16 +388,146 @@
         
         <div class="row">
             <div class="col-5">
-                <h2><strong>Helping Our Customers Grow</strong></h2>
+                <h2 style="text-align: right"><strong>Helping Our Customers Grow</strong></h2>
             </div>
             <div class="col-7">
-                <p>We've definitely done this before! We've helped a multitude
+                <p style="text-align: left">We've definitely done this before! We've helped a multitude
                      of customers in a multitude of industries grow their businesses.
                       Check out some of the case studies below to get an idea of what
                        kind of solution we can provide for you.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-4" style="text-align: right">
+                <img src="sales1.png" alt="">
+            </div>
+            <div class="col-4" style="text-align:center">
+                <img src="sales3.png" alt="">
+            </div>
+            <div class="col-4" style="text-align: left">
+                <img src="sales2.png" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="blueBox">
+                    <p><strong>There's no question. We could not have achieved this
+                         growth without our nChannel platform. It paid for 
+                         itself fast. Now it saves hours and money every day.
+                        </strong></p>
+                </div>
+                <div style="display: flex">
+                    <div class="personInfo">
+                        <h5>Mike's Archery</h5>
+                        <cite>Owner and GM, Bryan Dickness</cite>
+                        <a href="#">Download Case Study</a>
+                        <!-- <img src="mike.png" alt=""> -->
+                    </div>
+                    <div>
+                        <img src="mike.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="blueBox">
+                    <p>
+                        <strong>We make specials show up faster, 
+                        and specify in advance when they start 
+                        and stop. Even better, once we attract 
+                        a new customer from a less-agile retailer, 
+                        we keep them.
+                    </strong></p>
+                </div>
+                <div style="display: flex">
+                    <div class="personInfo">
+                        <h5>Midwest Photo Exchange</h5>
+                        <cite>President, Moishe Appelbaum</cite>
+                        <a href="#">Download Case Study</a>
+                    </div>
+                    <div>
+                        <img src="Midwest-Photo-Exchange-Moishe.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="container-fill" id="container9">
+        <div class="row">
+            <div class="col-3">
+                <img src="shopify-partner-logo_onwhite.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="netsuite-suitecloud-partner.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="microsoft-partner.png" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="ebay-compatible-app.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="Bigcommerce-Partner-Badge-BW.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="right-now-ebay.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="LS-Final-2.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="2017.TopCommerceSeal-3.png" style="width: 175px; height: 128px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fill" id="container10">
+        <div class="row">
+            <div class="col-3">
+                <h4>Connect</h4>
+                <div style="display: inline">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4>Multichannel Insights</h4>
+                <h6>November 2, 2017</h6>
+                <p>Project Management Tips for Creating
+                     a Successful eCommerce Website</p>
+                <a href="#">View Article</a>
+            </div>
+            <div class="col-5">
+                <h4>Explore More</h4>
+               <div>
+                   <ul class="exploreMoreList">
+                       <li>about</li>
+                       <li>careers</li>
+                   </ul>
+               </div>
+               <div>
+                   <ul class="exploreMoreList">
+                       <li>security</li>
+                       <li>pci compliance</li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+    </div>  
 
 </body>
 </html>
