@@ -55,6 +55,12 @@ ul { list-style-type: none; }
 {
     background-color : lightgrey;
 }
+.white
+{
+	color:white;
+	text-decoration: none;
+}
+
 .roundedButton:hover
 {
     border-radius: 12px;
@@ -96,6 +102,7 @@ ul.fancy-list
 {
     background-color:navy;
     color:white;
+	text-decoration: none;
 }
 .noStyle
 {
