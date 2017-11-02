@@ -52,6 +52,10 @@ div
 {
     background-color : red;
 }
+.yellowBackground
+{
+    background-color: yellow;
+}
 .greyBackground
 {
     background-color : lightgrey;
