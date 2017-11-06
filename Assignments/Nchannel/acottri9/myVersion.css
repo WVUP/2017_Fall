@@ -140,4 +140,5 @@ ul.fancy-list
      background-color: blue;
      color:white;
       border:1px solid #000; 
+      clear:both; 
 }
