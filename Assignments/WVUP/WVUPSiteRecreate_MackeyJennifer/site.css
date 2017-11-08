@@ -4,13 +4,32 @@ html
     
 }
 
-#container{
-    max-width:1100px;
-    margin-top: 0;
-    float: center;
-    margin-left: 22%;
-    margin-bottom: 0;
+#sitecontainer{
+
+    margin-left: 100px;
     
+}
+#container{
+
+
+  
+    background: linear-gradient( #E3B326, rgba(238, 204, 105, 0.6));
+    top: 0;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .34);
+    max-width:1100px;
+
+    
+    
+}
+
+#cap{
+
+    float: left;
+   top: 0;
     
 }
 
@@ -31,22 +50,22 @@ li{
     padding-right: 10px;
     font-size: 75%;
 }
-a:link {
+.headertext:link {
     color: #E3B326;
 }
 
 /* visited link */
-a:visited {
+.headertext:visited {
     color: #E3B326;
 }
 
 /* mouse over link */
-a:hover {
+.headertext:hover {
     color: white;
 }
 
 /* selected link */
-a:active {
+.headertext:active {
     color: yellow;
 }  
 #headernavbar
@@ -65,7 +84,7 @@ a:active {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+    z-index: 100;
     
 }
 
@@ -77,7 +96,7 @@ a:active {
     background:  #FFFFFF;    
     float:right;
     text-align: center;
-    overflow: hidden; 
+  
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-bottom-right-radius: 20px;
@@ -85,43 +104,76 @@ a:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, .34);
 }
 
-#leftsidebar {
-    
-    display: block;
-    position: relative;
-    min-height: 215%;
-    background: linear-gradient( #E3B326, rgba(238, 204, 105, 0.6));
-    text-align: right;
-    float: none;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-radius: 10px;
-    margin: 0;
-    margin-bottom: 0;
-    z-index:-1;
-    position: relative;
-  }
 
 #footer
   {  clear: both;
     width: 80%;
     float: right;
     background: white;
-    text-align: center;
+  
     margin-top: 5px;
-    height: auto;
     padding-bottom: 25px;
-    padding-top: 15px;
+    padding-top: 10px;
     background: #FFFFFF;
-    text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   
     border-radius: 10px;
-    color: gray;
-    font-size: 75%;
+    
     overflow:hidden;
     z-index: 1;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, .34);
   }
+
+
+.footertext{
+    text-align: center;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #555;
+    font-size: 16px;
+  
+    background: white;
+    text-align: center;
+    margin-top: 5px;
+
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: normal;
+
+
+
+}
+
+.footheaderlinks{
+ font-size: 16px;
+ text-align: center;
+ 
+
+}
+
+.footerlinks:link {
+    color: #111683;
+   
+    
+}  
+
+/* visited link */
+.footerlinks:visited {
+    color: #111683;
+}  
+
+
+/* mouse over link */
+.footerlinks:hover {
+    color: #111683;
+}  
+
+
+/* selected link */
+.footerlinks:active {
+    color:   #111683;
+}  
+
 
 
   #mainimage{
@@ -183,9 +235,10 @@ a:active {
     margin: 0;
     padding: 0;
     vertical-align: baseline;
+    
 }
 
-#calendar{
+#calendarcontainer{
     background: #5796D1;
     box-shadow: 0 0 10px rgba(0, 0, 0, .34);
     margin-left: 10px;
@@ -199,6 +252,17 @@ a:active {
     position: relative;
     z-index: 100;
     color: black;
+}
+
+#calendar{
+
+
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-left: 25%;
+    color: #111683;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
     
 #news{
@@ -236,12 +300,23 @@ a:active {
 
 .sidebarlinks
 {
-    text-align: left;
-    margin-right: 10px;
+    text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
+    padding-left: 120px;
+    position: absolute;
+  
+    left: 0;
+    top: 50%;
+    margin-right: 110px;
 }
 
+.sidebarbuttons{
+
+    bottom: 0;
+    left: 0;
+    float: left;
+    margin-right: 110px;
+}
 
 .section
 {
@@ -300,3 +375,57 @@ li.dropdown {
     text-align: left;
 }
 
+/*Calendar CSS*/
+
+/*Used WVUP's CSS for the calendar to play around with functionality and code, code does not belong to me, might or might not change*/
+
+.em-calendar-wrapper table, #calendar_wrap table {
+    background-color: rgba(255,255,255,.20);
+}
+.em-calendar-wrapper table, .em-calendar-wrapper td {
+    border-color: #111683 !important;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+.em-calendar-wrapper table, #calendar_wrap table {
+    border-radius: 14px;
+    border: 1px solid #111683;
+    overflow: hidden;
+    background-color: #B7D1EB;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    margin-top: 0;
+
+}
+
+.table.em-calendar thead, table td a.em-calnav, table.em-calendar tr.days-names, table.em-calendar td.month_name {
+    background-color: #111683 !important;
+    color: #E3B11F !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.tbody{
+
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+.a-eventful
+{
+    color: red !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.eventless-post, .eventless, .eventless-pre{
+
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
