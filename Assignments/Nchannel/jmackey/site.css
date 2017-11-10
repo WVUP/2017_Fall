@@ -6,6 +6,8 @@ html{
 }
 
 
+
+
 .homep{
     color: #FFF;
     font-family: "Kreon", "Times New Roman", serif;
@@ -17,6 +19,16 @@ html{
 }
 
 
+#contactheader{
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+    float: right;
+    padding-right: 15%;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    
+    z-index: 10px;
+}
 
 #container{
     margin: 0 auto;
@@ -36,6 +48,11 @@ html{
     background: #3b3e4b;
     height: 85px;
     top: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+           
+
 }
 
 .chatnow 
@@ -99,17 +116,17 @@ html{
 
 #homebody{
 
-
+top: 0;
     
     background-color: #FFF;
-    padding-top: 100px;
+ 
 
 
 }
 #wrapper {
     width: 100%;
     margin: 0;
-  
+  top: 0;
     background-color: #cfcfcf;
 }
 
@@ -122,14 +139,6 @@ html{
     z-index: 10;
 
     width: 100%;
-}
-#header {
-
-    float: 0;
-    width: 100%;
-    margin: 0;
-    position: fixed;
-    z-index: 10000;
 }
 
 
@@ -223,7 +232,7 @@ html{
     
         z-index: 100000;
         margin: 0 auto;
-        top: 105px;
+        top: 113px;
         right: 100px;
         padding-bottom: 50px;
       
@@ -253,7 +262,7 @@ html{
     padding: 0 0 50px 0;
     margin: 0;
     background-color: #f4f4f4;
-    top: 0;
+  
 
 }
 
@@ -270,7 +279,7 @@ html{
     min-width: 1280px;
     padding-bottom: 40px;
     overflow: hidden;
-    top: 0;
+  
     position: relative;
 
   
@@ -500,6 +509,7 @@ a{
         background-color: #f4f4f4;
         padding: 55px 0 0 0;
         min-height: 598px;
+        width: 100%;
     }
     
 
@@ -650,7 +660,7 @@ a{
  margin: 0 auto;
  padding: 70px 0;
  overflow: hidden;
- height: 920px;
+ height: 700px;
  max-width: 1280px;
  
 }
@@ -667,9 +677,12 @@ a{
 
 .testimonals{
 
-    width: 44%;
-    margin: 0 3%;
+    position: relative;
     float: left;
+
+    width: 420px;
+    overflow:hidden;
+  
     
 }
 
@@ -745,6 +758,7 @@ font-family: "Kreon", "Times New Roman", serif;
 color: #FFF;
 line-height: 22pt;
 font-size: 20px;
+padding-top: 10%;
 }
 
 #persontest{
@@ -755,6 +769,8 @@ font-size: 20px;
     color: #6b6b6b;
     font-family: "Roboto", "Helvetica", sans-serif;
     bottom: 0;
+    position: relative;
+    z-index: 10;
 
 }
 
