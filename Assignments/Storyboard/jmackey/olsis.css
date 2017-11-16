@@ -58,7 +58,7 @@ height: 50%;
 
     border: 3px solid #CC8800;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
     font-size: 75%;
     background: #E3B11F;
@@ -116,3 +116,48 @@ height: 50%;
 }
 
 
+.welcomemessage{
+
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 40px;
+    margin-left: 20%;
+    text-align: justify;
+    background: #D0C83D;
+    border-radius: 40px;
+    font-size: 75%;
+    float: left;
+    width: 25%;
+    position: relative;
+    left: 5px;
+    overflow:hidden;
+    top: 0px;
+
+}
+
+.loginform
+{
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 0;
+    text-align: center;
+    background: #D0C83D;
+    border-radius: 40px;
+    font-size: 75%;
+    float: left;
+    overflow: hidden;
+    width: 15%;
+  position: relative;
+  left: 5px;
+  overflow: hidden;
+
+}
+
+.logincontainer{
+
+    margin-left: 0px;
+    top: 20%;
+    position: absolute;
+}
