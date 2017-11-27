@@ -1,0 +1,49 @@
+html, body{
+    /* margin: 0%; */
+    background: white;
+    /* padding: 0%; */
+}
+
+.leftPane{
+    background: rgb(70, 66, 77);
+
+}
+
+.middlePane{
+    background: rgb(85, 11, 119);
+}
+
+.rightPane{
+    background: gray;
+    width: 100;
+    /* margin: 0%; */
+    /* padding: 0%; */
+}
+
+.rowContainer{
+    width: 99%;
+    /* margin-right: 0%; */
+    /* margin: 0%; */
+}
+
+
+.rightPaneRow{
+    background: white;
+    position: sticky;
+}
+
+.logoRow{
+    padding-top: 3%;
+}
+
+.twitchLogo{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* fount at https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
+}
+
+.twitchGlitchyLogo{
+    font-size: 30pt; 
+    color: white;
+}
