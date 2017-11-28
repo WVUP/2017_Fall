@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+   
+    <link href="style.css" rel="stylesheet" media="screen">
+    <script src= "scripts/functions.js"></script>
+</head>
+<body>
+
+        <div class = "navbar fixed-top goldBackground navbar-default nav">
+                <a class = "navText" href = "mainMenu.html" >Menu</a>
+                <a class = "navText" href = "personalInformation.html" >Personal Information </a>
+                
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle goldBackground" type="button" id="fAID" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Student Services
+                </button>
+                <div class="dropdown-menu goldBackground" aria-labelledby="fAID">
+                  <button class="dropdown-item goldBackground" type="button">Admission</button>
+                  <button class="dropdown-item goldBackground" type="button" onclick="location.href='registration.html';">Registration</button>
+                  <button class="dropdown-item goldBackground" type="button" onclick="location.href='studentRecords.html';">Student Records</button>
+                  <button class="dropdown-item goldBackground" type="button">Student Accounts</button>
+                  <button class="dropdown-item goldBackground" type="button">National Student Clearinghouse</button>
+                  <button class="dropdown-item goldBackground" type="button">Apply for Graduation</button>
+                  <button class="dropdown-item goldBackground" type="button">Scholarship Application</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle goldBackground" type="button" id="Eval" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Evalulations and Elections
+                </button>
+                <div class="dropdown-menu goldBackground" aria-labelledby="Eval">
+                        <button class="dropdown-item goldBackground" type="button">Financial Aid Status</a>
+                        <button class="dropdown-item goldBackground" type="button">Financial Aid Eligibity</a>
+                        <button class="dropdown-item goldBackground" type="button">Financial Aid Awards </a>
+                            <button class="dropdown-item goldBackground" type="button">General Financial Aid </a>
+                </div>
+        </div>
+            <a class = "navText" href = "" >Transfer Course Equivalencies </a>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle goldBackground" type="button" id="Other" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Other Links
+                    </button>
+                    <div class="dropdown-menu goldBackground" aria-labelledby="Other">
+                            <button class="dropdown-item goldBackground" type="button" onclick="location.href='http://www.wvup.edu';">Link to WVUP</button>
+                            <button class="dropdown-item goldBackground" type="button" onclick="location.href='https://ilearn-wvup.wvnet.edu/';">Link to Blackboard</button>
+                            <button class="dropdown-item goldBackground" type="button" >Link to your.wvup.edu </button>
+                    </div>
+            </div>
+        </div>
+    
+        <input class="form-control" style = "display:inline-block;margin-top : 10%; margin-left:5%; width : 5%" placeholder="Search" name="srch-term" id="srch-term" type="text">
+        <input type="button" Value = "Go">
+        <div style = "margin-left : 5%">
+        Click here to sign <a href = "home.html">out</a>.  
+        </div>
+
+    <div style = "float:right; margin-top : 5%;">
+
+       <h2>Personal Information</h2>
+             Which  of the following do you wish to update?
+    </div>
+    <div class = "container">
+        <div id = "overwriteElement" class = "jumboTron goldBackground" style = "margin-top : 15%; width : 30%;height : 30%; display : grid; float:left">
+            <input type = "password" id = "current" style = "margin-top: auto" placeholder= "Please enter your current Pin">
+            <input type = "password" id = "new" style = "margin-top: auto" placeholder= "Enter new Pin">
+            <input type = "password" id = "confirm" style = "margin-top: auto" placeholder = "Confirm new Pin">
+            <input type = "button" id = "updateButton" style = "margin: auto" value = "Update Pin">
+        </div>
+        <div class = "btn-group-vertical centerOnPage">
+                <button type="button" class="btn btn-secondary  goldBackground  ">Change Pin</button>
+                <button type="button" class="btn btn-secondary  goldBackground ">Security Question</button>
+            
+                <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle  goldBackground " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu  goldBackground " aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item  goldBackground " href="#">Dropdown link</a>
+                    <a class="dropdown-item  goldBackground " href="#">Dropdown link</a>
+                </div>
+                </div>
+        </div> 
+    </div>
+</body>
+</html>

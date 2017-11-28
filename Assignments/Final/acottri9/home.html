@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" media="screen">
+    <script src= "scripts/functions.js"></script>
+    <title>Olsis Login</title>
+</head>
+<body>
+
+        <div class = "navbar fixed-top goldBackground navbar-default nav">
+        
+        <a class = "navText" href = "" >Home page</a>
+        <a class = "navText" href = "" >Catalogue </a>
+        <a class = "navText" href = "" >Schedule </a>
+        <a class = "navText" href = "" >Events Calendar </a>
+        <a class = "navText" href = "" >Office Directory </a>
+        <a class = "navText" href = "" >Contact Info </a>
+        <a class = "navText" href = "" >Other Links</a>
+        </div>
+        <img src = "images/wvupLogo.jpg" style = "margin-top:2%;"> </img>
+    <div style = " margin-top:10%">
+        <div class = "container goldBackground center" style = "width : 50%; float:left; margin-left:10%; height : 50%;"> 
+            <div style = "margin-top : 5%">
+                Please enter your user Identification Number (ID) and your Personal Identification Number (PIN). When finished, click Login. 
+                When you are finished, 
+                please Exit and close your browser to protect your privacy. <b>You may use your WVUPID number (which begins with a 9) or your Social Security number as your User ID.</b>
+                Your initial PIN is your birth date in six digits. (Such as if your birthday is January 3, 1979, your initial PIN is 010379.) At your first login to the system, you will be required to change your PIN. 
+                The PIN field allows a maximum of 6 characters (letters or numbers). When you change your PIN, you will also be required to enter a security question and answer.
+                ***************************************************************************
+                <b>If this is not your first login to the system, you have already changed your PIN from the default. 
+                If you forget your PIN,
+                enter your User ID and then click the "Forgot PIN?" button.</b> When you correctly answer your security question, you will be prompted to create a new PIN.
+            </div>
+       
+        </div>
+        <form>
+        <div class = "goldBackground container" style = "height : 20%; width : 20%; float: right; margin-right : 15%">
+            <div class = "wrapper" style = "margin-top : 10%; ">
+                <input onChange="log('name')" id = 'name' type = "text" placeholder= "Username" required>
+                <div style = "margin-top: 5%">
+
+               
+                    <input onChange="log('password')" id = 'password' type = "password" placeholder= "Pin" required>
+                 </div>
+                <div style = "margin-top : 5%">
+                    <input type = "button" id = "Login" value = "Login" onClick = "validateUser('name','password')">
+                    <input type = "button" id = "forgot" value = "Forgot Pin?" onClick = "">
+                </div>
+                New users should click <a href = "">here</a> 
+            </div>
+        </div>
+        </form>
+       
+     </div>
+</body>
+</html>
