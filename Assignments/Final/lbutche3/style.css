@@ -40,10 +40,65 @@ html, body{
     display: block;
     width: 100%;
     height: auto;
-    /* fount at https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
+    /* found at https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
 }
 
 .twitchGlitchyLogo{
     font-size: 30pt; 
     color: white;
+    padding-top: 4%;
+    padding-left: 12%;
+}
+
+.userProfileRow{
+    padding-top: 5%;
+    background: rgb(51, 51, 116);
+    padding-bottom: 5%;
+}
+
+#userStatusIcon{
+    color: green;
+
+}
+
+.userStatus{
+    color: white;
+}
+
+#userName{
+    color: white;
+}
+
+#expandBar{
+    color: rgb(85, 11, 119);
+    font-size: 35pt;
+    /* font-stretch: expanded; */
+    width: 95%;
+    text-align: center;
+}
+
+.searchRow{
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1%;
+    
+    /* background: gray; */
+    /* width: inherit; */
+}
+
+.userDetails{
+    height: 100%;
+
+}
+
+.inputField{
+    border-radius: 10px;
+    background: white;
+    clear: both;
+    height: 50px;
+}
+
+.searchIcon{
+    background: black;
+    border-radius: 10px;
 }
