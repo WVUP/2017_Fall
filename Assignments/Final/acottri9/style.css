@@ -1,0 +1,100 @@
+body
+{
+    background-color : rgb(200, 241, 252);
+}
+a
+{
+    text-decoration-color: navy
+}
+.center
+{
+    width : 30%;
+    margin:auto;
+    text-align: left;
+}
+.wrapper 
+{
+    text-align: center;
+}
+
+.centerOnPage
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+.navText
+{
+    text-align: justify;
+    text-decoration: none;
+    overflow: hidden;
+}
+.mainMenuText
+{
+    border:1px solid black;
+    width: 40%;
+    height: 15%;
+    margin:0 auto;
+
+}
+.banner
+{
+    position: relative;
+    width: 60%;
+    height: 50%;
+    margin:0 auto;
+   
+    background-image: url(images/seasonalBanner.png);
+    background-repeat: no-repeat;
+    
+}
+.bannerText
+{
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+.goldBackground
+{
+    background-color:gold;
+    border:1px solid black;
+}
+
+table 
+{
+width: 100%; border: 4px solid gold; 
+}
+table th 
+{
+   background: gold; color:white;
+}
+th, td 
+{ 
+   border: 1px solid silver; 
+}
+table tbody tr:nth-child(even) 
+{
+   background: rgb(252, 246, 246); 
+}
+table tbody tr:nth-child(odd) 
+{
+   background: lightgoldenrodyellow; 
+}
+video
+{
+	border : 0.5mm ridge black;
+	height : auto;
+	max-width : 100%;
+}
