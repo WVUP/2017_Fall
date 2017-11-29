@@ -1,0 +1,78 @@
+iframe#footer
+{
+	
+}
+#footer
+{
+	background-color: #333;
+	color:#999;
+	padding: 2.5rem 4rem 0rem;
+}
+#footer .copyright
+{
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.foot-navi
+{
+	padding-left: 0em !important;
+	list-style-type: none;
+}
+.foot-navi .title
+{
+	margin-left:-0.75rem;
+	font-weight: bold;
+	/*border-bottom: 2px solid #999;*/
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	/*width:100%;*/
+	display: block;
+	margin-bottom: 0.25rem;
+}
+.foot-navi 
+{
+	
+}
+#footer a:active, #footer a:visited
+{
+	color:#999;
+}
+#footer a
+{
+	font-weight: 500;
+	cursor: pointer;
+	color: #999;
+}
+#foot-about
+{
+	font-weight: 200;
+	line-height: 2;
+
+}
+#foot-about .location
+{
+	color: #CCC;
+	font-weight: 300;
+	font-size: 1.25rem;
+	/*margin-left:-1.5rem;*/
+}
+#foot-about .location i
+{
+	margin-right: 0.75rem;
+	color: #999;
+	display: none;
+}
+#foot-about .detail
+{
+	text-indent: 0rem;
+}
+#foot-about .detail i
+{
+	 color:#666;
+	 margin-right: 0.5rem;
+}
+#foot-about .phone
+{
+	color: #7AC;
+}

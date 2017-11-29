@@ -1,0 +1,178 @@
+body, html
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	height: 100%;
+
+}
+html body
+{
+	background-color: #333;
+}
+html {
+    font-size: 20px;
+}
+@media(max-width: 1580px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media(max-width: 980px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media(max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media(max-width: 520px) {
+  html {
+    font-size: 12px;
+  }
+}
+#top-olsis
+{
+	padding: 0;
+}
+
+#nav
+{
+	width:100%;
+	height: 72px;
+	border:none;
+}
+
+#footer
+{
+	width:100%;
+	height:100%;
+	border:none;
+	padding: 0rem;
+}
+.bg-olsis
+{
+	/*background-color: #78B4DC;*/
+	
+}
+
+#top-olsis
+{
+
+	color: #FFF;
+}
+
+#hero-olsis
+{
+	background-color: transparent !important;
+	margin-bottom: 0rem !important;
+}
+#hero-back
+{ 
+	background-image: url('assets/mountains1.jpg');
+	background-size: 1680px;
+	background-origin: 0px;
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	z-index: -101;
+}
+#hero-back, .shade1
+{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+}
+.shade1
+{
+	background-color: rgba(0,0,0, 0.35);
+	z-index: -100;
+}
+
+.btn-olsis
+{
+	background-color: #7AC;
+	border-color: #7AC;
+	color: #FFF;
+	font-weight: bold;
+}
+.btn-olsis2
+{
+	background-color: #FA4;
+	border-color: #FA4;
+	color: #FFF;
+}
+#hero-olsis h1
+{
+	text-shadow: #333 0px 2px 1px;
+}
+#hero-olsis h1 span
+{
+	color:#FA4;
+}
+#hero-olsis .lead
+{
+	text-shadow: #333 0px 2px 1px;
+	margin-bottom: 0.75rem;
+	color: #FFF;
+	font-size: 1.5rem;
+}
+#hero-olsis .lead span
+{
+	color: #ADF;
+
+}
+#hero-olsis hr
+{
+	background-color: #CCC;
+}
+
+.caption2
+{
+	font-weight: 300;
+	text-align: right;
+	font-size: 1.1rem;
+	text-shadow: black 0px 2px 1px;
+	margin-top: 0px;
+}
+.jumbotron
+{
+	display: inline-block;
+}
+a:active, a:visited
+{
+	color:#FA4;
+}
+a
+{
+	font-weight: 500;
+	cursor: pointer;
+	color: #FA4;
+}
+
+a:hover
+{
+	color: #FA4 !important;
+	
+	/**/
+}
+a:-webkit-any-link
+{
+	text-decoration: none !important;
+	/*text-shadow: 0px 1px #4581AB;*/
+}
+html body#error 
+{
+	background-color: transparent;
+}
+#error h1
+{
+	color: white;
+}
+iframe, html { overflow: hidden; }
+
+img#logo
+{
+	image-rendering: optimizeSpeed;	
+}
