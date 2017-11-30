@@ -24,6 +24,14 @@ function validateUser(userID,pinID, errorPlaceID)
 	}
 	else
 	{
+        var exists = false;
+        for(var i = 0; i < userNames.length ; i++)
+        {
+            if(username == userNames[i] && password == passwords[i])
+            {
+                exists = true;
+            }
+        }
         alert('Invalid username or password');
 	}
 }
