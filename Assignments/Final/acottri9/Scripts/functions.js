@@ -30,6 +30,7 @@ function validateUser(userID,pinID, errorPlaceID)
             if(username == userNames[i] && password == passwords[i])
             {
                 exists = true;
+                window.location.href = "mainMenu.html"
             }
         }
         alert('Invalid username or password');
