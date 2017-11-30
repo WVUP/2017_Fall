@@ -36,6 +36,15 @@ function validateUser(userID,pinID, errorPlaceID)
 	}
 }
 
+function changeText(currentID,newID,confirmID,FieldName)
+{
+    var currentField = document.getElementById(currentID);
+    var newField =  document.getElementById(newID);
+    var confirmField = document.getElementById(confirmID);
+    currentField.placeholder = "Please enter current " + FieldName;
+    newField.placeholder = "Please enter new " + FieldName;
+    confirmField.placeholder = "Confirm new " + FieldName;
+}
 
 function updateBannerText(elementID)
 {

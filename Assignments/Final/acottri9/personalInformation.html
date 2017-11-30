@@ -72,20 +72,15 @@
             <input type = "password" id = "current" style = "margin-top: auto" placeholder= "Please enter your current Pin">
             <input type = "password" id = "new" style = "margin-top: auto" placeholder= "Enter new Pin">
             <input type = "password" id = "confirm" style = "margin-top: auto" placeholder = "Confirm new Pin">
-            <input type = "button" id = "updateButton" style = "margin: auto" value = "Update Pin">
+            <input type = "button" id = "updateButton" style = "margin: auto" value = "Update">
         </div>
-        <div class = "btn-group-vertical centerOnPage">
-                <button type="button" class="btn btn-secondary  goldBackground  ">Change Pin</button>
-                <button type="button" class="btn btn-secondary  goldBackground ">Security Question</button>
-            
-                <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle  goldBackground " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </button>
-                <div class="dropdown-menu  goldBackground " aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item  goldBackground " href="#">Dropdown link</a>
-                    <a class="dropdown-item  goldBackground " href="#">Dropdown link</a>
-                </div>
+        <div class = "btn-group-vertical centerOnPage" style = "width :15%; text-align:left">
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Pin')">Change Pin</button>
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Question')">Security Question</button>
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Phone Number')">Change address and Phone</button>
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Email')">Email-Address</button>
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Emergency Contact')">Update Emergency Contacts</button>
+                <button type="button" class="btn btn-secondary  goldBackground text-left" onClick = "changeText('current','new','confirm','Name')">Name Change Information</button>
                 </div>
         </div> 
     </div>
