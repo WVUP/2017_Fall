@@ -1,6 +1,9 @@
 html, body{
     /* margin: 0%; */
     background: white;
+    /* max-height: 100%; */
+    /* need a better way of setting max-height */
+    max-width: 100%;
     /* padding: 0%; */
 }
 
@@ -80,21 +83,21 @@ html, body{
 .searchRow{
     position: fixed;
     bottom: 0;
-    padding-bottom: 1%;
-    
-    /* background: gray; */
+    /* padding-bottom: 1%; */
+    background: rgb(51, 51, 116);
+    display: inline-block;
     /* width: inherit; */
 }
 
 .userDetails{
-    height: 100%;
-
+    height: -webkit-fill-available;
+    /* border: 5pt black thick; */
 }
 
 .inputField{
     border-radius: 10px;
     background: white;
-    clear: both;
+    /* clear: both; */
     height: 50px;
 }
 
