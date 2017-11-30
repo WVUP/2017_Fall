@@ -11,6 +11,22 @@ nav
 {
 	display: block;
 }
+.top-bar
+{
+	width: 100%;
+	margin: 1.25rem 1rem 2rem;
+}
+.top-bar .brand
+{
+
+}
+.top-bar .top-bar-right
+{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-right: 2rem;
+}
 .brand div
 {
 	display: inline-block;
@@ -115,5 +131,5 @@ li.nav-item2
 {
 	font-size: 0.8rem;
 	color: white;
-	border-bottom: none; 
+	border-bottom: none;
 }
