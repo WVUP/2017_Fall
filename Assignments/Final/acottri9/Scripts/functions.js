@@ -24,10 +24,28 @@ function validateUser(userID,pinID, errorPlaceID)
 	}
 	else
 	{
+        var exists = false;
+        for(var i = 0; i < userNames.length ; i++)
+        {
+            if(username == userNames[i] && password == passwords[i])
+            {
+                exists = true;
+                window.location.href = "mainMenu.html"
+            }
+        }
         alert('Invalid username or password');
 	}
 }
 
+function changeText(currentID,newID,confirmID,FieldName)
+{
+    var currentField = document.getElementById(currentID);
+    var newField =  document.getElementById(newID);
+    var confirmField = document.getElementById(confirmID);
+    currentField.placeholder = "Please enter current " + FieldName;
+    newField.placeholder = "Please enter new " + FieldName;
+    confirmField.placeholder = "Confirm new " + FieldName;
+}
 
 function updateBannerText(elementID)
 {

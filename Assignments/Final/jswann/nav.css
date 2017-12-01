@@ -1,0 +1,135 @@
+html body
+{
+	background-color: transparent;
+}
+nav
+{
+	margin-bottom:2.5rem;
+	display: inline-block;
+}
+.navbar
+{
+	display: block;
+}
+.top-bar
+{
+	width: 100%;
+	margin: 1.25rem 1rem 2rem;
+}
+.top-bar .brand
+{
+
+}
+.top-bar .top-bar-right
+{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-right: 2rem;
+}
+.brand div
+{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+}
+
+.brand img
+{
+}
+.brand span.name
+{
+	line-height: 2.4rem;
+	font-size: 2.4rem;
+	font-style: italic;
+	font-weight: 600;
+	text-shadow: 0px 1px 1px #333;
+	color: white;
+}
+.brand span.caption
+{
+	color: #CCC;
+	font-size: 0.55rem;
+	line-height: 0.55rem;
+	display: block;
+	font-weight: normal;
+	text-shadow: 0px 1px 1px #333;
+	/*text-align: right;
+	padding-right: 4px;*/
+}
+.nav-item
+{
+	margin-right:0.5rem;
+}
+ul.navbar-nav
+{
+	margin-top:-18px;
+}
+a.navbar-brand
+{
+	font-weight: bold;
+}
+.btn-phone
+{
+	background-color: #FA2;
+	border-color: #FA2;
+	color: #FFF;
+	font-weight: 500;
+}
+.nav-phone
+{
+	color:white;
+	width:300px;
+	font-size: 1.4rem;
+}
+.navbar-nav
+{
+	
+	 -ms-flex-direction: column !important;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important; 
+}
+li.nav-item
+{
+	margin-bottom:1rem;
+}
+li.nav-item:before
+{
+	content:'+';
+	color: #CCC;
+}
+li.nav-item a.nav-link
+{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	display: inline;
+}
+li.nav-item.active a.nav-link
+{
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	border-bottom: 2px solid #FA2;
+	padding-bottom:0.2rem;
+	margin-bottom: 0.5rem;
+}
+.navbar-nav a:hover
+{
+	color: #7AC !important;
+}
+.navbar-nav hr
+{
+	background-color: #999;
+}
+li.nav-item2
+{
+	list-style: none;
+}
+.nav-link2
+{
+	font-size: 0.8rem;
+	color: white;
+	border-bottom: none;
+}

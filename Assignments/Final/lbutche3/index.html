@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src=script.js></script>
 
 </head>
 <body>
@@ -49,44 +50,45 @@
                     <!-- User friends and followers -->
                     <div class="row userDetails">
                         <div class="col-12">
-                                <i class="fa fa-bars" aria-hidden="true" id="expandBar"></i>
+                            <div>
+                                    <i class="fa fa-bars" aria-hidden="true" id="expandBar"></i>
+                            </div>
+                               
                         </div>
+                       
                     </div>
 
+                                <!-- Cann't get to work right   -->
+                    <!-- <div class="row searchRow">
+                            <div class="col-7">
+                                <input type="text" class="inputField" name="" placeholder="Search...">
+                            </div>  
+                            <div class="col-5 searchIcon">
+                                <i class="fa fa-search" aria-hidden="true" style="font-size: 28pt; text-align: center"></i>
+                            </div>
+                    </div> -->
                     
-                    <div class="row searchRow">
-                            <div class="col-10">
-                                <div >
-                                    <input type="text" class="inputField" name="" placeholder="Search...">
-                                </div>
-                            </div>
-                                
-                            <div class="col-2">
-                                <div class="searchIcon">
-                                        <i class="fa fa-search" aria-hidden="true" style="font-size: 28pt; text-align: center"></i>
-                                </div>
-                            </div>
-                            
-                    </div>  
-
                     
                     
                 </div>
 
                 <!-- Begin Middle Pant -->
                 <div class="col-10 middlePane">
-
+                    <!-- Add Game Stuff Here -->
+                    <div class="row" id="gameContent">
+                        <img src="SuperMarioOdyssey.jpg" alt="">
+                    </div>
                 </div>    
             </div>
 
             <div class="row rightPaneRow">
                     <div class="col-12 rightPane">
-                        <div>
-                                <i class="fa fa-angle-left" aria-hidden="true" style="font-size: 26pt"></i>
+                        <div style="top:220; position: fixed">
+                                <i class="fa fa-angle-left carot" aria-hidden="true"></i>
                         </div>
 
-                        <div style="bottom: 0">
-                                <i class="fa fa-angle-left" aria-hidden="true" style="font-size: 26pt"></i>
+                        <div style="bottom:220; position: fixed">
+                                <i class="fa fa-angle-left carot" aria-hidden="true"></i>
                         </div>
                     </div>
             </div>

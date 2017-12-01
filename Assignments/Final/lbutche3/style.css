@@ -1,6 +1,9 @@
 html, body{
     /* margin: 0%; */
     background: white;
+    /* max-height: 100%; */
+    /* need a better way of setting max-height */
+    max-width: 100%;
     /* padding: 0%; */
 }
 
@@ -14,8 +17,11 @@ html, body{
 }
 
 .rightPane{
-    background: gray;
+    background: rgba(0, 0, 0, 0.692);
     width: 100;
+    border-style: solid;
+    border-color: black;
+
     /* margin: 0%; */
     /* padding: 0%; */
 }
@@ -80,25 +86,38 @@ html, body{
 .searchRow{
     position: fixed;
     bottom: 0;
-    padding-bottom: 1%;
-    
-    /* background: gray; */
+    /* padding-bottom: 1%; */
+    background: rgb(51, 51, 116);
+    display: inline-block;
+    width: 100%;
     /* width: inherit; */
 }
 
 .userDetails{
-    height: 100%;
-
+    height: -webkit-fill-available;
+    /* border: 5pt black thick; */
+    border-style: solid;
+    border-color: black;
 }
 
 .inputField{
     border-radius: 10px;
     background: white;
-    clear: both;
+    /* clear: both; */
     height: 50px;
 }
 
 .searchIcon{
     background: black;
     border-radius: 10px;
+}
+
+.carot{
+    font-size: 40pt;
+    color: gray;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
