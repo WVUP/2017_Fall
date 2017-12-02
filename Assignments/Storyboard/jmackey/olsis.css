@@ -14,7 +14,7 @@ html{
     width: 50%;
     text-align: center;
     float: right;
-    border: 2px solid gold;
+    
     text-shadow: 0 2px 0 #000000;
 }
 
@@ -23,14 +23,14 @@ html{
     list-style-type: none;
     margin-top: 10px;
     padding: 10px;
-    padding-bottom: 10px;
     overflow: hidden; 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 24px;
     width: 300px;
-    background: #E3B11F;
+    background: #ffe699;
     top: 0;
-    height: 100%;
+    height: 5%;
+    width: 100%;
 }
 
 .rightnavbar{
@@ -41,29 +41,129 @@ height: 50%;
 
 }
 
-.yellowbar{
 
-    BACKGROUND-COLOR: #cccc00;
-    height: 5px;
-}
 
 .personalinfolist{
 
     list-style-type: none;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 15%;
+    left: 25%;
+    float: left;
+    text-align: center;
+    background: #ffe699;
+    font-size: 75%;
+    float: left;
+ 
+    position: relative;
+    height: 45%;
+    width: 10%;
+   
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px #1E389F;
 
 
+}
+
+.logo{
+    position: relative;
+    top: 45px;
+    left: 0;
 }
 
 .sidebarbuttons{
 
-    border: 3px solid #CC8800;
     padding: 10px;
-    border-radius: 20px;
+    top: 0;
     text-align: center;
     font-size: 75%;
-    background: #E3B11F;
+    background: #ffe699;
     width: 300px;
-    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+
+
+
+.hoverbar{
+
+    position: relative;
+    display: inline-block;
+  
+    
+    color: #2e75b6;
+    font-size: 95%;
+
+
+}
+
+
+.hoverbar-content{
+
+    
+        display: none;
+        position: absolute;
+        background-color: #E5B957;
+        z-index: 100;
+        text-align: center;
+        color: #2e75b6;
+        left: 100px;
+        overflow: visible;
+
+
+
+}
+
+
+
+.hoverbar:hover .hoverbar-content{
+    display: block;
+    left: 25%;
+
+}
+
+.hoverbar-content a {
+    color: #0D4273;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 70%;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 25%;
+   
+}
+
+/* Change color of dropdown links on hover */
+.hoverbar-content a:hover {background-color: #FFEA6C;}
+
+
+.hoverbarinputs{
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+  
+    text-align: center;
+    background: #ffe699;
+    font-size: 75%;
+    float: left;
+  
+   
+  
+    left: 5px;
+ 
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px #1E389F;
+
+
+
 
 
 
@@ -71,12 +171,38 @@ height: 50%;
 }
 
 
+
+
+
+
+
+
+.wrapper{
+    background: #ffe699;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border: 2px solid #D5990C;
+}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
-    
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    left: 25%;
+    color: #2e75b6;
+    font-size: 80%;
+ 
+  
+   
     
 }
 
@@ -84,36 +210,64 @@ height: 50%;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #CC8800;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: #E5B957;
+    z-index: 10;
+    width: 250px;
+    text-align: center;
+    color: #2e75b6;
+    
+    
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: #1d0f0c;
+    color: #0D4273;
     padding: 12px 16px;
     text-decoration: none;
-    font-size: 50%;
+    font-size: 70%;
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #D0C83D;}
+.dropdown-content a:hover {background-color: #FFEA6C;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    left: 25%;
-    overflow: visible;
+
+
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #D0C83D;
+    background-color: #D9D041;
 }
+
+
+.welcome{
+
+top: 50%;   
+position: relative;
+color: black;
+height: 200px;
+width: 500px;
+float: left;
+padding: 40px;
+padding-left: 5%;
+padding-right: 5%;
+margin-right: 40px;
+margin-left: 20%;
+text-align: justify;
+background: #ffe699;
+
+
+}
+
+
+
 
 
 .welcomemessage{
@@ -124,8 +278,8 @@ height: 50%;
     margin-right: 40px;
     margin-left: 20%;
     text-align: justify;
-    background: #D0C83D;
-    border-radius: 40px;
+    background: #ffe699;
+
     font-size: 75%;
     float: left;
     width: 25%;
@@ -133,8 +287,11 @@ height: 50%;
     left: 5px;
     overflow:hidden;
     top: 0px;
-
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px #1E389F;
 }
+
 
 .loginform
 {
@@ -143,15 +300,17 @@ height: 50%;
     padding-right: 5%;
     top: 0;
     text-align: center;
-    background: #D0C83D;
-    border-radius: 40px;
+    background: #ffe699;
     font-size: 75%;
     float: left;
     overflow: hidden;
     width: 15%;
-  position: relative;
-  left: 5px;
-  overflow: hidden;
+    position: relative;
+    left: 5px;
+    overflow: hidden;
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px #1E389F;
 
 }
 
@@ -160,4 +319,42 @@ height: 50%;
     margin-left: 0px;
     top: 20%;
     position: absolute;
+    
+
 }
+
+
+.button {
+    background-color: #2e75b6;;
+    border: none;
+   
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px #1E389F;
+    color: #EFC840;
+    margin-left: 5px;
+
+}
+
+
+input[type=text] {
+  background-color: #EFC840;
+    color: black;
+    border: 1px solid #B26418;
+}
+
+::placeholder{
+
+color: gray;
+font-style: italic;
+padding: 5px;
+
+}
+    
+
+
