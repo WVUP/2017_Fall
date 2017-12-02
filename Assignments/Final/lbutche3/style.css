@@ -1,65 +1,61 @@
 html, body{
-    /* margin: 0%; */
-    background: white;
-    /* max-height: 100%; */
-    /* need a better way of setting max-height */
-    max-width: 100%;
-    /* padding: 0%; */
+    width: 100%;
+    height: 100%;
 }
 
-.leftPane{
-    background: rgb(70, 66, 77);
-
-}
-
-.middlePane{
-    background: rgb(85, 11, 119);
-}
-
-.rightPane{
-    background: rgba(0, 0, 0, 0.692);
-    width: 100;
+#leftPane{
+    background: #19171c;;
+    width: 13%;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
     border-style: solid;
     border-color: black;
-
-    /* margin: 0%; */
-    /* padding: 0%; */
 }
 
-.rowContainer{
-    width: 99%;
-    /* margin-right: 0%; */
-    /* margin: 0%; */
+#middlePane{
+    background: #6441a4;
+    width: 84%;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
+    border-top: black solid;
+    border-bottom: black solid;
 }
 
-
-.rightPaneRow{
-    background: white;
-    position: sticky;
-}
-
-.logoRow{
-    padding-top: 3%;
+#rightPane{
+    background: #19171c;;
+    width: 3%;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
+    border-style: solid;
+    border-color: black;
 }
 
 .twitchLogo{
     display: block;
     width: 100%;
     height: auto;
+    align-self: center;
     /* found at https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
+    /* padding-left: 5%; */
+    /* align-content: center; */
+    
 }
 
-.twitchGlitchyLogo{
-    font-size: 30pt; 
-    color: white;
-    padding-top: 4%;
-    padding-left: 12%;
+#logoContainer{
+    background: gray;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-.userProfileRow{
+#userProfileContainer{
     padding-top: 5%;
     background: rgb(51, 51, 116);
     padding-bottom: 5%;
+    border-top: black solid;
+    border-bottom: black solid;
 }
 
 #userStatusIcon{
@@ -75,49 +71,46 @@ html, body{
     color: white;
 }
 
-#expandBar{
-    color: rgb(85, 11, 119);
-    font-size: 35pt;
-    /* font-stretch: expanded; */
-    width: 95%;
+.columnForProfilePic{
+    align-self: center;
+    left: 6%;
+}
+
+#barContent{
+    font-size: 50pt;
     text-align: center;
+    color: white;
 }
 
-.searchRow{
-    position: fixed;
-    bottom: 0;
-    /* padding-bottom: 1%; */
-    background: rgb(51, 51, 116);
-    display: inline-block;
+#userFollows{
+    height: 80%;
+    /* background: red; */
+}
+
+#searchIcon{
+    color: white;
+    font-size: 20pt;
+    height: 100%;
     width: 100%;
-    /* width: inherit; */
-}
-
-.userDetails{
-    height: -webkit-fill-available;
-    /* border: 5pt black thick; */
-    border-style: solid;
-    border-color: black;
-}
-
-.inputField{
-    border-radius: 10px;
-    background: white;
-    /* clear: both; */
-    height: 50px;
-}
-
-.searchIcon{
+    text-align: center;
+    padding-top: 2%; 
     background: black;
     border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 0%;
 }
 
-.carot{
-    font-size: 40pt;
-    color: gray;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+#searchArea{
+    height: 5%;
+    padding-top: 1%; 
 }
+
+#inputSearch{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
