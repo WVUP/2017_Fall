@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src=script.js></script>
+    
 
 </head>
 <body>
@@ -63,7 +63,7 @@
                 <div class="col-9">
                     <input type="text" placeholder="Search..." id="inputSearch">
                 </div>
-                <div class="col-2" id="searchIcon">
+                <div class="col-2" id="searchIcon" onclick="testFunction()">
                     <i class="fa fa-search" aria-hidden="true" style="padding-top: 14%;"></i>
                 </div>
             </div>
@@ -74,15 +74,27 @@
 
 
     <div id="middlePane">
-        
+        <div class="container-fill">
+           <div class="row gameRow" id="gameContent">
 
+           </div>
+        </div>
     </div>
 
 
     <div id="rightPane">
+        <div class="container" id="expandRow">
+            <div class="row">
+                <div class="col-12" style="padding: 0%;">
+                        <i class="fa fa-caret-left" aria-hidden="true" id="firstCarot"></i>
+                        <i class="fa fa-caret-left" aria-hidden="true" id="secondCarot"></i>
+                        <i class="fa fa-caret-left" aria-hidden="true" id="thirdCarot"></i>
+                </div>
+            </div>
+        </div>
 
-        
 
     </div>
 </body>
+    <script src=script.js></script>
 </html>
