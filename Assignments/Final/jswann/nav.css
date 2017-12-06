@@ -9,7 +9,8 @@ nav
 }
 .navbar
 {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 }
 .top-bar
 {
@@ -115,6 +116,11 @@ li.nav-item.active a.nav-link
 	padding-bottom:0.2rem;
 	margin-bottom: 0.5rem;
 }
+li.nav-current a
+{
+	font-size: 1.2rem;
+	color: #FA2 !important;
+}
 .navbar-nav a:hover
 {
 	color: #7AC !important;
@@ -130,6 +136,6 @@ li.nav-item2
 .nav-link2
 {
 	font-size: 0.8rem;
-	color: white;
+	color: white !important;
 	border-bottom: none;
 }
