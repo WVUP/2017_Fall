@@ -200,6 +200,7 @@ height: 50%;
     left: 25%;
     color: #2e75b6;
     font-size: 80%;
+    cursor: pointer;
  
   
    
@@ -266,6 +267,135 @@ background: #ffe699;
 
 }
 
+
+.registration{
+
+    top: 25%;   
+    position: relative;
+    color: black;
+    
+    width: 75%;
+    float: left;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 40px;
+    margin-left: 10%;
+    text-align: justify;
+   
+    
+
+
+
+}
+
+
+.credithourtable{
+
+
+    top: 50%;   
+    position: relative;
+    color: black;
+    
+    width: 30%;
+    height: 25%;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 40px;
+    margin-left: 10%;
+    text-align: justify;
+  
+    
+
+
+
+}
+
+.TRANSCRIPTCONTAINER{
+    top: 25%;   
+    position: relative;
+    color: black;
+    
+    width: 50%;
+    float: right;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 10%;
+    margin-left: 25%;
+    text-align: justify;
+    background: #FFEDB7;
+    overflow: hidden;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+
+
+}
+
+.STUDENTINFOCONTAINER{
+
+    position: relative;
+    color: black;
+    
+    width: 10%;
+    float: left;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    bottom: 45%;
+    margin-left: 2%;
+    margin-top: 5%;
+    text-align: justify;
+  
+    
+
+
+}
+
+
+
+.textbox{
+
+    top: 25%;   
+    position: relative;
+    color: black;
+    
+    width: 50%;
+    float: right;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: justify;
+    background: #ffe699;
+    overflow: hidden;
+    
+
+}
+
+
+
+.textbox2{
+    
+          
+        position: relative;
+        color: black;
+        
+        width: 25%;
+        float: left;
+        padding: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-right: 40px;
+        margin-left: 10%;
+        text-align: justify;
+        background: #ffe699;
+        
+    
+    }
 
 
 
@@ -338,6 +468,7 @@ background: #ffe699;
     box-shadow: 0 1px 5px #1E389F;
     color: #EFC840;
     margin-left: 5px;
+    cursor: pointer;
 
 }
 
@@ -357,4 +488,50 @@ padding: 5px;
 }
     
 
+.table2 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    font-size: 95%;
+    position: relative;
+    bottom: 30%;
+}
 
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 95%;
+    min-width: 400px;
+}
+
+
+
+
+
+
+td, th {
+    border: 1px solid #9F7107;
+    text-align: left;
+    padding: 8px;
+    color: black;
+    background-color: #ffe699
+}
+
+td:nth-child(even){
+
+   background-color: #FFF3CF;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+
+}
+
+
+
+
+
+    
