@@ -85,6 +85,8 @@ html, body{
 #userFollows{
     height: 80%;
     /* background: red; */
+    color: white;
+
 }
 
 #searchIcon{
@@ -169,4 +171,53 @@ html, body{
 .gameViewCount{
     color: white;
     
+}
+
+#expandRow:hover{
+    color: red;
+}
+
+#expandRow #secondCarot:hover{
+    color: purple;
+}
+
+#recommendedChannels{
+    color: white;
+    padding-top: 5%;
+}
+
+.channelHeading{
+    font-size: 14pt;
+    text-decoration-line: underline;
+
+}
+
+
+.channelImg{
+    display: block;
+    width: 26%;
+    height: auto;
+    align-self: center;
+    float: left;
+    margin-right: 8%;
+}
+
+.channelContainer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#followedChannels{
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+.followedChannelImage{
+    display: block;
+    width: 26%;
+    height: auto;
+    align-self: center;
+    float: left;
+    margin-right: 4%;
 }
