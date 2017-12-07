@@ -196,12 +196,31 @@ function addUserDetails(){
     var parent = document.getElementById('topOfUserFollowers');
     var theBar = document.getElementById('theBar');
 
+    //Create Followed Channels and header
     var followHeader = createFollowedChannelsHeader();
     var followedChannel = makeFollowedChannel('witwix.png', 'witwix', 'Odyssesy');
     var secondChannel = makeFollowedChannel('bethesda.jpeg','Bethasda','Fallout 4 disappointment');
+    var thirdChannel = makeFollowedChannel('twitchPresents.jpeg','Twitch Presents','Yu-Gi-Oh');
+    var fourthChannel = makeFollowedChannel('twitchPlaysPokemon.png','Twitch Plays Pokemon','Pokemon Red');
 
+    //Append all the channels to header
     followHeader.appendChild(followedChannel);
     followHeader.appendChild(secondChannel);
+    followHeader.appendChild(thirdChannel);
+    followHeader.appendChild(fourthChannel);
+
+    //Create Friends Header and Friends
+    var friendHeader = createFriendsHeader();
+    var firstFriend = createFriendDiv('ScruffMcgee.png','ScruffMcgee','Twitch');
+    var secondFriend = createFriendDiv('amaz.png','Amaz','Hearthstone');
+    var thirdFriend = createFriendDiv('cryaotic.png','Cryaotic','Hand of Fate 2');
+
+
+    //Append friend to followChannel
+    followHeader.appendChild(friendHeader);
+    followHeader.appendChild(firstFriend);
+    followHeader.appendChild(secondFriend);
+    followHeader.appendChild(thirdFriend);
 
     parent.insertBefore(followHeader, barDiv);
 
@@ -270,4 +289,55 @@ function makeFollowedChannel(imagePath, Name, game){
         container.appendChild(gameName);
     
         return container;
-    }
+}
+
+/**
+ * Creates the friends header
+ */
+function createFriendsHeader(){
+    var div = document.createElement('div');
+    var details = document.createElement('h5');
+
+    div.className = 'col-12';
+    div.setAttribute("id","friendHeader");
+
+
+    var node = document.createTextNode('Friends');
+    details.className = 'channelHeading';
+
+    details.appendChild(node);
+
+
+    div.appendChild(details);
+
+    return div;
+}
+
+function createFriendDiv(imagePath, friendName, game){
+
+    var container = document.createElement('div');
+    var profileImg = document.createElement('img');
+    var profileName = document.createElement('h6');
+    var gameName = document.createElement('small');
+
+    //Create gameName
+    var gameTxt = document.createTextNode(game);
+    gameName.appendChild(gameTxt);
+    //Game Name done
+
+    //Create profileName
+    var profileTxt = document.createTextNode(friendName);
+    profileName.appendChild(profileTxt)
+
+    //Profile Image
+    profileImg.src = imagePath;
+    profileImg.className = 'friendImage';
+
+    //Set up container and append all
+    container.className = 'col-12 channelContainer';
+    container.appendChild(profileImg);
+    container.appendChild(profileName);
+    container.appendChild(gameName);
+
+    return container;
+}

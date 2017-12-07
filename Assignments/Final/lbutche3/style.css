@@ -132,15 +132,19 @@ html, body{
 }
 
 #firstCarot{
-    padding-bottom: 1340%;
+    position: absolute;
+    top: 2%;
 }
 
 #secondCarot{
     color: white;
+    position: absolute;
+    top: 50%;
 }
 
 #thirdCarot{
-    padding-top: 1450%;
+    position: absolute;
+    top: 95%;
 }
 
 .gamePicture{
@@ -216,6 +220,21 @@ html, body{
 .followedChannelImage{
     display: block;
     width: 26%;
+    height: auto;
+    align-self: center;
+    float: left;
+    margin-right: 4%;
+}
+
+
+#friendHeader{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.friendImage{
+    display: block;
+    width: 30%;
     height: auto;
     align-self: center;
     float: left;
