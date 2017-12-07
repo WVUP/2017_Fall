@@ -75,7 +75,6 @@
 
         .mid
         {
-            left: 50%;
 
         }
 
@@ -91,17 +90,40 @@
             <div class="purpbar"></div>
             <div class="purpbar"></div>
             <div class="purpbar"></div>
-            <input type="text" placeholder="Search....." class="search">
-            
+            <input type="text" placeholder="Search....." class="search" id="getData">
+
         </div>
 
         <div class="rightside">
         </div>        
         <div class="mid">
-            GET https://api.twitch.tv/kraken/search/games?query=<URL encoded search query>            
 
         </div>      
     </div>
+    <script>
+            
+            document.getElementById('getData').addEventListener('keydown', (event) =>
+            {
+
+                if(event.keyCode == '13')
+                {
+                    var j = document.getElementById('getData').value;
+                    console.log('user hit enter');
+                    function getData()
+                    {
+                        fetch('https://api.twitch.tv/kraken/search/games?query='+ j, {method: 'GET',
+                        headers:{
+                         'Client-ID': '5hclx4xrr4qpx18lvaoc9gsxh4xkcg',
+                         'Accept': 'application/vnd.twitchtv.v5+json'
+                        }})
+                        .then(function(Response){console.log(Response.json().then(body => console.log(body)))})
+                        .catch(function(Error){console.log(Error)});
+                    }
+                    getData();
+                }
+            })
+
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
