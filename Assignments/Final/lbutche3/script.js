@@ -54,3 +54,25 @@ function gameFirstRow(){
 }
 
 
+
+function expandRecommended(){
+    var rightPane = document.getElementById("rightPane");
+    var middlePane = document.getElementById("middlePane");
+    var expandRowClickOn = document.getElementById("expandRow");
+
+    middlePane.style.width = '72%';
+    rightPane.style.width = '15%';
+
+    expandRowClickOn.setAttribute("onClick", "shrinkRecommended()");
+}
+
+function shrinkRecommended(){
+    var rightPane = document.getElementById("rightPane");
+    var middlePane = document.getElementById("middlePane");
+    var expandRowClickOn = document.getElementById("expandRow");
+    
+    middlePane.style.width = '84%';
+    rightPane.style.width = '3%';
+
+    expandRowClickOn.setAttribute("onClick", "expandRecommended()");
+}
