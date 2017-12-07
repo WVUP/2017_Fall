@@ -27,10 +27,14 @@
         }
         .rightpane {
             background: rgb(70, 70, 70);
+            top: 0;
             height: 1200px;
             width: 45px;
             right: 0;
             position: fixed;
+        }
+        .rightpane:hover {
+            cursor:pointer;
         }
         .logo {
             height: 50px;
@@ -62,12 +66,53 @@
             border-radius: 5px;
             background-color: #4b367c;
             margin-top: 3px;
-            padding-left: 5px;
+            margin-left: 5px;
             width: 240px;
             height: 7px;
             border-style: solid;
             border-width: 1px;
             border-color: silver;
+        }
+        .purpleLine:hover {
+            cursor: pointer;
+        }
+        .arrow {
+            position: fixed; 
+            right:1%; 
+            
+        }
+        .arrowTop{
+            top:2%;
+        }
+        .arrowMid{
+            top:50%;
+        }
+        .arrowBot{
+            top:96%;
+        }
+        .middle{
+            padding-top: 50px;
+            width: 80%;
+            margin-left: 300px;
+        }
+        .middleRow2 {
+            margin-top: 
+        }
+        .game {
+            height: 400px;
+        }
+        .icon{
+            width: 180;
+            height: 240;
+            box-shadow: 0px 0px 25px 4px rgb(0, 0, 0);
+        }
+        .gameName{
+            color: rgb(150, 150, 150);
+            font-size: 18px;
+        }
+        .gameViewers{
+            color: white;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -91,7 +136,7 @@
                     </div>
                 </div>
                 <div class="search">
-                    <input style="width:240px; " type="text">
+                    <input style="width:240px;" placeholder="Search..." type="text">
                 </div>
                 <div class="purpleRain">
                     <div class="purpleLine"></div>
@@ -99,11 +144,124 @@
                     <div class="purpleLine"></div>
                 </div>
             </div>
+            <div class="middle row">
+                <div class="game col-2">
+                    <div><img class="icon" src="COD.jpg" alt=""></div>
+                    <div class="gameName">
+                        Call of Duty: WWII
+                    </div>
+                    <div class="gameViewers">
+                        10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="DOT.jpg" alt=""></div>
+                    <div class="gameName">
+                        Dota 2
+                    </div>
+                    <div class="gameViewers">
+                        10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="FN.jpg" alt=""></div>
+                    <div class="gameName">
+                        Fortnite
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="HS.jpg" alt=""></div>
+                    <div class="gameName">
+                        Hearthstone
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="IRL.jpg" alt=""></div>
+                    <div class="gameName">
+                        IRL
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="LOL.jpg" alt=""></div>
+                    <div class="gameName">
+                        Salt
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+            </div>
+            <div class="middle row middleRow2">
+                <div class="game col-2">
+                    <div><img class="icon" src="OVW.jpg" alt=""></div>
+                    <div class="gameName">
+                        More Salt
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="PUBG.jpg" alt=""></div>
+                    <div class="gameName">
+                        PlayerUnknown's Battlegrounds
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="RS.jpg" alt=""></div>
+                    <div class="gameName">
+                        Runescape
+                    </div>
+                    <div class="gameViewers">
+                            10 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="WOW.jpg" alt=""></div>
+                    <div class="gameName">
+                        World of Warcraft
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="CS.jpg" alt=""></div>
+                    <div class="gameName">
+                        Counter Strike: CS-GO
+                    </div>
+                    <div class="gameViewers">
+                            10,000 Viewers
+                    </div>
+                </div>
+                <div class="game col-2">
+                    <div><img class="icon" src="MC.jpg" alt=""></div>
+                    <div class="gameName">
+                        Minecraft
+                    </div>
+                    <div class="gameViewers">
+                            1,000,000 Viewers
+                    </div>
+                </div>
+            </div>
+            </div>
             
             <div class="rightpane">
-                <div style="right:50%; top:2%;" ><img src="arrow.png" alt=""></div>
-                <div style="right:50%; top:50%;"><img src="arrow.png" alt=""></div>
-                <div style="right:50%; top:98%;"><img src="arrow.png" alt=""></div>
+                <div class="arrow arrowTop"><img src="arrow.png" alt=""></div>
+                <div class="arrow arrowMid"><img src="arrow.png" alt=""></div>
+                <div class="arrow arrowBot"><img src="arrow.png" alt=""></div>
                 
                 
                 
