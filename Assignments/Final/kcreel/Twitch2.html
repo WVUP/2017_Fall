@@ -60,7 +60,9 @@
         }
         .purpleRain {
             width: 250px;
-
+            position: fixed;
+            margin-top: -185px;
+            visibility: visible;
         }
         .purpleLine {
             border-radius: 5px;
@@ -72,6 +74,7 @@
             border-style: solid;
             border-width: 1px;
             border-color: silver;
+            
         }
         .purpleLine:hover {
             cursor: pointer;
@@ -114,6 +117,28 @@
             color: white;
             font-size: 12px;
         }
+        .hidden {
+            visibility: hidden;
+        }
+        .purpleRain2 {
+            width: 250px;
+            position: fixed;
+            margin-top: 0px;
+            
+        }
+        .leftHead{
+            color: darkgrey;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        .streamers{
+            color: white;
+            font-size: 15px;
+        }
+        .friends{
+            color: white;
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
@@ -135,10 +160,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="hidden" id="hidden">
+                    <div class="leftHead">Followed Streams</div>
+                    <div class="streamers">Yogscast</div>
+                    <div class="streamers">imaqtpie</div>
+                    <div class="streamers">DisguisedToastHS</div>
+                    <div class="streamers">Brownman</div>
+                    <div class="streamers">nl_Kripp</div>
+                    <div class="leftHead">Friends</div>
+                    <div class="friends">None LOLOLOLOLOL</div>
+                    <div class="purpleRain2" id="purpleRain2" onclick="undoDrop()">
+                        <div class="purpleLine"></div>
+                        <div class="purpleLine"></div>
+                        <div class="purpleLine"></div>
+                    </div>
+                </div>
                 <div class="search">
                     <input style="width:240px;" placeholder="Search..." type="text">
                 </div>
-                <div class="purpleRain">
+                <div class="purpleRain" id="purpleRain" onclick="dropdown()">
                     <div class="purpleLine"></div>
                     <div class="purpleLine"></div>
                     <div class="purpleLine"></div>
@@ -258,16 +298,37 @@
             </div>
             </div>
             
-            <div class="rightpane">
+            <div class="rightpane" onclick="rightSide()">
                 <div class="arrow arrowTop"><img src="arrow.png" alt=""></div>
                 <div class="arrow arrowMid"><img src="arrow.png" alt=""></div>
                 <div class="arrow arrowBot"><img src="arrow.png" alt=""></div>
-                
-                
-                
             </div>
         </div>
     </div>
+    <script>
+        function dropdown() {
+            var bars = document.getElementById("purpleRain");
+            bars.style.visibility = 'hidden';
+            var dropdown = document.getElementById("hidden");
+            dropdown.style.visibility = 'visible';
+        }
+        function rightSide() {
+            var sideBar = document.getElementsByClassName("rightpane")[0];
+            sideBar.style.width = '250px';
+            var arrow1 = document.getElementsByClassName("arrow")[0];
+            var arrow2 = document.getElementsByClassName("arrow")[1];
+            var arrow3 = document.getElementsByClassName("arrow")[2];
+            arrow1.style.right = "12%";
+            arrow2.style.right = "12%";
+            arrow3.style.right = "12%";
+        }
+        function undoDrop(){
+            var bars = document.getElementById("purpleRain");
+            bars.style.visibility = 'visible';
+            var dropdown = document.getElementById("hidden");
+            dropdown.style.visibility = 'hidden';
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
