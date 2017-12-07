@@ -2,15 +2,18 @@
 var text;
 var semester;
 var html = '';
+ var CRN = {};
+ var course = ' ';
+ var title = ' ';
+ var credits = ' ';
+ var startDate = ' ';
+ var endDate = ' ';
+ var days = ' ';
+ var time = ' ';
+ var instructor = ' '; 
 
+function addClass(CRN, course, title, credits, startDate, endDate, days, time, instructor) {
 
-function addClass() {
-    "use strict";
-
-
-
-
-    var CRN = {};
     
     CRN[5415] = { course: "CS101", title: "Intro to PC Applications", credits: 4, startDate: "01-08-2018", endDate: "05-04-2018", days: "T, Th", time: "1:00 PM - 2:15 PM", instructor: "Gary Thompson"};
     CRN[5424] = { course: "CS121", title: "Intro to Programming", credits: 4, startDate: "01-08-2018", endDate: "05-04-2018", days: "M, W ", time: "11:00 AM - 12:45 PM", instructor: "Charles Almond"};
@@ -63,3 +66,42 @@ function addClass() {
 
     
  };
+
+
+
+
+
+ <p id="demo"></p>
+ 
+
+ // Set the date we're counting down to
+ var countDownDate = new Date("Dec 25").getTime();
+ 
+ // Update the count down every 1 second
+ var x = setInterval(function() {
+ 
+   // Get todays date and time
+   var now = new Date().getTime();
+ 
+   // Find the distance between now an the count down date
+   var distance = countDownDate - now;
+ 
+   // Time calculations for days, hours, minutes and seconds
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+   // Display the result in the element with id="demo"
+   document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+   + minutes + "minutes" + seconds + "seconds ";
+ 
+   // If the count down is finished, write some text 
+   if (distance < 0) {
+     clearInterval(x);
+     document.getElementById("demo").innerHTML = "Merry Christmas!";
+   }
+ }, 1000);
+
+
+ /** https://www.w3schools.com/howto/howto_js_countdown.asp Reference for javascript countdown function. */
