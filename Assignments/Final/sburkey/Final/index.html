@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WVUP Olsis</title>
+	
+	<link rel = "stylesheet" href = "style.css" />
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+		integrity = "sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin = "anonymous">
+</head>
+<body>
+	<div id = header>
+		<center><img src = 'https://static1.squarespace.com/static/593ec2594402432d4f40bb33/t/59763d8fe58c62aec5bf6d44/1500921239551/WVUP+logo'></center>
+	</div>
+	
+	<br><br><br><br><br><br><br><br>
+	
+	<div id = content style = "top: 0px; left 0px; bottom: 0px;">
+		<p>
+			OLSIS
+		</p>
+	</div>
+	
+	<div id = content2 style = "top: 0px; left 0px;">
+		<p>
+			Online Student Information System
+		</p>
+	</div>
+	
+	<div id = login style = "position: fixed; left: 350px; top: 280px; width: 250px; height: 200px;">
+		<p class = log>
+			User Login
+		</p>
+		<form name = 'myForm' class = log>
+			<input type = "text" id = "name" placeholder = "ID Number">
+		</form>
+		<form name = 'myForm' class = log>
+			<input type = "password" id = "name" placeholder = "PIN number">
+		</form>
+		<br>
+		<button type = "button" id = "bootstrap" class = "btn btn-primary btn-sm">
+			<input type = "submit" name = "nameButton" value = "Submit">
+		</button>
+	</div>
+	
+	<div id = text style = "position: fixed; left: 550px; bottom: 90px;">
+		<p>
+			Let's go Riverhawks!!
+		</p>
+	</div>
+	
+	<div id = copyright style = "position: fixed; left: 525px; bottom: 50px;">
+		<p>
+			© 2017 Ellucian Company L.P. and its affiliates.
+		</p>
+	</div>
+	
+	<script type = "text/javascript">
+    	document.getElementById("bootstrap").onclick = function ()
+		{
+        	window.location.href = "StudentServices.html";
+    	};
+	</script>
+	
+</body>
+</html>
