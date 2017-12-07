@@ -250,11 +250,11 @@ height: 50%;
 
 .welcome{
 
-top: 50%;   
+top: 25%;   
 position: relative;
 color: black;
 height: 200px;
-width: 500px;
+width: 35%;
 float: left;
 padding: 40px;
 padding-left: 5%;
@@ -263,9 +263,45 @@ margin-right: 40px;
 margin-left: 20%;
 text-align: justify;
 background: #ffe699;
+border: 3px solid #D5990C;
+border-radius: 3px;
 
 
 }
+
+.tree{
+
+
+
+    float: right;
+    height: 200px;
+}
+
+
+.banner{
+    top: 35%;   
+    position: relative;
+    color: black;
+    height: 25%;
+    width: 35%;
+    float: left;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+padding-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 30%;
+    text-align: justify;
+    background: #ffe699;
+    border-radius: 50px;
+    border: 3px solid #D5990C;
+   
+    
+    
+    }
+
+
 
 
 .registration{
@@ -372,6 +408,8 @@ background: #ffe699;
     text-align: justify;
     background: #ffe699;
     overflow: hidden;
+    border: 3px solid #D5990C;
+    border-radius: 3px;
     
 
 }
@@ -393,6 +431,8 @@ background: #ffe699;
         margin-left: 10%;
         text-align: justify;
         background: #ffe699;
+        border: 3px solid #D5990C;
+        border-radius: 3px;
         
     
     }
@@ -530,6 +570,14 @@ tr:nth-child(even) {
 
 }
 
+#demo{
+
+font-size: 150%;
+
+
+
+
+}
 
 
 
