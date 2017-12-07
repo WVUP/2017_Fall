@@ -139,6 +139,14 @@
             color: white;
             font-size: 15px;
         }
+        .rightHide {
+            padding-top: 50px;
+            padding-left: 30px;
+            visibility: hidden;
+        }
+        .arrowHidden {
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -298,10 +306,27 @@
             </div>
             </div>
             
-            <div class="rightpane" onclick="rightSide()">
-                <div class="arrow arrowTop"><img src="arrow.png" alt=""></div>
-                <div class="arrow arrowMid"><img src="arrow.png" alt=""></div>
-                <div class="arrow arrowBot"><img src="arrow.png" alt=""></div>
+            <div class="rightpane">
+                <div onclick="rightSide()" class="arrow arrowTop"><img src="arrow.png" alt=""></div>
+                <div onclick="rightSide()" class="arrow arrowMid"><img src="arrow.png" alt=""></div>
+                <div onclick="rightSide()" class="arrow arrowBot"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrow arrowhidden arrowTop"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrow arrowHidden arrowMid"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrow arrowHidden arrowBot"><img src="arrow.png" alt=""></div>
+                <div class="rightHide">
+                    <div class="leftHead">
+                        Recommended Channels
+                    </div>
+                    <div class="streamers">Dyrus</div>
+                    <div class="streamers">sips_</div>
+                    <div class="streamers">sodapoppin</div>
+                    <div class="streamers">HatFilms</div>
+                    <div class="streamers">RoosterTeeth</div>
+                    <div class="leftHead">
+                        Recommended Friends
+                    </div>
+                    <div class="friends">LOL YOU THOUGHT WRONG</div>
+                </div>
             </div>
         </div>
     </div>
@@ -321,12 +346,38 @@
             arrow1.style.right = "12%";
             arrow2.style.right = "12%";
             arrow3.style.right = "12%";
+            var hide = document.getElementsByClassName("rightHide")[0];
+            hide.style.visibility = "visible";
+            var arrow4 = document.getElementsByClassName("arrowHidden")[0];
+            var arrow5 = document.getElementsByClassName("arrowHidden")[0];
+            var arrow6 = document.getElementsByClassName("arrowHidden")[0];
+            //arrow4.style.z-index = "100";
+            //arrow5.style.z-index = "100";
+            //arrow6.style.z-index = "100";    
         }
         function undoDrop(){
             var bars = document.getElementById("purpleRain");
             bars.style.visibility = 'visible';
             var dropdown = document.getElementById("hidden");
             dropdown.style.visibility = 'hidden';
+        }
+        function undorightSide(){
+            var sideBar = document.getElementsByClassName("rightpane")[0];
+            sideBar.style.width = '45px';
+            var arrow1 = document.getElementsByClassName("arrow")[0];
+            var arrow2 = document.getElementsByClassName("arrow")[1];
+            var arrow3 = document.getElementsByClassName("arrow")[2];
+            arrow1.style.right = "1%";
+            arrow2.style.right = "1%";
+            arrow3.style.right = "1%";
+            var hide = document.getElementsByClassName("rightHide")[0];
+            hide.style.visibility = "hidden";
+            var arrow4 = document.getElementsByClassName("arrowHidden")[0];
+            var arrow5 = document.getElementsByClassName("arrowHidden")[0];
+            var arrow6 = document.getElementsByClassName("arrowHidden")[0];
+            arrow4.style.z-index = "-1";
+            arrow5.style.z-index = "-1";
+            arrow6.style.z-index = "-1";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
