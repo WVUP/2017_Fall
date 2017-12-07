@@ -63,11 +63,14 @@ html {
 {
 	
 }
+
+.admissions1
+{
+}
 #hero-olsis
 {
 	background-color: transparent !important;
 	margin-bottom: 0rem !important;
-	width: 90px;
 	display: inline-block;
 }
 #hero-back
@@ -86,6 +89,11 @@ html {
 	left:0px;
 	height: 100%;
 	width: 100%;
+}
+.main-area 
+{
+	margin-top: -0.75rem;
+	padding: 0;
 }
 .shade1
 {
@@ -179,4 +187,24 @@ iframe, html { overflow: scroll; }
 img#logo
 {
 	image-rendering: optimizeSpeed;	
+}
+.note
+{
+	padding: 1rem;
+}
+.registered
+{
+	display: block;
+}
+input[type=text]
+{
+	width:100px;
+}
+input[type=submit]
+{
+	margin-bottom: 2rem !important;
+}
+.registered span
+{
+	font-size: 1.25rem;
 }
