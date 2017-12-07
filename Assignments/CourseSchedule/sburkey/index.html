@@ -23,127 +23,130 @@
 <body>
 	<h1>Enter course name and other needed information below.</h1>
 	
-	Please enter the name of your course here: <input type = "text" id = "name" placeholder = "Course Name" required>
+	<form name = 'myForm'>
+		Please enter the name of your course here: <input type = "text" id = "name" placeholder = "Course Name"><input type = "submit" name = "nameButton" 
+			value = "Submit">
 	
-	<br><br>
+		<br><br>
 	
-    Please enter the course number of the course here: <input type = "text" id = "number" placeholder = "Course Number" required>
+    	Please enter the course number of the course here: <input type = "text" id = "crnNum" placeholder = "Course Number"><input type = "submit" name = "numButton" 
+			value = "Submit">
     
-    <br><br>
+    	<br><br>
 	
-	Please enter the professor of the course here: <input type = "text" id = "prof" placeholder = "Course Professor" required>
+		Please enter the professor of the course here: <input type = "text" id = "prof" placeholder = "Course Professor"><input type = "submit" name = "profButton" 
+			value = "Submit">
 	
-	<div id = "cName"></div>
+		<br><br>
 	
-	<br><br>
+		Please enter the days of the week the class takes place: <input type = "text" id = "days" placeholder = "M, W, F"><input type = "submit" name = "dayButton"
+			value = "Submit">
+	</form>
 	
-    <div id = "cNum"></div>
-    
-    <br><br>
-	
-	<div id = "cProf"></div>
-	
+
 	<script>
 	
-		var course = 
-		{
-			cname: document.getElementById('name'),
-			cnum: document.getElementById('number'),
-            cprof: document.getElementById('prof')
-		}
+		let _field = ['crn', 'instructor', 'day', 'name'];
 		
-		function Course(cname, cnum, cprof)
+		let myCourses = [];
+	
+		myForm.nameButton.addEventListener('click', (evt) =>
 		{
-	        this.coursename = cname;
-	        this.el = document.getElementById('name').addEventListener('keydown', (event) => 
-			{
-            	event.stopPropagation();
-           
-            	if(event.keyCode == '13')
-				{
-                	console.log('User hit enter for course name');
-                	UpdateValues();
-            	}
-        	});
+			let courseToAdd = {};
 			
-			this.coursenumber = cnum;
-			this.el = document.getElementById('number').addEventListener('keydown', (event) =>
+			_field.forEach( (field) =>
 			{
-				event.stopPropagation();
-				
-				if(event.keyCode == '13')
-				{
-					console.log('User hit enter for course number');
-					UpdateValues();
-				}
-			});
-
-            this.courseprofessor = cprof;
-            this.el = document.getElementById('prof').addEventListener('keydown', (event) =>
-			{
-				event.stopPropagation();
-				
-				if(event.keyCode == '13')
-				{
-					console.log('User hit enter for the course professor');
-					UpdateValues();
-				}
-			});
-	    }
+				courseToAdd[field] = myForm[field].value;
+			})
+			
+			myCourses.push(courseToAdd);
+			console.log(courseToAdd);
+		})
 		
-		function UpdateValues()
+		myForm.numButton.addEventListener('click', (evt) =>
 		{
-            var _coursename = document.getElementById('name').value;
-			var _coursenumber = document.getElementById('number').value;
-            var _courseprofessor = document.getElementById('prof').value;
-            console.log(_coursename);
-			console.log(_coursenumber);
-            console.log(_courseprofessor);
-        }
-
-	    Course.prototype = 
+			let courseToAdd = {};
+			
+			_field.forEach( (field) =>
+			{
+				courseToAdd[field] = myForm[field].value;
+			})
+			
+			myCourses.push(courseToAdd);
+			console.log(courseToAdd);
+		})
+		
+		myForm.profButton.addEventListener('click', (evt) =>
 		{
-	    	customAlert: function()
+			let courseToAdd = {};
+			
+			_field.forEach( (field) =>
 			{
-	             alert(this.coursename + ' added to list.');
-				 alert(this.coursenumber + ' added to list.');
-                 alert(this._courseprofessor + ' added to list.');
-	        },
-	            
-	        showCourseName: function()
+				courseToAdd[field] = myForm[field].value;
+			})
+			
+			myCourses.push(courseToAdd);
+			console.log(courseToAdd);
+		})
+		
+		myForm.dayButton.addEventListener('click', (evt) =>
+		{
+			let courseToAdd = {};
+			
+			_field.forEach( (field) =>
 			{
-	            console.log('Course name: ' + this.coursename + ' ' + this.coursenumber + ' ' + this.courseprofessor + 'has been set.');
-	        },
-
-	        customMesage: function(callback)
-			{
-	            if(callback)
-				{
-	               setTimeout(() => 
-				   {
-	                   callback(this.coursename);
-					   callback(this.coursenumber);
-                       callback(this.courseprofessor);
-	               }, 2000);
-	                    
-	            }
-	        },
-
-	        show: function()
-			{
-	        	this.el.innerHTML = '<b>' + this.coursename + '<b>' + this.coursenumber + '<b>' + this.courseprofessor;
-	        }
+				courseToAdd[field] = myForm[field].value;
+			})
+			
+			myCourses.push(courseToAdd);
+			console.log(courseToAdd);
+		})
+	
+		var _course = 
+		{
+			crn: '',
+			instructor: '',
+			day: '',
+			name: ''
 		}
 		
-		function setUser(_coursename, _coursenumber, _courseprofessor)
+		var test = Object.assign({}, _course);
+		
+		var cCode = {crn: document.getElementById('crnNum')};
+		var prof = {instructor: document.getElementById('prof')};
+		var dow = {day: document.getElementById('days')};
+		var cname = {name: document.getElementById('name')};
+		
+		function Course(crn, instr, day, name)
 		{
-            document.getElementById('cName').innerHTML = 'Course ' + _coursename + ' added.';
-			document.getElementById('cNum').innerHTML = 'Course number ' + _coursenumber + ' added.';
-            document.getElementById('cProf').innerHTML = 'Course professor is ' + _courseprofessor;
-            console.log(_coursename);
-			console.log(_coursenumber);
-            console.log(_courseprofessor);
-        }
+			this.crn = crn;
+			this.insturctor = instr;
+			this.day = day;
+			this.name = name;
+			this.el = document.getElementById('course_element');
+		}
+		
+		Course.prototype.log = function()
+		{
+			console.log('CRN info: ', this.crn)
+		}
+		
+		Course.prototype.logInstructor = function()
+		{
+			console.log('Professor name: ', this.instr)
+			this.el.innerHTML = 'Professor: '
+		}
+		
+		Course.prototype.logName = function()
+		{
+			console.log('Class name: ', this.name)
+		}
+		
+		Course.prototype.logDays = function()
+		{
+			console.log('Class days: ', this.day)
+		}
+		
 	</script>
 
 

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta http-equiv =" X-UA-Compatible" content = "ie = edge">
+
+	<title>Burkey WVUP Homepage redesign</title>
+	
+	<link rel = "stylesheet" href = "style.css" />
+	<link rel = "stylesheet" 
+		href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+		integrity = "sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin = "anonymous">
+	<link href = 'http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel = 'stylesheet' type = 'text/css'>
+	<link href = 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel = 'stylesheet' type = 'text/css'>
+		
+	<script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+		integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin = "anonymous"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+		integrity = "sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin = "anonymous"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+		integrity = "sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin = "anonymous"></script>
+		
+	<style>
+    #calender
+	{
+    	background: #1e85bc;
+      	border-radius: 5px;
+     	box-sizing: border-box;
+      	padding: 15px;
+      	width: 220px;
+    }
+	
+    header
+	{
+     	overflow: clear;
+      	position: relative;
+    }
+	
+    h5
+	{
+      	font-family: 'PT Sans Narrow', sans-serif;
+      	font-size: 18px;
+      	font-weight: 700;
+      	margin: 0 0 10px;
+      	text-align: center;
+    }
+	
+    #calenderButtons
+	{
+      	position: absolute;
+      	top: -4px;
+    }
+	
+    #calenderButtons:first-child
+	{
+      	left: 0;
+    }
+	
+    #calenderButtons:last-child
+	{
+      	right: 0;
+    }
+	
+    table
+	{
+      	border-collapse: collapse;
+      	color: #222;
+      	font-family: 'PT Sans', sans-serif;
+      	font-size: 13px;
+      	width: 100%;
+    }
+	
+    td
+	{
+      	border: 1px solid #ccc;
+      	color: #444;
+      	line-height: 22px;
+      	text-align: center;
+    }
+	
+    tr:first-child td
+	{
+      	color: #222;
+      	font-weight: 700;
+    }
+	
+    .selected
+	{
+      	background: #8cddf2;
+      	border: 0;
+      	box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+    }
+  </style>
+</head>
+
+<body class = "homepage">
+	<div id = "container-fluid">
+		<nav class = "navbar navbar-expand-lg navbar-light bg-light">
+			<a class = "navbar-brand" href = "#">WVUP</a>
+			<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" 
+				aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
+				<span class = "navbar-toggler-icon"></span>
+			</button>
+				  
+			<div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+				<ul class = "navbar-nav mr-auto">
+					<li class = "nav-item active">
+						<a class = "nav-link" href = "#">Home <span class = "sr-only">(current)</span></a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">Academics</a>
+					</li>
+					<li class = "nav-item">
+						 <a class = "nav-link" href = "#">Current Students</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">Future Students</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">High School Students</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">Faculty & Staff</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">Alumni & Giving</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "#">Economic Development</a>
+					</li>
+				</ul>
+				<form class = "form-inline my-2 my-lg-0">
+					<input class = "form-control mr-sm-2" type = "text" placeholder = "Search" aria-label = "Search">
+					<button class = "btn btn-outline-success my-2 my-sm-0" typ e= "submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<div id = "content_rightSide">
+			<div id = "mainHeader">
+				<div id = "header" style = "display: block;">
+					<div id = "wvup_campus">
+					</div>
+				</div>
+			</div>
+
+			<div id="mainContent" style = "min-height: 817px;">
+				<div id = "middleContentPane">
+					<div id = "infoContent">
+						<h1 class = "pageHeader">Home</h1>
+						
+						<div id = "right_Content">
+							<div id = "calender">
+							  <header>
+								    <button id = "calenderButtons">«</button>
+								    <h5>October 2017</h5>
+								    <button id = "calenderButtons">»</button>
+								  </header>
+								<table>
+								  <tr>
+								    <td>S</td>
+								    <td>M</td>
+								    <td>T</td>
+								    <td>W</td>
+								    <td>Th</td>
+								    <td>F</td>
+								    <td>S</td>
+								  </tr>
+								  <tr>
+								    <td>1</td>
+								    <td>2</td>
+								    <td>3</td>
+								    <td>4</td>
+								    <td>5</td>
+								    <td>6</td>
+								    <td>7</td>
+								  </tr>
+								  <tr>
+								    <td>8</td>
+								    <td>9</td>
+								    <td>10</td>
+								    <td>11</td>
+								    <td>12</td>
+								    <td>13</td>
+								    <td>14</td>
+								  </tr>
+								  <tr>
+								    <td>15</td>
+								    <td>16</td>
+								    <td>17</td>
+								    <td>18</td>
+								    <td class = "selected">19</td>
+								    <td>20</td>
+								    <td>21</td>
+								  </tr>
+								  <tr>
+								    <td>22</td>
+								    <td>23</td>
+								    <td>24</td>
+								    <td>25</td>
+								    <td>26</td>
+								    <td>27</td>
+								    <td>28</td>
+								  </tr>
+								  <tr>
+								    <td>29</td>
+								    <td>30</td>
+								    <td>31</td>
+								    <td></td>
+								    <td></td>
+								    <td></td>
+								    <td></td>
+								  </tr>
+								</table>
+							</div>
+							
+							<br>
+							
+							<div style = "color: #9CBCDA;">
+								<h6>Events</h6>
+								<br>
+								<h6>Oct. 20th</h6>
+								<p>
+									Last Day to Apply to<br>Graduate in December
+								</p>
+								<br>
+								<h6>Oct. 23rd</h6>
+								<p>
+									Board of Governors<br>Meet
+								</p>
+							</div>
+						</div>
+						
+						<div style = "float: right; margin-right: 5%; display: inline-block;">
+							<a href = "http://your.wvup.edu/">
+								<img src = "http://www.wvup.edu/wp-content/uploads/2016/08/Hub-Button-2016_blue.jpg">
+							</a>
+						
+							<br><br><br>
+						
+							<h3 style = "color: #0223f9;">What's Happening Now</h3>
+							<br>
+							<h4 class = "contentHeader" style = "color: #0223f9;">Senator Manchin and WVU Parkersburg host the MOV Career Fair</h4>
+							<p id = "homeContent">
+								Approximately 105 businesses and organizations and 600 job seekers were on campus for the Mid-Ohio Valley<br>
+								 (MOV) Career Fair presented by U.S. Senator Joe Manchin and West Virginia University at Parkersburg<br>
+								  Wednesday, Oct. 11 from 10 a.m. to 2 p.m. in the WVU Parkersburg College Activities Center.
+							</p>
+						</div>
+					</div>
+							
+						<div id = "leftSidebar" class = "leftGrid_300_col">
+							<div id = "sideWidgets">
+								<div id = "widgets" class = "grid_300_col">
+									<div id = "home_leftSide_miniMenu" class = "side_Widgets">
+										<div class = "miniMenu">
+											<ul class = "nav flex-column">
+											<li class = "nav-item">
+												<a class = "nav-link active" href = "http://www.wvup.edu/about/about-wvu-parkersburg/directions-to-campus/">
+													Directions to WVUP Campus</a>
+											</li>
+											<li class = "nav-item">
+												<a class = "nav-link active" 
+													href = "http://www.wvup.edu/about/human-resources/employment-opportunities/">Job Opportunities</a>
+											</li>
+											<li class = "nav-item">
+												<a class = "nav-link active" 
+													href = "http://www.wvup.edu/future-students/costs-scholarships-financial-aid-2/financial-aid/">
+														Financial Aid Information</a>
+											</li>
+											<li class = "nav-item">
+												<a class = "nav-link active" 
+													href = "http://www.wvup.edu/current-students/services/childcare/">Child Care Services</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active" href="http://www.wvup.edu/current-students/life-at-wvu-parkersburg/">Life at WVUP</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active" href="http://www.wvup.edu/about/jackson-county-center/">Jackson County Campus</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active" href="http://www.wvup.edu/academics/office-of-academic-affairs/programs-of-study/">
+													Programs of Study</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active" href="http://www.wvup.edu/about/social-justice/">Social Justice Information</a>
+											</li>
+											</ul>
+										</div>
+											
+									<br><br>
+												
+									<div id = "buttonMenu">
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://www.wvup.edu/academics/office-of-academic-affairs/programs-of-study/majors-complete-listing/" 
+													target = "_blank">Degree Programs</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://foundation.wvup.edu/">Give Now</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://www.wvup.edu/workforce/community-education/">Community Classes</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://www.wvup.edu/current-students/services/career-services/career-coach/" 
+													target = "_blank">Career Coach</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://www.wvup.edu/future-students/get-started/virtual-tours/">Virtual Tours</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "https://thewvupchronicle.com" target = "_blank">Student Newspaper</a>
+											</button>
+										</div>
+										<br>
+										<div id = "button_menu">
+											<button type = "button" class = "btn btn-outline-dark">
+												<a href = "http://www.wvup.edu/current-students/services/disability-services/">Disability Services</a>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+				<footer>	
+					<div id = "footer">
+						<p class="text-center">
+							300 Campus Drive, Parkersburg, WV 26104-8647 | Voice: 304-424.8000 | Fax: 304-424.8315 | Toll-Free: 1-800-WVA-WVUP (WV/OH)
+								Accredited by The Higher Learning Commission and a member of the North Central Association of Colleges and Schools.
+								A member institution of the Community and Technical College System of West Virginia
+								WVU Parkersburg is an affiliated institution of West Virginia University | An Equal Opportunity/Affirmative Action institution
+						</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body
+{
+	background: radial-gradient(circle closest-side,
+      #ffffff, #ceefff, #537ca8, #0f4e9b) no-repeat center center fixed;
+}
+
+img
+{
+	width: 400px;
+	height: 100px;
+}
+
+h1
+{
+	color: #ceefff;
+}
+
+#info
+{
+	color: #efaa0f;
+}
+
+#content
+{
+    padding: 20px; 
+    width: 100px;
+	text-aline: center;
+	color: #efaa0f;
+	font-size: 50px;
+}
+
+#content2
+{
+	text-aline: center;
+	color: white;
+	padding: 20px;
+}
+
+#login
+{
+	border-radius: 5px;
+	background: white;
+	width: 550px;
+}
+
+#text
+{
+	color: #ceefff;
+	text-aline: center;
+	font-size: 30px;
+}
+
+#copytight
+{
+	color: #537ca8;
+	text-aline: center;
+	font-size: 10px;
+}
+
+.log
+{
+	padding: 5px;
+}
