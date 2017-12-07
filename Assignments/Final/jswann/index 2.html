@@ -15,7 +15,7 @@
 		<!-- <iframe id="nav" src="nav.html"></iframe> -->
 		<link rel="stylesheet" href="./nav.css">
 		<div class="top-bar">
-		  <a class="brand" href="index.html">
+		  <a class="brand" href="#">
 		  	<div class="left">
 		  		<img id="logo" src="assets/wvu_logo.png" height="60" />
 		  	</div>
@@ -40,7 +40,7 @@
 				        <a id="nav-home" class="nav-link" href="index.html" target="_parent">Student Services <span class="sr-only">(current)</span></a>
 				        <ul>
 				        	<li class="nav-item2"><a class="nav-link2" href="admissions.html">Admissions</a></li>
-				        	<li class="nav-item2 nav-current"><a class="nav-link2" href="registration-menu.html">Registration</a></li>
+				        	<li class="nav-item2"><a class="nav-link2" href="registration-menu.html">Registration</a></li>
 				        	<li class="nav-item2"><a class="nav-link2" href="#">Student Records</a></li>
 				        	<li class="nav-item2"><a class="nav-link2" href="#">Student Accounts</a></li>
 				        	<hr/>
@@ -56,46 +56,10 @@
 				    </ul>
 				  </div>
 			</nav>
-			<div id="main-drop" class="main-area col-9 add-drop form-group">
-				<h6>Spring 2018</h6>
-				<h4 style="color:#FA2;">Add / Drop Classes</h4>
-				<h5>Add Classes</h5>
-				<input type="text" id="course1" class="form-control" />
-				<input type="text" id="course2" class="form-control" />
-				<input type="text" id="course3" class="form-control" />
-				<input type="text" id="course4" class="form-control" />
-				<input type="submit" name="Submit" onclick="submit()" class="btn btn-primary" />
-
-				<h5 class="title">Drop Classes</h5>
-				<span class="registered">
-					<span></span>
-					<select name="Action" >
-						<option value=""></option>
-						<option value="drop">Drop</option>
-					</select>
-				</span>
-				<span class="registered">
-					<span></span>
-					<select name="Action" >
-						<option value=""></option>
-						<option value="drop">Drop</option>
-					</select>
-				</span>
-				<span class="registered">
-					<span></span>
-					<select name="Action" >
-						<option value=""></option>
-						<option value="drop">Drop</option>
-					</select>
-				</span>
-				<span class="registered">
-					<span></span>
-					<select name="Action" >
-						<option value=""></option>
-						<option value="drop">Drop</option>
-					</select>
-				</span>
-				<input type="submit" onclick="drop()" class="btn btn-primary" />
+			<div id="hero-olsis" class="main-area col-9 jumbotron">
+				<h1 class="display-4"><span>WVU-P</span> + <span>OLSIS</span></h1>
+				<p class="lead">Serving the <span>Mid-Ohio Valley</span> region</p>
+				<hr class="my-4"></hr>
 			</div>
 		<div class="shade1"></div>
 		<div id="hero-back"></div>
@@ -103,5 +67,5 @@
 	</div>
   	<iframe id="footer" class="container-fluid" src="footer.html"></iframe>
   </body>
-	<script src="./add-drop.js"></script>
+	<!-- <script src="./nav.js"></script> -->
 </html>
