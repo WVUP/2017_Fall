@@ -1,0 +1,199 @@
+/*
+Aaron Cottrill`s CSS
+*/
+html, body 
+{
+margin: 0;
+padding:0;
+}
+img
+{ 
+padding : 10px; 
+display : block;
+}
+a:link
+{
+    color: white; 
+}
+a:visited
+{
+    color: white;
+}
+
+input
+{
+   color:white;
+   background:red;
+}
+.container 
+{
+    width: 960px;
+    margin: 0 auto;
+    /* background:silver; */
+}
+.nav 
+{
+    background: #4651c9;
+    line-height: 25px;
+}
+.inline-block 
+{
+    display: inline-block;
+}
+.logo 
+{
+    background: #E3B11F;
+    color: #111683;
+    padding: 0;
+    margin:0;
+}
+.menu 
+{
+    padding-left: 0px;
+    
+}
+.menu ul 
+{
+    margin:0;
+    padding: 0;
+}
+.menu ul li 
+{
+    display: inline-block;
+    background:#0089ff;
+    color:#E3B11F;;
+}
+.menu ul li:hover
+{
+    color:white;
+    background-color: #111683;
+}
+.content 
+{
+    background: white;
+    height: 100%;
+}
+.leftPane 
+{
+    width: 20%;
+    background: #E3B11F;
+    color : #111683;
+    height: 100%;
+}
+.rightPane
+{
+    width: 20%;
+    background: #5392ce;
+    color : navy;
+    height: 100%;
+}
+.main 
+{
+    width:60%;
+}
+.mainImage
+{
+    width: 100%;
+    height: 100%;
+}
+.left 
+{
+    float:left;
+    text-align: center;
+}
+.degreeButton
+{
+    background: red;
+    width: 90%;
+    height : 7%;
+    margin:auto;
+}
+.degreeButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.giveNowButton
+{
+    background: orange;
+    width: 90%;
+    height: 7%;
+    margin:auto;
+}
+.giveNowButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.communityClassesButton
+{
+    background: seagreen;
+    width: 90%;
+    height: 7%;
+    margin:auto;
+}
+.communityClassesButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.careerCoachButton
+{
+    background: gold;
+    width: 90%;
+    height: 7%;
+    margin:auto;
+}
+.careerCoachButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.virtualTourButton
+{
+    background: cyan;
+    width: 90%;
+    height: 7%;
+    margin:auto;
+}
+.virtualTourButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.studentNewspaperButton
+{
+    background: navy;
+    width: 90%;
+    height: 7%;
+    margin:auto;
+}
+.studentNewspaperButton:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.rectangle
+{
+    background: navy;
+    width: 100%;
+    height: 7%;
+    margin:auto;
+}
+.cyanRectangle
+{
+    background: #5392ce;
+    width: 100%;
+    height: 7%;
+    margin:auto;
+}
+.welcome
+ {
+    width: 90%;
+    background-image: url(http://www.wvup.edu/wp-content/gallery/home_headers/fall2016grad.gif);
+    color:white;
+    margin:20px auto;
+    text-align: center;
+    padding: 20px 0;
+    height: 300px;
+    display : block;
+}
+.right
+{
+    float:right;
+    text-align:center;
+}

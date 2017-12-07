@@ -1,0 +1,494 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul
+{
+	list-style: none;
+}
+
+div
+{
+	display: block;
+}
+
+.header .main_content .main_nav 
+{
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #7f8291;
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    top: 0px;
+}
+
+.header .main_content .container
+{
+	height: 100%;
+}
+
+.header .main_content .main_nav li 
+{
+    font-size: 15px;
+    display: table;
+    height: 100%;
+    float: right;
+    padding: 20px 5px;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+body .container
+{
+	margin: 0 auto;
+    max-width: 940px;
+    padding: 0 20px;
+    position: relative;
+}
+
+body .button 
+{
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 12px 20px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    color: #FFF;
+    border-radius: 0px 10px 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.home .body #cyan_background .container .content p
+{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    line-height: 22pt;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.home .body #features .half .text p 
+{
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.home .body #features .features_link a 
+{
+    background-color: #22b0e6;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.home .body #explore .h3
+{
+    text-align: center;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #6b6b6b;
+    margin: 0 0 35px 0;
+}
+
+.home .body #explore #video_viewer 
+{
+    float: left;
+    padding: 0 90px 0 0;
+    width: 40%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#explore #video_viewer li.active_view
+{
+    color: #22b0e6;
+}
+
+.home .body #tabs #tabnav
+{
+    margin: 24px auto 30px auto;
+    width: 100%;
+    min-height: 350px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
+}
+
+.home .body #tabs #tabnav li .active_item
+{
+    padding: 15px 25px;
+    background: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16pt;
+    color: #6b6b6b;
+    display: none;
+    position: relative;
+}
+
+.home .body #tabs #tabnav .open_section
+{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.home .body #tabs #tabnav .open_section .third img
+{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    padding: 10px 0 0 1px;
+}
+
+.home .body #tabs #tabnav .open_section .third p.icon
+{
+    padding: 0 3% 0 35px;
+    position: relative;
+    margin: 0 0 25px 0;
+}
+
+.home .body #tabs #tabnav .open_section .third p
+{
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.home .body #tabs #tabnav .open_section .third h3
+{
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #6b6b6b;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19pt;
+    margin: 0 0 3px 0;
+}
+
+.home .body #tech_support 
+{
+    min-height: 500px;
+    background-image: url(images/orange-back.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ee7541;
+    padding: 115px 0 0 0;
+}
+
+.home .body #tech_support .text
+{
+    font-weight: 700;
+    max-width: 645px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+home .body #tech_support .text h2.number, .home .body #tech_support .text h3.number
+{
+    font-size: 38px;
+    margin: 20px 0 0 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 45px;
+}
+
+.home .body #tech_support .contact
+{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 35px 0 0 0;
+    max-width: 700px;
+}
+
+.home .body #tech_support .contact .half
+{
+    width: 47%;
+    float: left;
+    border: 3px solid #FFF;
+    text-align: left;
+    margin: 0 1.5%;
+    padding: 15px 20px 16px 20px;
+    min-height: 120px;
+    position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.home .body #tech_support .contact .half span
+{
+    color: #FFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    line-height: 18pt;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 0 0 120px;
+    box-sizing: border-box;
+}
+
+home .body #sales
+{
+    padding: 70px 0;
+}
+
+.home .body #sales .container
+{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.home .body #sales .text
+{
+    overflow: hidden;
+}
+
+.home .body #sales .text h2
+{
+    color: #6b6b6b;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 39pt;
+    font-size: 34px;
+    text-align: right;
+    width: 34%;
+    float: left;
+}
+
+.home .body #sales .text p
+{
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    width: 66%;
+    float: left;
+    padding: 7px 0 0 40px;
+    max-width: 525px;
+    box-sizing: border-box;
+}
+
+.home .body #sales .icons
+{
+    text-align: center;
+    margin: 45px 0 75px 0;
+}
+
+.home .body #sales .icons img
+{
+    margin: 0 35px;
+}
+
+body #logos
+{
+    text-align: center;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+body #logos .wrap
+{
+    margin: 0 -25px;
+    overflow: hidden;
+}
+
+body #logos span
+{
+    width: 24%;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+    padding: 25px 25px;
+    box-sizing: border-box;
+}
+
+body #logos span img
+{
+    width: 100%;
+    display: block;
+    height: auto;
+    max-width: 198px;
+    max-height: 107px;
+}
+
+body .footer
+{
+    background-color: #3b3e4b;
+    overflow: hidden;
+    padding: 35px 0 0 0;
+}
+
+body .footer .container
+{
+    overflow: hidden;
+}
+
+body .footer .quarter.padded
+{
+    padding: 0 20px 2px 0;
+}
+
+body .footer-section .quarter h3
+{
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 19pt;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+body .footer .quarter .social.first
+{
+    margin: 0 0 10px 0;
+}
+
+body .footer .quarter .social
+{
+    margin: 0 0 10px 9px;
+    color: #3b3e4b;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #ee7541;
+    line-height: 24pt;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+body .footer .quarter .social.icon-linkedin
+{
+    line-height: 23pt;
+    font-size: 19px;
+}
+
+body .footer .quarter .social.icon-youtube
+{
+    line-height: 23pt;
+    font-size: 18px;
+}
+
+body .footer .quarter .social.icon-google
+{
+    line-height: 24pt;
+    font-size: 17px;
+}
+
+body .footer .quarter p
+{
+    margin: -4px 0 0 0;
+    color: #FFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    max-width: 240px;
+}
+
+body .footer .quarter p span
+{
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #6b6e7c;
+}
+
+body .footer .quarter a.perm
+{
+    color: #22b0e6;
+    text-decoration: underline;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+    display: inline-block;
+}
+
+body .footer .quarter
+{
+    width: 33.33%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body .footer .quarter ul
+{
+    overflow: hidden;
+}
+
+body .footer .quarter ul li
+{
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    width: 50%;
+    line-height: 14pt;
+    margin: 0 0 18px 0;
+    box-sizing: border-box;
+}
+
+body .footer .quarter ul li a
+{
+    color: #6b6e7c;
+    transition: all 0.2s ease;
+}
+
+body .footer .copyright
+{
+    text-align: center;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-color: #333643;
+    padding: 20px 0;
+    margin: 35px 0 0 0;
+}
+
+body .footer .copyright span
+{
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 16pt;
+}

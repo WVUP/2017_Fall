@@ -1,0 +1,671 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Information Management, Inventory & Order Sync|nChannel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" style="width: 200%; height: 200%;">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            
+        }
+        .hover:hover{
+            cursor: pointer;
+        }
+        .row1{
+            min-height:56px;
+            position: fixed;
+            z-index: 200;
+        }
+        .row2{
+            text-align: center;
+            min-height: 706px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            font-size: 20px;
+            line-height: 22pt;
+            font-weight: 400;
+        }
+        .row3{
+            padding-bottom: 30px;
+            padding-top: 29px;
+            min-height:40px;
+            color: white;
+        }
+        .row4{
+            margin: 80px;
+            z-index: -20;
+            min-height: 534px;
+            position: relative;
+        }
+        .row5{
+            min-height:600px;
+            position: relative;
+            z-index: -20;
+        }
+        .row6{
+            min-height:300px;
+            position: relative;
+            z-index: -20;
+        }
+        .row7{
+            padding-top: 115px;
+            min-height:500;
+            background-image: url("orange-back.jpg");
+            position: relative;
+            z-index: -20;
+        }
+        .row8{
+            padding-bottom: 70px;
+            padding-top: 70px;
+            min-height:638;
+            position: relative;
+            z-index: -20;
+        }
+        .row9{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            min-height:324;
+            position: relative;
+            z-index: -20;
+        }
+        .row10{
+            padding-top: 30px;
+            min-height:351px;
+            position: relative;
+            z-index: -20;
+        }
+        .row11{
+            min-height:21px;
+            position: relative;
+            z-index: -20;
+        }
+        .head {
+            padding-top: 200px;
+            font-size: 34px;
+            line-height: 30pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+        .learn{
+            background: #ee7541;
+            height: 40px;
+            width: 125px;
+            margin-left: 44%;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 0 0 0 ;
+            padding-top: 5px;
+            margin-top: 20px; 
+            margin-bottom: 40px;
+        }
+        .navTop{
+            position: relative;
+            float: top;
+            float: right;
+            display: inline-block;
+            color: #f4f4f4;
+        }
+        .navBot{
+            float: right;
+            display: inline-block;
+            color: #f4f4f4;
+            min-width: 64px;
+            min-height: 45px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #7f8291;
+            bottom: 0px;
+            line-height: 3;
+        }
+        .frumunda:hover{
+            cursor: pointer;
+        }
+        .frumunda1 {
+            position: fixed;
+            display: inline-block;
+            margin-top: 61px;
+            right: 40.5%;
+            height: 45px;
+            top: 0;
+            max-height: 36px;
+            min-width: 90px;
+            background-color: #ebad06;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            
+        }
+        .frumunda2 {
+            position: fixed;
+            display: inline-block;
+            margin-top: 61px;
+            right: 24%;
+            height: 45px;
+            top: 0;
+            max-height: 36px;
+            min-width: 146px;
+            background-color: #ee7541;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .frumunda3 {
+            position: fixed;
+            display: inline-block;
+            margin-top: 61px;
+            right: 33.5%;
+            top: 0;
+            height: 45px;
+            max-height: 36px;
+            min-width: 105px;
+            background-color: #00b2ee;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .frumunda4 {
+            position: fixed;
+            display: inline-block;
+            padding-top: 4px;
+            margin-top: 61px;
+            right: 21%;
+            height: 45px;
+            top: 0;
+            max-height: 36px;
+            min-width: 40px;
+            background-color: #3b3e4b;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #7f8291;
+        }
+        .navHide{
+            display: none;
+            min-height: 45px;
+            
+        }
+        .navHide div:hover {
+            display: block;
+        }
+        .container {
+            padding: 0 5%;
+        }
+        .curlyPic{
+            background: url("dot-pat.png") 0 0 repeat;
+        }
+        .parright{
+            float: right;
+        }
+        .parleft{
+            margin-left: 5%;
+            float: left;
+        }
+        .parHead{
+            float: left;
+            font-size: 18px;
+        }
+        .parmsg{
+            float: left;
+            font-size: 11px;
+            color:#ee7541;
+            font-weight: bold;
+        }
+        .parbody{
+            float: left;
+        }
+        .feat{
+            background: #00b2ee;
+            height: 40px;
+            width: 187px;
+            margin-left: 31%;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 0 0 0 ;
+            padding-top: 5px;
+            padding-left: 9px;
+            margin-top: 290px; 
+            margin-bottom: 40px;
+            color: white;
+            font-size: 18px;
+        }
+        .learn2{
+            background: #00b2ee;
+            height: 40px;
+            width: 125px;
+            padding-left: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 0 0 0 ;
+            padding-top: 5px;
+            margin-top: 20px; 
+            margin-bottom: 40px;
+            color: white;
+        }
+        .body6{
+            float: right;
+        }
+        .head7{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .body7{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .phone7{
+            text-align: center;
+            color: white;
+            font-size: 35px;
+        }
+        .box7{
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: 3px solid white;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .questions{
+            position: fixed;
+            z-index: 20;
+            background-color: #ebad06;
+            color: white;
+            border-top-right-radius: 10px;
+            bottom: 0;
+            right: 8%;
+            height: 45px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            box-shadow: 2px -2px 10px grey;
+        }
+        .head8{
+            float: right;
+        }
+        .msg8{
+            float: right;
+        }
+        .body8{
+            background-color: #00b2ee;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .questions:hover {
+            height: 55px;
+        }
+        .head82{
+            text-align: right;
+            font-size: 30px;
+            color: #3b3e4b;
+            font-weight: bold;
+        }
+        .body82{
+            color: #3b3e4b;
+            font-size: 18px;
+            margin-top: 8px;
+        }
+        .body8 {
+            color: white;
+            height: 200px;
+            padding: 10%;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .head8 {
+            font-size: 24px;
+            color: #3b3e4b;
+        }
+        .email7{
+            background-color: #00b2ee;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 35px;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .chat7{
+            background-color: #00b2ee;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 35px;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .circle10{
+            background-color: #ee7541;
+            border-radius: 50%;
+            width:10px;
+            height:25px;
+            margin: 2%;
+            line-height: 2px;
+        }
+        .head10 {
+            color: white;
+            font-size: 20px;
+        }
+        .text10{
+            color: #7f8291;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid row1" style="background: #3b3e4b">
+        <div class="container">
+            <div class="navHide" id="navhidden">
+                <div class="navTop">contact</div>
+                <div class="navTop">support</div>
+            </div>
+            <div>
+                <img class="hover" src="n.png" alt="" style="float:left; bottom:0px;" width="110px" >
+            </div>
+            <ul>
+                <li class="navBot">
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">insights</a> 
+                </li>
+                <li class="navBot">
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">pricing</a> 
+                </li>
+                <li class="navBot">
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">connectors</a> 
+                </li>
+                <li class="navBot">
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">solutions</a> 
+                </li>
+                <li class="navBot">
+                    <a href="#" style="color: #7f8291; text-decoration: none; font-size: 13px; font-weight:bold;">overview</a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid row2" style="background: #9cdcf2 ">
+        <div class="container">
+            <div class="">
+                <div class="frumunda frumunda1">chat now</div>
+                <div class="frumunda frumunda2">1-800-714-0882</div>
+                <div class="frumunda frumunda3">get a quote</div>
+                <div class="frumunda frumunda4"><i class="fa fa-search" aria-hidden="true"></i></div>
+            </div>
+            <div class="head">Sell more...online and in store.</div>
+            <div>Increase revenue by selling more products in more channels like eCommerce <br>webstores and marketplaces. 
+            Grow without the growing pains.</div>
+            <div class="learn hover">learn more</div>
+            <div class="curlyPic">
+                
+                <div><img src="connect.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row3" style="background: #ee7541">
+        <div class="container">
+            <div style="text-align:center; font-size:32px;">Explore our most popular integrations</div>
+        </div>
+    </div>
+    <div class="container-fluid row4" style="background: white">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="parleft col-5">
+                        
+                        <div class="row"> 
+                            <div class="col-4"><img src="small-shopify-logo.png" alt="" style="padding-bottom:30px;"></div>
+                            <div class="col-8">
+                                <div class="parHead">Shopify</div></br>
+                                <div class="parmsg">SELL MORE ON SHOPIFY</div><br>
+                                <div class="parbody">Use our Shopify connector to integrate your webstore with your fulfillment systems. Eliminate the need for manual data entry so you can focus on growing your business.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parright col-6 ">
+                        <div class="row">
+                            <div class="col-4"><img src="small-magento-logo.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">Magento</div><br>
+                                <div class="parmsg">IMPROVE CUSTOMER EXPERIENCE</div><br>
+                                <div class="parbody">Use our Magento connector for either Magento 1.x or 2.0 to centralize your operations for better order and inventory management. Improve your customer experience so you can overcome your competition.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="parleft col-5 ">
+                        
+                        <div class="row">
+                            <div class="col-4"><img src="small-netsuite-logo.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">NetSuite</div><br>
+                                <div class="parmsg">MULTICHANNEL ORDER MANAGEMENT</div><br>
+                                <div class="parbody">Use our NetSuite connector to integrate your ERP with your sales channels. Automate order processing so you can fulfill orders quicker and always deliver on time.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="parright col-6">
+                        
+                        <div class="row">
+                            <div class="col-4"><img src="Micro-Dynamics-NAV-e1401305420976.png" alt="" style="padding-bottom:30px;"></div> 
+                            <div class="col-8">
+                                <div class="parHead">Microsoft Dynamics NAV</div><br>
+                                <div class="parmsg">REAL-TIME INVENTORY MANAGEMENT</div><br>
+                                <div class="parbody">Use our Microsoft Dynamics NAV connector to sync inventory between your ERP and all your sales channel. Ensure inventory levels are always accurate and stop overselling.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feat hover">See All Integrations</div>
+        </div>
+    </div>
+    <div class="container-fluid row5" style="background: #f4f4f4">
+        <div class="container">
+            <div style="font-weight:3000; color:#333643; font-size:30px; text-align:center; padding-top: 70px; padding-bottom:30px;">Explore the App</div>
+            <img src="YouThought.PNG" alt="">
+        </div>
+    </div>
+    <div class="container-fluid row6" style="background: white">
+        <div class="container">
+            <div class="row">
+                <img src="ShesA.jpg" alt="" class="col-4" style="width:100px; height:270px;">
+                <div class="col-4"> 
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Real-time integration to a multitude of endpoint systems.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Integrate your eCommerce webstore, marketplaces, ERP, accounting systems, POS systems, and 3PLs.</div></div><br><br>
+                    <div class="row"><i class="fa fa-check col-2" aria-hidden="true" style="color:#ee7541; font-size:30px;"></i><div class="body6 col-10"> Direct API-based product connectors with advanced product listing features.</div></div>
+                </div>
+                <div class="col-4"> 
+                    <div style="font-size:18px; font-weight:bold; color: #6b6b6b;">How our platform works...</div>
+                    <div style="color: #6b6b6b;">
+                            nChannel's platform is truly software-as-a-service. We integrate through APIs wherever possible, 
+                            and install very little on any local computers (for ERPs and POS systems). We've experienced the pains 
+                            of evolutions of retail integration. So, we built a platform that works like it should. Learn more about 
+                            all of the systems we can integrate.
+                    </div>
+                    <div class="learn2 hover">learn more</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row7" style="">
+        <div class="container">
+            <div class="head7">24/7 Customer Support</div>
+            <div class="body7">Talk to an nChannel expert anytime—we are here to help. We are a team of real </div>
+            <div class="body7">people who can provide direction and answer any questions you might have. </div>
+            <div class="body7">No voicemails and we provide 100% local USA support.</div>
+            <div class="phone7">
+                <div class="row" style="width: 40%; margin-left: 30%;">
+                    <div class="col-2">
+                        <div style="border-radius:50%; background:#a74f28; width:36px; height:36px; font-size:22px; padding-top:7px;"><i class="fa fa-phone" aria-hidden="true"></i></div> 
+                    </div>
+                    <div class="col-10"> 1-844-533-1333</div>
+                </div>
+            </div>
+            <div class="row" style="color:white; width:80%; margin-left:10%; margin-right:10%;">
+                <div class="col box7">
+                    <div style="font-size:20px;">Email Us for More Info</div>
+                    <div class="row">
+                        <div class="email7 col-3 hover">email us</div>
+                        <div class="body72 col-6">We have a solution for any scenario.</div>
+                    </div>
+                </div>
+                <div class="col box7">
+                    <div style="font-size:20px;">Chat with Us Online</div>
+                    <div class="row">
+                        <div class="chat7 col-3 hover">chat now</div>
+                        <div class="body72 col-6">Chat with us during business hours (ET).</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row8" style="background: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 head82">Helping Our Customers Grow</div>
+                <div class="col-8 body82">
+                    We've definitely done this before! We've helped a multitude of customers in a multitude of industries grow their businesses. 
+                    Check out some of the case studies below to get an idea of what kind of solution we can provide for you.</div>
+            </div>
+            <div class="row" style="margin:5%;">
+                <div class="col"></div>
+                <div class="col"></div>
+                
+                <div class="col" style="">
+                    <img src="sales1.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="sales3.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="sales2.png" alt="">
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="body8">
+                        There's no question. We could not have achieved this growth without our nChannel platform. 
+                        It paid for itself fast. Now it saves hours and money every day.
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="head8">Mike's Archery</div>
+                            <div class="msg8">Owner and GM, Bryan Dickess</div>
+                            <a href="#" class="msg8">Download Case Study</a>
+                        </div>
+                        <div class="col-3" style=""><img src="mike.png" alt=""></div>
+                        
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-5">
+                    <div class="body8">
+                        We make specials show up faster, and specify in advance when they start and stop. 
+                        Even better, once we attract a new customer from a less-agile retailer, we keep them.
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="head8">Midwest Photo Exchange</div>
+                            <div class="msg8">President, Moishe Appelbaum</div>
+                            <a href="#" class="msg8">Download Case Study</a>
+                        </div>
+                        <div class="col-3"><img src="midwest.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row9" style="background: #f4f4f4">
+        <div class="container" >
+            <div style="padding-top:5%; padding-bottom:5%;"><img src="photo9.png" alt=""></div>
+        </div>
+    </div>
+    <div class="container-fluid row10" style="background: #3b3e4b">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="head10">Connect</div>
+                    <div class="row" style="width:70%;">
+                        <div class="circle10 col"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="circle10 col"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="circle10 col">in</div>
+                        <div class="circle10 col"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                        <div class="circle10 col"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="head10">Multichannel Insights</div>
+                    <div class="text10">November 2, 2017</div>
+                    <div style="color:white;">Project Management Tips for Creating a Successful eCommerce Website</div>
+                    <a href="#">View Article</a>
+                </div>
+                <div class="col">
+                    <div class="head10">Explore More</div>
+                    <div class="row">
+                        <div class="col-6 text10 hover">about</div>
+                        <div class="col-6 text10 hover">careers</div>
+                        <div class="col-6 text10 hover">security</div>
+                        <div class="col-6 text10 hover">pci compliance</div>
+                        <div class="col-6 text10 hover">privacy policy</div>
+                        <div class="col-6 text10 hover">industries</div>
+                        <div class="col-6 text10 hover">for investors</div>
+                        <div class="col-6 text10 hover">contact</div>
+                        <div class="col-6 text10 hover">press releases</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row11" style="background: #333643">
+        <div class="container" style="text-align:center; color:white; font-size:15px; padding-top:15px; padding-bottom:15px; font-weight:bold;">
+            Copyright C 2016 | All Rights Reserved, nChannel
+        </div>
+    </div>
+    <div class="questions">
+        <a> Questions? Chat with us!</a>
+    </div>
+
+    <!-- <script>
+        window.onscroll = function (oEvent) {
+            var mydivpos = document.getElementById("navHide").offsetTop;
+            var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
+
+            if(scrollPos == mydivpos)
+                document.getElementById("navhidden").className = "block";
+            else
+                document.getElementById("navhidden").className = "none";
+        };
+    </script> -->
+</body>
+</html>

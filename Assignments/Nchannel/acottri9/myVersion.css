@@ -1,0 +1,144 @@
+/*
+Aaron Cottrill`s 
+*/
+html
+{
+    font-family: Helvetica;
+    /*
+    display:inline-block;
+    */
+}
+a
+{
+    color: white; 
+}
+body 
+{ 
+    padding-top: 70px; 
+    padding-bottom: 70px; 
+}
+h1
+{
+    text-align:center;
+}
+ul { list-style-type: none; }
+
+.inlineBlock
+{
+    display:inline-block;
+}
+.block 
+{
+    display:block; 
+}
+.nav
+{
+    background-color: grey;
+    color : white;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+}
+.greyText
+{
+	    color : gray;
+}
+.learnSection
+{
+    background-color: #9cdcf2;
+    color : white;
+    padding-top:50px;
+}
+.interruptSection
+{
+    background-color:#ee7541;
+    color:white;
+}
+.roundedButton
+{
+    border-radius: 8px;
+    font-variant: italic;
+    color:white;
+}
+.blueBackground
+{
+    background-color : blue;
+}
+.redBackground
+{
+    background-color : red;
+}
+.yellowBackground
+{
+    background-color: yellow;
+}
+.greyBackground
+{
+    background-color : lightgrey;
+}
+.white
+{
+	color:white;
+	text-decoration: none;
+}
+
+.roundedButton:hover
+{
+    border-radius: 12px;
+    font-variant: italic;
+    color:white;
+    background-color:black
+}
+ul.fancy-list li:before 
+{
+    /*
+    font-family: Wingdings;
+    */
+    /*
+    content: "f00c";
+    color: red;
+    */
+    content: "\2713";
+    color: #F5B54B;
+}
+ul.fancy-list 
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    list-style: none;
+}
+.explore
+{
+    background-color:whitesmoke;
+    color:grey;
+    display:block;
+}
+.navText
+{
+    text-align: right;
+    text-decoration: none; 
+}
+.connect
+{
+    background-color:navy;
+    color:white;
+	text-decoration: none;
+}
+.noStyle
+{
+    text-decoration: none;
+}
+.piece
+{
+    width: 15%; 
+}
+.quoteText
+{
+    width:500px;
+    height:100px;
+     background-color: blue;
+     color:white;
+      border:1px solid #000; 
+      clear:both; 
+}
