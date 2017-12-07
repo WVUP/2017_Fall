@@ -8,7 +8,7 @@
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style>
         .back {
-            background: rgb(66, 0, 92);
+            background: #4b367c;
             padding: 0;
             height: 1200px;
             margin: 0;
@@ -19,6 +19,7 @@
             height: 1200px;
             width: 250px;
             float: left;
+            position: fixed;
         }
         .upperLeftPane {
             background: grey;
@@ -28,15 +29,45 @@
             background: rgb(70, 70, 70);
             height: 1200px;
             width: 45px;
-            float: right;
+            right: 0;
+            position: fixed;
         }
         .logo {
-            height: 30px;
-            width: 120px;
+            height: 50px;
+            width: 150px;
         }
         .twitch {
-            height: 30px;
-            width: 30px;
+            height: 50px;
+            width: 50px;
+        }
+        .status{
+            font-size: 12px;
+            color: #80d680;
+        }
+        .userPic {
+            height: 40px;
+            width: 40px;
+            margin-top: 7px;
+        }
+        .search {
+            position: fixed;
+            bottom: 5;
+            left: 5;
+        }
+        .purpleRain {
+            width: 250px;
+
+        }
+        .purpleLine {
+            border-radius: 5px;
+            background-color: #4b367c;
+            margin-top: 3px;
+            padding-left: 5px;
+            width: 240px;
+            height: 7px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: silver;
         }
     </style>
 </head>
@@ -45,18 +76,37 @@
         <div class="">
             <div class="leftpane">
                 <div class="upperLeftPane">
-                    <img src="Twitch_BlackLogo.svg.png" alt="" class="logo">
-                    <img src="twitch-2048-black.png" alt="" class="twitch">
-                    <div class="userPic"></div>
-                    <div class="username"></div>
-                    <div class="status"></div>
+                    <div style="padding-top:5px; padding-left:5px;">
+                        <img src="Twitch_BlackLogo.svg.png" alt="" class="logo">
+                        <img src="twitch-2048-black.png" alt="" class="twitch">
+                    </div>
+                    
+                    <div class="row" style="margin-top: 7px;">
+                        <div class="col-1"></div>
+                        <div class="col-2"><img class="userPic" src="user.jpg" alt=""></div>
+                        <div class="col-8">
+                            <div class="username">spartan_drake</div>
+                            <div class="status">Online</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input style="width:240px; " type="text">
+                </div>
+                <div class="purpleRain">
+                    <div class="purpleLine"></div>
+                    <div class="purpleLine"></div>
+                    <div class="purpleLine"></div>
                 </div>
             </div>
             
             <div class="rightpane">
-                <img src="arrow.png" alt="">
-                <img src="arrow.png" alt="">
-                <img src="arrow.png" alt="">
+                <div style="right:50%; top:2%;" ><img src="arrow.png" alt=""></div>
+                <div style="right:50%; top:50%;"><img src="arrow.png" alt=""></div>
+                <div style="right:50%; top:98%;"><img src="arrow.png" alt=""></div>
+                
+                
+                
             </div>
         </div>
     </div>
