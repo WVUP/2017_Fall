@@ -106,7 +106,7 @@
                 var html = '';
                 games.games.forEach( (g) => {
                 html += '<div>' + g.name + '</div>';
-                html += '<div>' + g.logo + '</div>';
+                html += '<img src="' + g.logo.large + '">';
                 html += '<div>' + g.popularity + '</div>';
                 })
                 document.getElementById('mid').innerHTML = html;
