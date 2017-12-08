@@ -22,13 +22,15 @@ function testFunction(){
     }
 }
 
-// window.onload = testFunction();
+//Sets up the Game list across the middle pane
+window.onload = GameList()
 
-//document.addEventListener("load", testFunction, true);
+function GameList(){
+    document.getElementById("gameContent").innerHTML = gameFirstRow();
+    document.getElementById("gameRowsContainer").innerHTML += gameSecondRow().outerHTML;
+}
 
-window.onload = buildGameList;
-
-document.getElementById("gameContent").innerHTML = gameFirstRow();
+//document.getElementById("gameContent").innerHTML = gameFirstRow();
 
 
 function makeGameSquare(imageSource, name, viewerCount){
@@ -38,19 +40,49 @@ function makeGameSquare(imageSource, name, viewerCount){
 }
 
 function gameFirstRow(){
+    //Im ashamed of all of this
     var game1 = makeGameSquare("SuperMarioOdyssey.jpg", "Super Mario Odyssey", "100000");
     var game2 = makeGameSquare("XenobladeChronicles.jpg", "I'm Really Feeling It", "420");
     var game3 = makeGameSquare("EarthBound.jpg", "EarthBound", "4000");
     var game4 = makeGameSquare("SuperSmashBrosMelee.jpg", "Super Smash Bros Melee", "500");
     var game5 = makeGameSquare("The Legend of Zelda_ A Link to the Past.jpg", "Link to the Past", "4532");
+    var game6 = makeGameSquare("HearthStone.jpg","HearthStone","8621");
+    
 
     game1 += game2;
     game1 += game3;
     game1 += game4;
     game1 += game5;
+    game1 += game6;
+    
     
     
     return game1;
+}
+
+/**
+ * Returns the second preBuilt rows of games
+ */
+function gameSecondRow(){
+    var game7 = makeGameSquare("Siege.jpg","R6 Siege","2");
+    var game8 = makeGameSquare("PUBG.jpg","PBUG","534892");
+    var game9 = makeGameSquare("trash.jpg","League Of Legends","0");
+    var game10 = makeGameSquare("LANoire.jpg","L.A. Noire","5642");
+    var game11 = makeGameSquare("DarkSouls3.jpg","Dark Souls 3","7856");
+    var game12 = makeGameSquare("Uno.jpg","Uno","765");
+    var row2 = document.createElement("div");
+    row2.className = "row";
+    row2.id = "secondGameRow";
+
+    game7 += game8;
+    game7 += game9;
+    game7 += game10;
+    game7 += game11;
+    game7 += game12;
+    
+    row2.innerHTML = game7;
+
+    return row2;
 }
 
 
