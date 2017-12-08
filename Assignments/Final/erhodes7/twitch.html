@@ -101,7 +101,17 @@
         </div>      
     </div>
     <script>
-            
+            function stringBuilder(games)
+            {
+                var html = '';
+                games.forEach( (g) => {
+                html += '<div>' + games.name + '</div>';
+                html += '<div>' + games.logo + '</div>';
+                html += '<div>' + games.popularity + '</div>';
+                })
+            }    
+
+
             document.getElementById('getData').addEventListener('keydown', (event) =>
             {
 
@@ -116,7 +126,7 @@
                          'Client-ID': '5hclx4xrr4qpx18lvaoc9gsxh4xkcg',
                          'Accept': 'application/vnd.twitchtv.v5+json'
                         }})
-                        .then(function(Response){console.log(Response.json().then(body => console.log(body)))})
+                        .then(function(Response){console.log(Response.json().then(body => console.log(body))); stringBuilder(Response.json())})
                         .catch(function(Error){console.log(Error)});
                     }
                     getData();
