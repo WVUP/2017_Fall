@@ -3,3 +3,12 @@ html{background-image: url("SimpleAndSweet.jpg"); color:#FF0}
 #Aid{display:inline; padding: 15px; color:gold}
 Ul{list-style-type:none;
 font-size:25px;}
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+	}
