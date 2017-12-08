@@ -33,6 +33,19 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
 
 
    html += "<tbody>";
+    html+=" <tr>" 
+  +" <th>   CRN  </th>"
+  + "<th>   Course   </th>"
+  +" <th>   Title  </th>"
+  +"<th> Credits</th>"
+   +"<th>Start Date</th>"
+  +" <th>End Date</th>"
+  +" <th>Days</th>"
+  +" <th>Time</th>"
+   +"<th>Instructor</th>"
+  +" <th>Action</th>"
++"</tr>";
+
    html += "<tr>";
    html += "<td> 5415 </td>";
    html += "<td> CS101 </td>"
@@ -43,6 +56,10 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
    html += "<td>T, Th</td>";
    html += "<td>1:00 PM - 2:15 PM</td>";
    html += "<td>Gary Thompson</td>";
+   html +="<td><select name ='drop'> "
+   +"<option value='1'>******</option>"
+   +"<option value='2'>DROP</option> "
+   +"<option value='3'>Repeat Course</option> </td>";
    html += "</tr>";
 
 
@@ -57,6 +74,10 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
    html += "<td>M, W</td>";
    html += "<td>11:00 AM - 12:45 PM</td>";
    html += "<td>Charles Almond</td>";
+   html +="<td><select name ='drop'> "
+   +"<option value='1'>******</option>"
+   +"<option value='2'>DROP</option> "
+   +"<option value='3'>Repeat Course</option> </td>";
    html += "</tr>";
 
 
@@ -70,6 +91,10 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
    html += "<td>M, T, W, Th</td>";
    html += "<td>9:30 PM - 10:20 AM</td>";
    html += "<td>Gary Thompson</td>";
+   html +="<td><select name ='drop'> "
+   +"<option value='1'>******</option>"
+   +"<option value='2'>DROP</option> "
+   +"<option value='3'>Repeat Course</option> </td>";
    html += "</tr>";
 
 
@@ -86,6 +111,10 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
    html += "<td>M, W</td>";
    html += "<td>11:00 AM - 12:15 PM</td>";
    html += "<td>Charles Almond</td>";
+   html +="<td><select name ='drop'> "
+   +"<option value='1'>******</option>"
+   +"<option value='2'>DROP</option> "
+   +"<option value='3'>Repeat Course</option> </td>";
    html += "</tr>";
 
 
@@ -100,6 +129,10 @@ function addClass(CRN, course, title, credits, startDate, endDate, days, time, i
    html += "<td>T, tH</td>";
    html += "<td>1:00 PM - 2:15 PM</td>";
    html += "<td>Charles Almond</td>";
+   html +="<td><select name ='drop'> "
+   +"<option value='1'>******</option>"
+   +"<option value='2'>DROP</option> "
+   +"<option value='3'>Repeat Course</option> </td>";
    html += "</tr>";
 
 

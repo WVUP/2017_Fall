@@ -2,6 +2,7 @@ html{
 
     background: #9CBCDA;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#2e75b6;
 }
 
 
@@ -248,6 +249,20 @@ height: 50%;
 }
 
 
+.welcomemessage{
+    color: #195D9D;
+    padding: 5px;
+
+
+}
+
+.loginform{
+
+    color: #2e75b6;
+
+
+
+}
 .welcome{
 
 top: 25%;   
@@ -260,12 +275,14 @@ padding: 40px;
 padding-left: 5%;
 padding-right: 5%;
 margin-right: 40px;
-margin-left: 20%;
-text-align: justify;
+margin-left: 25%;
+
 background: #ffe699;
 border: 3px solid #D5990C;
+color: #2e75b6;
 border-radius: 3px;
-
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 115%;
 
 }
 
@@ -291,7 +308,7 @@ border-radius: 3px;
     padding-top: 15px;
 padding-bottom: 10px;
     margin-right: 40px;
-    margin-left: 30%;
+    margin-left: 25%;
     text-align: justify;
     background: #ffe699;
     border-radius: 50px;
@@ -300,6 +317,11 @@ padding-bottom: 10px;
     
     
     }
+
+
+
+
+    
 
 
 
@@ -341,6 +363,7 @@ padding-bottom: 10px;
     margin-right: 40px;
     margin-left: 10%;
     text-align: justify;
+    color: #2e75b6;
   
     
 
@@ -351,7 +374,7 @@ padding-bottom: 10px;
 .TRANSCRIPTCONTAINER{
     top: 25%;   
     position: relative;
-    color: black;
+    color: #2e75b6;
     
     width: 50%;
     float: right;
@@ -385,18 +408,86 @@ padding-bottom: 10px;
     margin-top: 5%;
     text-align: justify;
   
+
+}
+
+
+.financialaidbox{
+
+
+    top: 25%;   
+    position: relative;
+   
     
+    width: 50%;
+    float: right;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 20%;
+    margin-left: 25%;
+    text-align: justify;
+    background: #ffe699;
+    overflow: hidden;
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+
+
+}
+
+.surveybox{
+
+    top: 25%;   
+    position: relative;
+   
+    
+    width: 50%;
+    float: right;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 20%;
+    margin-left: 25%;
+    text-align: justify;
+    background: #ffe699;
+    overflow: hidden;
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+
 
 
 }
 
 
 
+.linkbox{
+
+    top: 25%;   
+    position: relative;
+   
+    
+    width: 50%;
+    float: right;
+    padding: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 20%;
+    margin-left: 25%;
+    text-align: justify;
+    background: #ffe699;
+    overflow: hidden;
+    border: 3px solid #D5990C;
+    border-radius: 3px;
+
+
+    
+}
+
 .textbox{
 
     top: 25%;   
     position: relative;
-    color: black;
+   
     
     width: 50%;
     float: right;
@@ -495,7 +586,7 @@ padding-bottom: 10px;
 
 
 .button {
-    background-color: #2e75b6;;
+    background-color: #2e75b6;
     border: none;
    
     padding: 5px 12px;
@@ -524,6 +615,23 @@ input[type=text] {
 color: gray;
 font-style: italic;
 padding: 5px;
+
+}
+
+
+option {
+
+    background-color: #EFC840;
+    color: black;
+    border: 1px solid #B26418;
+
+}
+
+select{
+
+    background-color: #FFF3CF;
+    color: black;
+    border: 1px solid #B26418;
 
 }
     
@@ -557,7 +665,8 @@ td, th {
     text-align: left;
     padding: 8px;
     color: black;
-    background-color: #ffe699
+    background-color: #ffe699;
+    color: #2e75b6;
 }
 
 td:nth-child(even){
@@ -573,8 +682,8 @@ tr:nth-child(even) {
 #demo{
 
 font-size: 150%;
-
-
+color: red;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
