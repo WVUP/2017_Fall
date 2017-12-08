@@ -20,10 +20,12 @@
             width: 250px;
             float: left;
             position: fixed;
+            box-shadow: 0 0 25px 4px black;
         }
         .upperLeftPane {
             background: grey;
             height: 10%;
+            box-shadow: 0 0 25px 4px black;
         }
         .rightpane {
             background: rgb(70, 70, 70);
@@ -32,6 +34,7 @@
             width: 45px;
             right: 0;
             position: fixed;
+            box-shadow: 0 0 25px 4px black;
         }
         .rightpane:hover {
             cursor:pointer;
@@ -52,16 +55,18 @@
             height: 40px;
             width: 40px;
             margin-top: 7px;
+            box-shadow: 0 0 25px 1px black;
         }
         .search {
             position: fixed;
             bottom: 5;
             left: 5;
+            box-shadow: 0 0 25px 4px black;
         }
         .purpleRain {
             width: 250px;
             position: fixed;
-            margin-top: -185px;
+            margin-top: -323px;
             visibility: visible;
         }
         .purpleLine {
@@ -102,7 +107,9 @@
             margin-top: 
         }
         .game {
+            border: 0;
             height: 400px;
+            width: 200px;
         }
         .icon{
             width: 180;
@@ -112,6 +119,7 @@
         .gameName{
             color: rgb(150, 150, 150);
             font-size: 18px;
+            padding-top: 3px;
         }
         .gameViewers{
             color: white;
@@ -127,15 +135,22 @@
             
         }
         .leftHead{
+            padding-left: 10px;
             color: darkgrey;
             font-size: 18px;
             text-decoration: underline;
         }
         .streamers{
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             color: white;
             font-size: 15px;
         }
         .friends{
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             color: white;
             font-size: 15px;
         }
@@ -145,7 +160,13 @@
             visibility: hidden;
         }
         .arrowHidden {
+            display: none;
+            position: fixed; 
+            right: 12%; 
             z-index: -1;
+        }
+        .table{
+            padding-left: 280px;
         }
     </style>
 </head>
@@ -169,6 +190,7 @@
                     </div>
                 </div>
                 <div class="hidden" id="hidden">
+                    <br>
                     <div class="leftHead">Followed Streams</div>
                     <div class="streamers">Yogscast</div>
                     <div class="streamers">imaqtpie</div>
@@ -184,7 +206,7 @@
                     </div>
                 </div>
                 <div class="search">
-                    <input style="width:240px;" placeholder="Search..." type="text">
+                    <input style="width:240px;" placeholder="Search..." type="text" id="search" onkeypress="search()">
                 </div>
                 <div class="purpleRain" id="purpleRain" onclick="dropdown()">
                     <div class="purpleLine"></div>
@@ -192,7 +214,7 @@
                     <div class="purpleLine"></div>
                 </div>
             </div>
-            <div class="middle row">
+            <!-- <div class="middle row">
                 <div class="game col-2">
                     <div><img class="icon" src="COD.jpg" alt=""></div>
                     <div class="gameName">
@@ -217,7 +239,7 @@
                         Fortnite
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -226,7 +248,7 @@
                         Hearthstone
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -235,7 +257,7 @@
                         IRL
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -244,7 +266,7 @@
                         Salt
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
             </div>
@@ -255,7 +277,7 @@
                         More Salt
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -264,7 +286,7 @@
                         PlayerUnknown's Battlegrounds
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -273,7 +295,7 @@
                         Runescape
                     </div>
                     <div class="gameViewers">
-                            10 Viewers
+                        10 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -282,7 +304,7 @@
                         World of Warcraft
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -291,7 +313,7 @@
                         Counter Strike: CS-GO
                     </div>
                     <div class="gameViewers">
-                            10,000 Viewers
+                        10,000 Viewers
                     </div>
                 </div>
                 <div class="game col-2">
@@ -300,9 +322,149 @@
                         Minecraft
                     </div>
                     <div class="gameViewers">
-                            1,000,000 Viewers
+                        1,000,000 Viewers
                     </div>
                 </div>
+            </div> -->
+            <div class="table">
+                <table id="table">
+                    <tr>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="COD.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Call of Duty: WWII
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="DOT.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Dota 2
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="FN.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Fortnite
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="HS.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Hearthstone
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="IRL.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            IRL
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="LOL.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Salt
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="OVW.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            More Salt
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="PUBG.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            PlayerUnknown's Battlegrounds
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="RS.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Runescape
+                                        </div>
+                                        <div class="gameViewers">
+                                            10 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="WOW.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            World of Warcraft
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="CS.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Counter Strike: CS-GO
+                                        </div>
+                                        <div class="gameViewers">
+                                            10,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                        <td>
+                                <div class="game ">
+                                        <div><img class="icon" src="MC.jpg" alt=""></div>
+                                        <div class="gameName">
+                                            Minecraft
+                                        </div>
+                                        <div class="gameViewers">
+                                            1,000,000 Viewers
+                                        </div>
+                                    </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             </div>
             
@@ -310,9 +472,9 @@
                 <div onclick="rightSide()" class="arrow arrowTop"><img src="arrow.png" alt=""></div>
                 <div onclick="rightSide()" class="arrow arrowMid"><img src="arrow.png" alt=""></div>
                 <div onclick="rightSide()" class="arrow arrowBot"><img src="arrow.png" alt=""></div>
-                <div onclick="undorightSide()" class="arrow arrowhidden arrowTop"><img src="arrow.png" alt=""></div>
-                <div onclick="undorightSide()" class="arrow arrowHidden arrowMid"><img src="arrow.png" alt=""></div>
-                <div onclick="undorightSide()" class="arrow arrowHidden arrowBot"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrowhidden arrowTop"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrowHidden arrowMid"><img src="arrow.png" alt=""></div>
+                <div onclick="undorightSide()" class="arrowHidden arrowBot"><img src="arrow.png" alt=""></div>
                 <div class="rightHide">
                     <div class="leftHead">
                         Recommended Channels
@@ -330,56 +492,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function dropdown() {
-            var bars = document.getElementById("purpleRain");
-            bars.style.visibility = 'hidden';
-            var dropdown = document.getElementById("hidden");
-            dropdown.style.visibility = 'visible';
-        }
-        function rightSide() {
-            var sideBar = document.getElementsByClassName("rightpane")[0];
-            sideBar.style.width = '250px';
-            var arrow1 = document.getElementsByClassName("arrow")[0];
-            var arrow2 = document.getElementsByClassName("arrow")[1];
-            var arrow3 = document.getElementsByClassName("arrow")[2];
-            arrow1.style.right = "12%";
-            arrow2.style.right = "12%";
-            arrow3.style.right = "12%";
-            var hide = document.getElementsByClassName("rightHide")[0];
-            hide.style.visibility = "visible";
-            var arrow4 = document.getElementsByClassName("arrowHidden")[0];
-            var arrow5 = document.getElementsByClassName("arrowHidden")[0];
-            var arrow6 = document.getElementsByClassName("arrowHidden")[0];
-            //arrow4.style.z-index = "100";
-            //arrow5.style.z-index = "100";
-            //arrow6.style.z-index = "100";    
-        }
-        function undoDrop(){
-            var bars = document.getElementById("purpleRain");
-            bars.style.visibility = 'visible';
-            var dropdown = document.getElementById("hidden");
-            dropdown.style.visibility = 'hidden';
-        }
-        function undorightSide(){
-            var sideBar = document.getElementsByClassName("rightpane")[0];
-            sideBar.style.width = '45px';
-            var arrow1 = document.getElementsByClassName("arrow")[0];
-            var arrow2 = document.getElementsByClassName("arrow")[1];
-            var arrow3 = document.getElementsByClassName("arrow")[2];
-            arrow1.style.right = "1%";
-            arrow2.style.right = "1%";
-            arrow3.style.right = "1%";
-            var hide = document.getElementsByClassName("rightHide")[0];
-            hide.style.visibility = "hidden";
-            var arrow4 = document.getElementsByClassName("arrowHidden")[0];
-            var arrow5 = document.getElementsByClassName("arrowHidden")[0];
-            var arrow6 = document.getElementsByClassName("arrowHidden")[0];
-            arrow4.style.z-index = "-1";
-            arrow5.style.z-index = "-1";
-            arrow6.style.z-index = "-1";
-        }
-    </script>
+    <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
