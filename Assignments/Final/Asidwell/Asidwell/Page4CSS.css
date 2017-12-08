@@ -1,0 +1,13 @@
+html{background-image: url("SimpleAndSweet.jpg"); color:#FF0}
+#Registration{
+	color:#FF0;
+	font-size: 25px;
+}
+b{color:white;}
+	#Services{display:inline; color:gold;}
+#Aid{display:inline; padding: 15px; color:gold}
+UL{list-style-type:none;
+color: white	
+}
+footer{text-align: right;
+color:white}

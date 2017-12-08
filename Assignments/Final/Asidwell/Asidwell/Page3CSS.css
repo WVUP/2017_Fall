@@ -1,0 +1,24 @@
+html{background-image: url("SimpleAndSweet.jpg"); color:#FF0}
+#Admissions{
+	color:#FF0;
+	font-size: 25px;
+}
+UL{list-style-type:none;
+color: white
+	
+}
+
+footer{text-align: right;
+color:white}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+	}
+	#Services{display:inline; color:gold;}
+#Aid{display:inline; padding: 15px; color:gold}
